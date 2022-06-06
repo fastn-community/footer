@@ -6,3 +6,4 @@ zip: github.com/fifthtry/footer/archive/refs/heads/main.zip
 -- fpm.dependency: fifthtry.github.io/doc-site as ds
 
 -- fpm.auto-import: ds
+
