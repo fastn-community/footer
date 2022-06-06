@@ -1,1 +1,118 @@
--- ds.page: hello
+-- import: fpm
+-- import: fifthtry.github.io/footer/assets
+
+
+
+
+-- fpm.toc-item list empty-toc:
+
+
+
+
+-- fpm.toc-item list footer:
+$processor$: toc
+
+- Roadmap: /roadmap/
+- Home Index: /index/
+- Docs: /index/
+- Articles: /index/
+- Home Pictures: /index/  
+
+
+-- basic-footer:
+site-logo: $assets.file.assets.site-logo.svg
+site-url: /
+site-name: FTD
+footer-nav-list: $footer
+copyright: Copyright ©2022. FifthTry Pvt Ltd.
+
+
+
+
+-- ftd.column basic-footer:
+optional string site-name:
+optional string site-url: /
+optional string copyright:
+optional ftd.image-src site-logo: $assets.file.assets.site-logo.svg
+string logo-height: 20
+width: fill
+padding-horizontal: 220
+padding-vertical: $fpm.space.space-11
+optional ftd.color backgroungcolor: $fpm.color.main.custom-one
+fpm.toc-item list footer-nav-list: $empty-toc
+
+
+--- ftd.row:
+spacing: 8
+link: $site-url
+background-color: $backgroungcolor
+
+--- ftd.image:
+if: $site-logo is not null
+src: $site-logo
+width: auto
+height: $logo-height
+
+
+--- ftd.text: $site-name
+if: $site-name is not null
+color: $fpm.color.main.text-strong
+position: center
+
+--- fallback-title:
+if: $site-logo is null
+site-name: $site-name
+
+--- container: ftd.main
+
+
+
+--- footer-list: 
+title: $obj.title
+url: $obj.url
+is-active: $obj.is-active
+$loop$: $footer-nav-list as $obj
+
+
+
+--- container: ftd.main
+
+--- ftd.row:
+width: fill
+height: 1
+color: $fpm.color.main.border
+
+
+--- container: ftd.main
+
+
+--- ftd.text: 
+text: $copyright
+color: $fpm.color.main.text
+
+
+-- ftd.row footer-list:
+caption title:
+optional string url: /
+optional boolean is-active: 
+spacing: 20
+width: fill
+
+--- ftd.text: $title
+color: $fpm.color.main.text
+color if $is-active: $fpm.color.main.text-strong
+link: $url
+
+
+
+
+
+-- ftd.row fallback-title:
+optional string site-name:
+
+
+--- ftd.text: LOGO
+if: $site-name is null
+move-left: 2
+role: $fpm.type.heading-large
+color: $fpm.color.main.text-strong
