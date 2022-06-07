@@ -1,30 +1,291 @@
 -- import: fpm
 -- import: fifthtry.github.io/footer/assets
+-- import: fifthtry.github.io/package-doc/doc as pd
+
+-- ftd.type bold-copy-relaxed: $fpm.type.label-small.font
+desktop: $fpm.type.copy-relaxed.desktop
+mobile: $fpm.type.copy-relaxed.mobile
+xl: $fpm.type.copy-relaxed.xl
+weight: 700
+
+-- ftd.font-size sub-heading-sml:
+line-height: 32
+size: 32
+letter-spacing: 0
+
+-- ftd.type sub-heading-small: $fpm.font-display
+desktop: $sub-heading-sml
+mobile: $sub-heading-sml
+xl: $sub-heading-sml
+weight: 400
+
+-- fpm.toc-item list empty-toc: 
+
+-- fpm.sitemap-data sitemap:
+$processor$: sitemap
+
+
+-- string bio-text: 
+
+I'm surprised you had the courage to take the responsibility yourself. 
+Leave that to me.
+
+
+
+-- ftd.column:
+id: show-container
+width: fill
+padding-horizontal: 50
+background-color: $fpm.color.main.background.base
+
+-- pd.package: footer
+name: fifthtry.github.io/footer
+
+This component can be used as a footer component on your page.
+
+
+-- pd.component: footer
+name: fifthtry.github.io/footer
+
+This is the main footer.
 
 
 
 
--- fpm.toc-item list empty-toc:
+
+-- pd.output: Basic usage example
 
 
+\-- basic-footer:
+site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-url: /
+footer-nav-list: $sitemap.sections
+copyright: Copyright ©2022. FifthTry Pvt Ltd.
+
+FifthTry has a review based workflow for documentation, just like Github Pull Request. 
 
 
--- fpm.toc-item list footer:
-$processor$: toc
-
-- Roadmap: /roadmap/
-- Home Index: /index/
-- Docs: /index/
-- Articles: /index/
-- Home Pictures: /index/  
 
 
 -- basic-footer:
-site-logo: $assets.file.assets.site-logo.svg
+site-logo: $assets.files.assets.logo-fifthtry-dark.svg
 site-url: /
-site-name: FTD
-footer-nav-list: $footer
+footer-nav-list: $sitemap.sections
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
+
+-- container: show-container
+
+-- pd.output: Basic usage example
+
+
+\-- basic-footer:
+site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+backgroungcolor: $fpm.color.main.custom.one
+site-url: /
+site-name: Fifthtry
+footer-nav-list: $sitemap.sections
+copyright: Copyright ©2022. FifthTry Pvt Ltd.
+
+-- basic-footer:
+site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+backgroungcolor: $fpm.color.main.custom.one
+site-url: /
+site-name: Fifthtry
+footer-nav-list: $sitemap.sections
+copyright: Copyright ©2022. FifthTry Pvt Ltd.
+
+-- container: show-container
+
+-- pd.output: Basic usage example
+
+\-- socio-footer:
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+footer-nav-list: $sitemap.sections
+copyright: Copyright ©2022. FifthTry Pvt Ltd.
+
+-- socio-footer:
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+footer-nav-list: $sitemap.sections
+copyright: Copyright ©2022. FifthTry Pvt Ltd.
+
+
+-- container: show-container
+
+-- pd.output: Basic usage example
+
+\-- social-sideline-footer:
+social: true
+site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+bio: $bio-text
+site-url: /
+footer-nav-list: $sitemap.sections
+site-name: Fifthtry
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+copyright: Copyright ©2022. FifthTry Pvt Ltd.
+
+
+-- social-sideline-footer:
+social: true
+site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+bio: $bio-text
+site-url: /
+footer-nav-list: $sitemap.sections
+site-name: Fifthtry
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+copyright: Copyright ©2022. FifthTry Pvt Ltd.
+
+-- container: show-container
+
+-- pd.output: Basic usage example
+
+
+\-- social-sideline-footer:
+site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+bio: $bio-text
+site-url: /
+site-name: Fifthtry
+footer-nav-list: $sitemap.sections
+copyright: Copyright ©2022. FifthTry Pvt Ltd.
+
+-- social-sideline-footer:
+site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+bio: $bio-text
+site-url: /
+site-name: Fifthtry
+footer-nav-list: $sitemap.sections
+copyright: Copyright ©2022. FifthTry Pvt Ltd.
+
+
+-- container: show-container
+
+-- pd.output: Basic usage example
+
+\-- left-hug-sitemap-footer:
+site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+bio: $bio-text
+site-url: /
+site-name: Fifthtry
+sections: $sitemap.sections
+sub-sections: $sitemap.subsections
+copyright: Copyright ©2022. FifthTry Pvt Ltd.
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+
+-- left-hug-sitemap-footer:
+site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+bio: $bio-text
+site-url: /
+site-name: Fifthtry
+sections: $sitemap.sections
+sub-sections: $sitemap.subsections
+copyright: Copyright ©2022. FifthTry Pvt Ltd.
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+
+
+
+-- container: show-container
+
+-- pd.output: Basic usage example
+
+\-- sitemap-footer:
+site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+bio: $bio-text
+site-url: /
+site-name: Fifthtry
+copyright: Copyright ©2022. FifthTry Pvt Ltd.
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+
+
+-- sitemap-footer:
+site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+bio: $bio-text
+site-url: /
+site-name: Fifthtry
+copyright: Copyright ©2022. FifthTry Pvt Ltd.
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -33,44 +294,43 @@ copyright: Copyright ©2022. FifthTry Pvt Ltd.
 optional string site-name:
 optional string site-url: /
 optional string copyright:
-optional ftd.image-src site-logo: $assets.file.assets.site-logo.svg
-string logo-height: 20
+optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
+string logo-height: 32
 width: fill
-padding-horizontal: 220
+max-width: 1200
+align: center
 padding-vertical: $fpm.space.space-11
-optional ftd.color backgroungcolor: $fpm.color.main.custom-one
-fpm.toc-item list footer-nav-list: $empty-toc
+optional ftd.color backgroungcolor: $fpm.color.main.background.base
+fpm.toc-item list footer-nav-list: $sitemap.sections
+background-color: $fpm.color.main.background.base
+ftd.color text-color: $fpm.color.main.text
+ftd.color active-text-color: $fpm.color.main.text-strong
+spacing: 32
 
 
 --- ftd.row:
-spacing: 8
-link: $site-url
-background-color: $backgroungcolor
+align: center
 
---- ftd.image:
-if: $site-logo is not null
-src: $site-logo
-width: auto
-height: $logo-height
-
-
---- ftd.text: $site-name
-if: $site-name is not null
-color: $fpm.color.main.text-strong
-position: center
-
---- fallback-title:
-if: $site-logo is null
+--- logo-with-name:
+site-logo: $site-logo
 site-name: $site-name
+site-url: $site-url
+logo-height: $logo-height
+
 
 --- container: ftd.main
 
+--- ftd.row:
+align: center
+spacing: 32
 
 
---- footer-list: 
+--- footer-list-section: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
+toc: $empty-toc
+sub-sections: $empty-toc
 $loop$: $footer-nav-list as $obj
 
 
@@ -79,8 +339,8 @@ $loop$: $footer-nav-list as $obj
 
 --- ftd.row:
 width: fill
-height: 1
-color: $fpm.color.main.border
+border-bottom: 1
+border-color: $fpm.color.main.border
 
 
 --- container: ftd.main
@@ -89,19 +349,23 @@ color: $fpm.color.main.border
 --- ftd.text: 
 text: $copyright
 color: $fpm.color.main.text
+align: center
+role: $fpm.type.fine-print
 
 
 -- ftd.row footer-list:
 caption title:
 optional string url: /
-optional boolean is-active: 
-spacing: 20
-width: fill
+boolean is-active: false
+ftd.color text-color: $fpm.color.main.text
+ftd.color active-text-color: $fpm.color.main.text-strong
 
 --- ftd.text: $title
 color: $fpm.color.main.text
 color if $is-active: $fpm.color.main.text-strong
+role: $fpm.type.copy-relaxed
 link: $url
+width: fill
 
 
 
@@ -114,5 +378,750 @@ optional string site-name:
 --- ftd.text: LOGO
 if: $site-name is null
 move-left: 2
-role: $fpm.type.heading-large
+role: $sub-heading-small
 color: $fpm.color.main.text-strong
+
+
+-- ftd.column socio-footer:
+optional ftd.image-src twitter-logo:
+optional ftd.image-src facebook-logo:
+optional ftd.image-src discord-logo:
+optional ftd.image-src instagram-logo:
+optional ftd.image-src telegram-logo:
+optional string twitter-url: /
+optional string facebook-url: /
+optional string discord-url: /
+optional string instagram-url: /
+optional string telegram-url: /
+optional string copyright:
+width: fill
+max-width: 1200
+align: center
+padding-vertical: $fpm.space.space-11
+optional ftd.color backgroungcolor: $fpm.color.main.background.base
+fpm.toc-item list footer-nav-list: $empty-toc
+background-color: $fpm.color.main.background.base
+spacing: 32
+
+--- ftd.row:
+align: center
+
+--- images-list:
+twitter-logo: $twitter-logo
+twitter-url: $twitter-url
+facebook-logo: $facebook-logo
+facebook-url: $facebook-url
+discord-logo: $discord-logo
+discord-url: $discord-url
+instagram-logo: $instagram-logo
+instagram-url: $instagram-url
+telegram-logo: $telegram-logo
+telegram-url: $telegram-url
+
+
+--- container: ftd.main
+
+
+
+--- ftd.row:
+align: center
+spacing: 32
+
+
+--- footer-list-section: 
+title: $obj.title
+url: $obj.url
+is-active: $obj.is-active
+toc: $empty-toc
+sub-sections: $empty-toc
+$loop$: $footer-nav-list as $obj
+
+--- container: ftd.main
+
+--- ftd.row:
+width: fill
+border-bottom: 1
+border-color: $fpm.color.main.border
+
+
+--- container: ftd.main
+
+
+--- ftd.text: 
+text: $copyright
+color: $fpm.color.main.text
+align: center
+role: $fpm.type.fine-print
+
+
+
+-- ftd.column social-sideline-footer:
+optional string site-name:
+optional string site-url: /
+optional ftd.image-src twitter-logo:
+optional ftd.image-src facebook-logo:
+optional ftd.image-src discord-logo:
+optional ftd.image-src instagram-logo:
+optional ftd.image-src telegram-logo:
+optional string twitter-url: /
+optional string facebook-url: /
+optional string discord-url: /
+optional string instagram-url: /
+optional string telegram-url: /
+optional string copyright:
+optional body bio:
+optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
+string logo-height: 32
+width: fill
+max-width: 1200
+align: center
+padding-vertical: $fpm.space.space-13
+optional ftd.color backgroungcolor: $fpm.color.main.background.base
+fpm.toc-item list footer-nav-list: $empty-toc
+background-color: $fpm.color.main.background.base
+spacing: 24
+boolean social: false
+
+--- ftd.row:
+id: logo-bio-container
+width: fill
+spacing: 40
+
+
+--- logo-with-name:
+site-logo: $site-logo
+site-name: $site-name
+site-url: $site-url
+logo-height: $logo-height
+
+
+--- container: logo-bio-container
+
+
+--- ftd.text:
+text: $bio
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+width: 305
+
+--- container: ftd.main
+
+
+--- ftd.row:
+width: fill
+border-bottom: 1
+border-color: $fpm.color.main.border
+
+--- container: ftd.main
+
+--- ftd.row:
+width: fill
+id: copyright-with-link-container
+
+--- ftd.row:
+width: fill
+
+--- ftd.text: 
+text: $copyright
+color: $fpm.color.main.text
+align: center
+role: $fpm.type.fine-print
+
+--- container: copyright-with-link-container
+
+--- ftd.row:
+if: not $social
+align: center
+spacing: 32
+
+
+--- footer-list-section: 
+title: $obj.title
+url: $obj.url
+is-active: $obj.is-active
+toc: $empty-toc
+sub-sections: $empty-toc
+$loop$: $footer-nav-list as $obj
+
+--- container: copyright-with-link-container
+
+
+--- ftd.row:
+spacing: 32
+if:  $social
+
+
+--- images-list:
+twitter-logo: $twitter-logo
+twitter-url: $twitter-url
+facebook-logo: $facebook-logo
+facebook-url: $facebook-url
+discord-logo: $discord-logo
+discord-url: $discord-url
+instagram-logo: $instagram-logo
+instagram-url: $instagram-url
+telegram-logo: $telegram-logo
+telegram-url: $telegram-url
+
+
+
+
+
+
+-- ftd.column social-sideline-footer-with-socio-links:
+optional string site-name:
+optional ftd.image-src twitter-logo:
+optional ftd.image-src facebook-logo:
+optional ftd.image-src discord-logo:
+optional ftd.image-src instagram-logo:
+optional ftd.image-src telegram-logo:
+optional string twitter-url: /
+optional string facebook-url: /
+optional string discord-url: /
+optional string instagram-url: /
+optional string telegram-url: /
+optional string site-url: /
+optional string copyright:
+optional body bio:
+optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
+string logo-height: 32
+width: fill
+max-width: 1200
+align: center
+padding-vertical: $fpm.space.space-13
+optional ftd.color backgroungcolor: $fpm.color.main.background.base
+fpm.toc-item list footer-nav-list: $empty-toc
+background-color: $fpm.color.main.background.base
+spacing: 24
+
+--- ftd.row:
+id: logo-bio-container
+width: fill
+spacing: 40
+
+
+
+--- logo-with-name:
+site-logo: $site-logo
+site-name: $site-name
+site-url: $site-url
+logo-height: $logo-height
+
+
+--- container: logo-bio-container
+
+
+--- ftd.text:
+text: $bio
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+width: 305
+
+--- container: ftd.main
+
+
+--- ftd.row:
+width: fill
+border-bottom: 1
+border-color: $fpm.color.main.border
+
+--- container: ftd.main
+
+--- ftd.row:
+width: fill
+id: copyright-with-link-container
+
+--- ftd.row:
+width: fill
+
+--- ftd.text: 
+text: $copyright
+color: $fpm.color.main.text
+align: center
+role: $fpm.type.fine-print
+
+--- container: copyright-with-link-container
+
+--- ftd.row:
+spacing: 32
+
+--- images-list:
+twitter-logo: $twitter-logo
+twitter-url: $twitter-url
+facebook-logo: $facebook-logo
+facebook-url: $facebook-url
+discord-logo: $discord-logo
+discord-url: $discord-url
+instagram-logo: $instagram-logo
+instagram-url: $instagram-url
+telegram-logo: $telegram-logo
+telegram-url: $telegram-url
+
+
+-- ftd.row left-hug-sitemap-footer:
+optional string site-name:
+optional string site-url: /
+optional string copyright:
+optional body bio:
+optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
+string logo-height: 32
+width: fill
+max-width: 1200
+align: center
+padding-vertical: $fpm.space.space-11
+optional ftd.color backgroungcolor: $fpm.color.main.background.base
+fpm.toc-item list footer-nav-list: $empty-toc
+fpm.toc-item list sections: $empty-toc
+fpm.toc-item list sub-sections: $empty-toc
+background-color: $fpm.color.main.background.base
+optional ftd.image-src twitter-logo:
+optional ftd.image-src facebook-logo:
+optional ftd.image-src discord-logo:
+optional ftd.image-src instagram-logo:
+optional ftd.image-src telegram-logo:
+optional string twitter-url: /
+optional string facebook-url: /
+optional string discord-url: /
+optional string instagram-url: /
+optional string telegram-url: /
+spacing: 88
+
+--- ftd.column:
+id: right-side
+spacing: 24
+
+--- logo-with-name:
+site-logo: $site-logo
+site-name: $site-name
+site-url: $site-url
+logo-height: $logo-height
+
+
+--- container: right-side
+
+--- ftd.text:
+text: $bio
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+width: 305
+
+--- container: right-side
+
+--- ftd.row:
+padding-vertical: 16
+
+--- images-list:
+twitter-logo: $twitter-logo
+twitter-url: $twitter-url
+facebook-logo: $facebook-logo
+facebook-url: $facebook-url
+discord-logo: $discord-logo
+discord-url: $discord-url
+instagram-logo: $instagram-logo
+instagram-url: $instagram-url
+telegram-logo: $telegram-logo
+telegram-url: $telegram-url
+
+
+
+--- container: right-side
+
+
+--- ftd.text: 
+text: $copyright
+color: $fpm.color.main.text
+role: $fpm.type.fine-print
+
+--- container: ftd.main
+
+--- ftd.row:
+width: fill
+max-width: 688
+
+
+--- footer-list-section: 
+title: $obj.title
+url: $obj.url
+is-active: $obj.is-active
+toc: $empty-toc
+sub-sections: $sitemap.subsections
+$loop$: $sections as $obj
+
+
+-- ftd.column footer-item: 
+caption title:
+optional string link:
+fpm.toc-item list children:
+
+--- ftd.row:
+width: fill
+
+--- ftd.text: $title
+role: $fpm.type.fine-print
+color: $fpm.color.main.text
+white-space: nowrap
+margin-bottom: 20
+
+
+--- container: ftd.main
+
+--- ftd.row:
+width: fill
+if: $children is not empty
+
+
+--- ftd.column:
+width: fill
+
+--- footer-item: $obj.title
+$loop$: $children as $obj
+link: $obj.url
+title: $obj.title
+children: $obj.children 
+
+
+-- ftd.column sitemap-footer:
+optional string site-name:
+optional string site-url: /
+optional string copyright:
+optional body bio:
+optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
+string logo-height: 32
+width: fill
+max-width: 1200
+align: center
+padding-vertical: $fpm.space.space-11
+optional ftd.color backgroungcolor: $fpm.color.main.background.base
+background-color: $fpm.color.main.background.base
+optional ftd.image-src twitter-logo:
+optional ftd.image-src facebook-logo:
+optional ftd.image-src discord-logo:
+optional ftd.image-src instagram-logo:
+optional ftd.image-src telegram-logo:
+optional string twitter-url: /
+optional string facebook-url: /
+optional string discord-url: /
+optional string instagram-url: /
+optional string telegram-url: /
+optional string sign-up-txt:
+fpm.toc-item list sections: $sitemap.sections
+fpm.toc-item list sub-sections: $sitemap.subsections
+fpm.toc-item list toc: $sitemap.toc
+spacing: 88
+optional boolean subscription: false
+ftd.color text-color: $fpm.color.main.text
+ftd.color active-text-color: $fpm.color.main.text-strong
+
+
+--- ftd.row:
+width: fill
+max-width: 1200
+align: center
+
+--- footer-list-section: 
+title: $obj.title
+url: $obj.url
+is-active: $obj.is-active
+text-color: $text-color
+active-text-color: $active-text-color
+toc: $sitemap.toc
+sub-sections: $sitemap.subsections
+$loop$: $sections as $obj
+
+
+--- container: ftd.main
+
+--- ftd.row:
+id: main-container
+align if not $subscription: center
+width if  $subscription: fill
+
+--- ftd.column:
+align: center
+id: logo-with-copyright
+spacing: 24
+width: fill
+
+--- logo-with-name:
+site-logo: $site-logo
+site-name: $site-name
+site-url: $site-url
+logo-height: $logo-height
+
+
+
+--- container: logo-with-copyright
+
+--- images-list:
+twitter-logo: $twitter-logo
+twitter-url: $twitter-url
+facebook-logo: $facebook-logo
+facebook-url: $facebook-url
+discord-logo: $discord-logo
+discord-url: $discord-url
+instagram-logo: $instagram-logo
+instagram-url: $instagram-url
+telegram-logo: $telegram-logo
+telegram-url: $telegram-url
+
+
+
+--- container: logo-with-copyright
+
+--- ftd.text: 
+text: $copyright
+color: $fpm.color.main.text
+role: $fpm.type.fine-print
+
+
+--- container: main-container
+
+--- ftd.row:
+align: right
+if: $subscription
+
+--- subscription-form:
+
+
+
+
+-- ftd.row subscription-form:
+width: fill
+spacing: 8
+
+
+
+
+--- ftd.input: 
+border-radius: 8
+background-color: $fpm.color.main.text-strong
+padding-vertical: 12
+padding-horizontal: 16
+placeholder: Enter your Email...
+color: $fpm.color.main.text
+
+
+
+--- container: ftd.main
+
+--- ftd.row:
+width: fill
+padding-vertical: 12
+padding-horizontal: 24
+border-radius: 8
+background-color: $fpm.color.main.accent.secondary
+
+--- ftd.text:  Try it Free
+role: $bold-copy-relaxed
+color: $fpm.color.main.text-strong
+white-space: nowrap
+
+--- ftd.row:
+padding-top: 8
+padding-horizontal: 4
+
+--- ftd.image:
+src: $assets.files.assets.right-arrow.svg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.column footer-list-section:
+caption title:
+optional string url: /
+boolean is-active: false
+ftd.color text-color: $fpm.color.main.text-strong
+ftd.color active-text-color: $fpm.color.main.text-strong
+fpm.toc-item list sub-sections: $empty-toc
+fpm.toc-item list toc: $empty-toc
+width: fill
+
+--- ftd.text: $title
+color: $fpm.color.main.text
+role: $fpm.type.copy-relaxed
+link: $url
+width: fill
+
+--- container: ftd.main
+
+--- footer-list-toc: 
+title: $obj.title
+url: $obj.url
+is-active: $obj.is-active
+toc: $toc
+$loop$: $sub-sections as $obj
+
+
+
+
+
+-- ftd.column footer-list-toc:
+caption title:
+optional string url: /
+boolean is-active: false
+ftd.color text-color: $fpm.color.main.text-strong
+ftd.color active-text-color: $fpm.color.main.text-strong 
+fpm.toc-item list toc: $empty-toc
+append-at: toc-container
+open: true
+
+--- ftd.text: $title
+color: $fpm.color.main.text
+role: $fpm.type.copy-relaxed
+link: $url
+width: fill
+
+--- ftd.column:
+if: $toc is not empty
+
+--- ftd.column:
+id: toc-container
+
+--- footer-list-toc: 
+title: $obj.title
+url: $obj.url
+is-active: $obj.is-active
+$loop$: $toc as $obj
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.row logo-with-name:
+optional string site-name:
+optional string site-url: 
+optional ftd.image-src site-logo: 
+string logo-height:
+optional ftd.color backgroundcolor: $fpm.color.main.background.base
+
+
+--- ftd.row:
+spacing: 8
+link: $site-url
+background-color: $backgroundcolor
+
+--- ftd.image:
+if: $site-logo is not null
+src: $site-logo
+width: auto
+height: $logo-height
+
+
+--- ftd.text: $site-name
+if: $site-name is not null
+color: $fpm.color.main.text-strong
+position: center
+role: $sub-heading-small
+
+--- container: ftd.main
+
+--- fallback-title:
+if: $site-logo is null
+site-name: $site-name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.row images-list:
+optional ftd.image-src twitter-logo:
+optional ftd.image-src facebook-logo:
+optional ftd.image-src discord-logo:
+optional ftd.image-src instagram-logo:
+optional ftd.image-src telegram-logo:
+optional string twitter-url: /
+optional string facebook-url: /
+optional string discord-url: /
+optional string instagram-url: /
+optional string telegram-url: /
+
+--- ftd.image: 
+if: $twitter-logo is not null
+src: $twitter-logo
+link: $twitter-url
+width: 16
+height: 16
+margin-right: 32
+
+--- ftd.image: 
+if: $facebook-logo is not null
+src: $facebook-logo
+link: $facebook-url
+width: 16
+height: 16
+margin-right: 32
+
+--- ftd.image: 
+if: $discord-logo is not null
+src: $discord-logo
+link: $discord-url
+width: 16
+height: 16
+margin-right: 32
+
+--- ftd.image: 
+if: $instagram-logo is not null
+src: $instagram-logo
+link: $instagram-url
+width: 16
+height: 16
+margin-right: 32
+
+
+--- ftd.image: 
+if: $telegram-logo is not null
+src: $telegram-logo
+link: $telegram-url
+width: 16
+height: 16
+margin-right: 32
