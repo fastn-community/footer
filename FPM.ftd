@@ -1,8 +1,131 @@
 -- import: fpm
 
--- fpm.package: <user_name>.github.io/<repo_name>
-zip: github.com/<user_name>/<repo_name>/archive/refs/heads/main.zip
+-- fpm.package: fifthtry.github.io/footer
+zip: github.com/fifthtry/footer/archive/refs/heads/main.zip
 
 -- fpm.dependency: fifthtry.github.io/doc-site as ds
+-- fpm.dependency: fifthtry.github.io/package-doc as pd
 
 -- fpm.auto-import: ds
+
+-- fpm.sitemap:
+
+
+
+
+
+# Heading: /index/
+
+
+## subheadingthree: /index/
+
+- Footer Link #1: /index/
+
+
+## subheadingfour: /index/
+
+- Footer Link #1: /index/
+- Footer Link #2: /index/
+ 
+
+## subheadingfive: /index/
+
+- Footer Link #1: /index/
+- Footer Link #2: /index/
+
+## subheadingsix: /index/
+
+- Footer Link #1: /index/
+- Footer Link #2: /index/
+- Footer Link #3: /index/
+- Footer Link #4: /index/  
+- Footer Link #5: /index/
+
+
+# Heading: /
+
+
+## subheadingthree: /index/
+
+
+- Footer Link #4: /index/  
+- Footer Link #5: /index/ 
+
+## subheadingfour: /index/
+
+- Footer Link #1: /index/
+- Footer Link #2: /index/
+- Footer Link #3: /index/
+- Footer Link #4: /index/  
+- Footer Link #5: /index/ 
+
+## subheadingfive: /index/
+
+  
+- Footer Link #5: /index/ 
+
+## subheadingsix: /index/
+
+- Footer Link #1: /index/
+- Footer Link #2: /index/
+- Footer Link #3: /index/
+- Footer Link #4: /index/  
+- Footer Link #5: /index/
+
+
+
+
+# Heading: /index/
+
+
+## subheadingthree: /index/
+
+ 
+- Footer Link #5: /index/ 
+
+## subheadingfour: /index/
+
+- Footer Link #1: /index/
+- Footer Link #2: /index/
+- Footer Link #3: /index/
+- Footer Link #4: /index/  
+- Footer Link #5: /index/ 
+
+## subheadingfive: /index/
+
+- Footer Link #1: /index/
+- Footer Link #2: /index/
+- Footer Link #3: /index/
+- Footer Link #4: /index/  
+
+
+## subheadingsix: /index/
+
+- Footer Link #1: /index/
+- Footer Link #2: /index/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
