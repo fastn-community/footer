@@ -1,2 +1,2 @@
-# fpm-template
-FPM Blank Package Template Repo
+# fastn-template
+fastn Blank Package Template Repo

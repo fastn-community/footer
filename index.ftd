@@ -1,29 +1,13 @@
--- import: fpm
+-- import: fastn
 -- import: fifthtry.github.io/footer/assets
 -- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/code-block as cb
+-- import: fastn/processors as pr
 
--- ftd.type bold-copy-relaxed: $fpm.type.label-small.font
-desktop: $fpm.type.copy-relaxed.desktop
-mobile: $fpm.type.copy-relaxed.mobile
-xl: $fpm.type.copy-relaxed.xl
-weight: 700
+-- pr.toc-item list empty-toc: 
 
--- ftd.font-size sub-heading-sml:
-line-height: 32
-size: 32
-letter-spacing: 0
-
--- ftd.type sub-heading-small: $fpm.font-display
-desktop: $sub-heading-sml
-mobile: $sub-heading-sml
-xl: $sub-heading-sml
-weight: 400
-
--- fpm.toc-item list empty-toc: 
-
--- fpm.sitemap-data sitemap:
-$processor$: sitemap
-
+-- pr.sitemap-data sitemap:
+$processor$: pr.full-sitemap
 
 -- string bio-text: 
 
@@ -32,71 +16,72 @@ Leave that to me.
 
 
 
+
+
 -- ftd.column:
-id: show-container
-width: fill
-padding-horizontal: 50
-background-color: $fpm.color.main.background.base
+width: fill-container
+padding-horizontal.px: 50
+background.solid: $inherited.colors.background.base
 
 -- pd.package: footer
 name: fifthtry.github.io/footer
 
 This component can be used as a footer component on your page.
 
-
 -- pd.component: footer
 name: fifthtry.github.io/footer
 
 This is the main footer.
 
+-- cb.rendered: 
 
-
-
-
--- pd.output: Basic usage example
-
+-- cb.rendered.input: 
 
 \-- basic-footer:
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
 site-url: /
-footer-nav-list: $sitemap.sections
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
 
 FifthTry has a review based workflow for documentation, just like Github Pull Request. 
 
-
-
+-- cb.rendered.output:
 
 -- basic-footer:
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
 site-url: /
-footer-nav-list: $sitemap.sections
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
 
--- container: show-container
+-- end: cb.rendered.output
 
--- pd.output: Basic usage example
+-- end: cb.rendered
 
+-- cb.rendered: 
+
+-- cb.rendered.input: 
 
 \-- basic-footer:
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
-backgroungcolor: $fpm.color.main.custom.one
+backgroungcolor: $inherited.colors.background.step-1
 site-url: /
 site-name: Fifthtry
-footer-nav-list: $sitemap.sections
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
+
+-- cb.rendered.output:
 
 -- basic-footer:
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
-backgroungcolor: $fpm.color.main.custom.one
+backgroundcolor: $inherited.colors.background.step-1
 site-url: /
 site-name: Fifthtry
-footer-nav-list: $sitemap.sections
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
 
--- container: show-container
+-- end: cb.rendered.output
 
--- pd.output: Basic usage example
+-- end: cb.rendered
+
+-- cb.rendered: 
+
+-- cb.rendered.input: 
 
 \-- socio-footer:
 twitter-logo: $assets.files.assets.twitter.svg
@@ -109,8 +94,9 @@ instagram-logo: $assets.files.assets.instagram.svg
 instagram-url: /
 telegram-logo: $assets.files.assets.telegram.svg
 telegram-url: /
-footer-nav-list: $sitemap.sections
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
+
+-- cb.rendered.output:
 
 -- socio-footer:
 twitter-logo: $assets.files.assets.twitter.svg
@@ -123,18 +109,19 @@ instagram-logo: $assets.files.assets.instagram.svg
 instagram-url: /
 telegram-logo: $assets.files.assets.telegram.svg
 telegram-url: /
-footer-nav-list: $sitemap.sections
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
 
+-- end: cb.rendered.output
 
--- container: show-container
+-- end: cb.rendered
 
--- pd.output: Basic usage example
+-- cb.rendered: 
+
+-- cb.rendered.input: 
 
 \-- social-sideline-footer:
 social: true
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
-bio: $bio-text
 site-url: /
 footer-nav-list: $sitemap.sections
 site-name: Fifthtry
@@ -150,6 +137,10 @@ telegram-logo: $assets.files.assets.telegram.svg
 telegram-url: /
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
 
+I'm surprised you had the courage to take the responsibility yourself. 
+Leave that to me.
+
+-- cb.rendered.output:
 
 -- social-sideline-footer:
 social: true
@@ -170,39 +161,44 @@ telegram-logo: $assets.files.assets.telegram.svg
 telegram-url: /
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
 
--- container: show-container
+-- end: cb.rendered.output
 
--- pd.output: Basic usage example
+-- end: cb.rendered
 
+-- cb.rendered: 
+
+-- cb.rendered.input: 
 
 \-- social-sideline-footer:
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
-bio: $bio-text
 site-url: /
 site-name: Fifthtry
-footer-nav-list: $sitemap.sections
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
+
+I'm surprised you had the courage to take the responsibility yourself. 
+Leave that to me.
+
+-- cb.rendered.output:
 
 -- social-sideline-footer:
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
 bio: $bio-text
 site-url: /
 site-name: Fifthtry
-footer-nav-list: $sitemap.sections
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
 
+-- end: cb.rendered.output
 
--- container: show-container
+-- end: cb.rendered
 
--- pd.output: Basic usage example
+-- cb.rendered: 
+
+-- cb.rendered.input: 
 
 \-- left-hug-sitemap-footer:
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
-bio: $bio-text
 site-url: /
 site-name: Fifthtry
-sections: $sitemap.sections
-sub-sections: $sitemap.subsections
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
 twitter-logo: $assets.files.assets.twitter.svg
 twitter-url: /
@@ -214,14 +210,17 @@ instagram-logo: $assets.files.assets.instagram.svg
 instagram-url: /
 telegram-logo: $assets.files.assets.telegram.svg
 telegram-url: /
+
+I'm surprised you had the courage to take the responsibility yourself. 
+Leave that to me.
+
+-- cb.rendered.output:
 
 -- left-hug-sitemap-footer:
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
-bio: $bio-text
 site-url: /
 site-name: Fifthtry
 sections: $sitemap.sections
-sub-sections: $sitemap.subsections
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
 twitter-logo: $assets.files.assets.twitter.svg
 twitter-url: /
@@ -234,15 +233,19 @@ instagram-url: /
 telegram-logo: $assets.files.assets.telegram.svg
 telegram-url: /
 
+I'm surprised you had the courage to take the responsibility yourself. 
+Leave that to me.
 
+-- end: cb.rendered.output
 
--- container: show-container
+-- end: cb.rendered
 
--- pd.output: Basic usage example
+-- cb.rendered: 
+
+-- cb.rendered.input: 
 
 \-- sitemap-footer:
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
-bio: $bio-text
 site-url: /
 site-name: Fifthtry
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
@@ -257,6 +260,10 @@ instagram-url: /
 telegram-logo: $assets.files.assets.telegram.svg
 telegram-url: /
 
+I'm surprised you had the courage to take the responsibility yourself. 
+Leave that to me.
+
+-- cb.rendered.output:
 
 -- sitemap-footer:
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
@@ -275,6 +282,11 @@ instagram-url: /
 telegram-logo: $assets.files.assets.telegram.svg
 telegram-url: /
 
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- end: ftd.column
 
 
 
@@ -285,104 +297,100 @@ telegram-url: /
 
 
 
-
-
-
-
-
--- ftd.column basic-footer:
+-- component basic-footer:
 optional string site-name:
 optional string site-url: /
-optional string copyright:
+optional string copyright: Copyright ©2022. FifthTry Pvt Ltd.
 optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
-string logo-height: 32
-width: fill
-max-width: 1200
-align: center
-padding-vertical: $fpm.space.space-11
-optional ftd.color backgroungcolor: $fpm.color.main.background.base
-fpm.toc-item list footer-nav-list: $sitemap.sections
-background-color: $fpm.color.main.background.base
-ftd.color text-color: $fpm.color.main.text
-ftd.color active-text-color: $fpm.color.main.text-strong
-spacing: 32
+optional ftd.color backgroundcolor: $inherited.colors.background.step-1
+pr.toc-item list footer-nav-list: $sitemap.sections
+ftd.color text-color: $inherited.colors.text
+ftd.color active-text-color: $inherited.colors.text-strong
+integer logo-height: 32
 
+-- ftd.column:
+width: fill-container
+align-self: center
+align-content: center
+padding-vertical.px: 64
+spacing.fixed.px: 32
+background.solid: $basic-footer.backgroundcolor
 
---- ftd.row:
-align: center
+-- ftd.row:
+align-self: center
+align-content: center
+max-width.fixed.px: 1200
 
---- logo-with-name:
-site-logo: $site-logo
-site-name: $site-name
-site-url: $site-url
-logo-height: $logo-height
+-- logo-with-name:
+site-logo: $basic-footer.site-logo
+site-name: $basic-footer.site-name
+site-url: $basic-footer.site-url
+logo-height: $basic-footer.logo-height
 
+-- end: ftd.row
 
---- container: ftd.main
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 32
+max-width.fixed.percent: 70
+wrap: true
 
---- ftd.row:
-align: center
-spacing: 32
-
-
---- footer-list-section: 
+-- footer-list-section: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
-toc: $empty-toc
 sub-sections: $empty-toc
-$loop$: $footer-nav-list as $obj
+$loop$: $basic-footer.footer-nav-list as $obj
 
+-- end: ftd.row
 
+-- ftd.row:
+width: fill-container
+border-bottom-width.px: 1
+border-color: $inherited.colors.border
 
---- container: ftd.main
+-- end: ftd.row
 
---- ftd.row:
-width: fill
-border-bottom: 1
-border-color: $fpm.color.main.border
+-- ftd.text: 
+if: {basic-footer.copyright != NULL}
+text: $basic-footer.copyright
+color: $inherited.colors.text
+text-align: center
+role: $inherited.types.fine-print
 
+-- end: ftd.column
 
---- container: ftd.main
-
-
---- ftd.text: 
-text: $copyright
-color: $fpm.color.main.text
-align: center
-role: $fpm.type.fine-print
-
-
--- ftd.row footer-list:
-caption title:
-optional string url: /
-boolean is-active: false
-ftd.color text-color: $fpm.color.main.text
-ftd.color active-text-color: $fpm.color.main.text-strong
-
---- ftd.text: $title
-color: $fpm.color.main.text
-color if $is-active: $fpm.color.main.text-strong
-role: $fpm.type.copy-relaxed
-link: $url
-width: fill
+-- end: basic-footer
 
 
 
 
 
--- ftd.row fallback-title:
+
+
+
+
+
+-- component fallback-title:
 optional string site-name:
 
+-- ftd.text: LOGO
+if: { fallback-title.site-name == NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
 
---- ftd.text: LOGO
-if: $site-name is null
-move-left: 2
-role: $sub-heading-small
-color: $fpm.color.main.text-strong
+-- end: fallback-title
 
 
--- ftd.column socio-footer:
+
+
+
+
+
+
+
+
+-- component socio-footer:
 optional ftd.image-src twitter-logo:
 optional ftd.image-src facebook-logo:
 optional ftd.image-src discord-logo:
@@ -394,68 +402,75 @@ optional string discord-url: /
 optional string instagram-url: /
 optional string telegram-url: /
 optional string copyright:
-width: fill
-max-width: 1200
-align: center
-padding-vertical: $fpm.space.space-11
-optional ftd.color backgroungcolor: $fpm.color.main.background.base
-fpm.toc-item list footer-nav-list: $empty-toc
-background-color: $fpm.color.main.background.base
-spacing: 32
+pr.toc-item list footer-nav-list: $sitemap.sections
+optional ftd.color backgroundcolor: $inherited.colors.background.step-1
 
---- ftd.row:
-align: center
+-- ftd.column:
+width: fill-container
+align-content: center
+align-self: center
+padding-vertical.px: 80
+spacing.fixed.px: 32
+background.solid: $socio-footer.backgroundcolor
 
---- images-list:
-twitter-logo: $twitter-logo
-twitter-url: $twitter-url
-facebook-logo: $facebook-logo
-facebook-url: $facebook-url
-discord-logo: $discord-logo
-discord-url: $discord-url
-instagram-logo: $instagram-logo
-instagram-url: $instagram-url
-telegram-logo: $telegram-logo
-telegram-url: $telegram-url
+-- ftd.row:
+align-content: center
+max-width.fixed.px: 1200
 
+-- images-list:
+twitter-logo: $socio-footer.twitter-logo
+twitter-url: $socio-footer.twitter-url
+facebook-logo: $socio-footer.facebook-logo
+facebook-url: $socio-footer.facebook-url
+discord-logo: $socio-footer.discord-logo
+discord-url: $socio-footer.discord-url
+instagram-logo: $socio-footer.instagram-logo
+instagram-url: $socio-footer.instagram-url
+telegram-logo: $socio-footer.telegram-logo
+telegram-url: $socio-footer.telegram-url
 
---- container: ftd.main
+-- end: ftd.row
 
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 32
 
-
---- ftd.row:
-align: center
-spacing: 32
-
-
---- footer-list-section: 
+-- footer-list-section: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
-toc: $empty-toc
 sub-sections: $empty-toc
-$loop$: $footer-nav-list as $obj
+$loop$: $socio-footer.footer-nav-list as $obj
 
---- container: ftd.main
+-- end: ftd.row
 
---- ftd.row:
-width: fill
-border-bottom: 1
-border-color: $fpm.color.main.border
+-- ftd.row:
+width: fill-container
+border-bottom-width.px: 1
+border-color: $inherited.colors.border
+
+-- end: ftd.row
+
+-- ftd.text: 
+text: $socio-footer.copyright
+color: $inherited.colors.text
+text-align: center
+role: $inherited.types.fine-print
+
+-- end: ftd.column
+
+-- end: socio-footer
 
 
---- container: ftd.main
-
-
---- ftd.text: 
-text: $copyright
-color: $fpm.color.main.text
-align: center
-role: $fpm.type.fine-print
 
 
 
--- ftd.column social-sideline-footer:
+
+
+
+
+
+-- component social-sideline-footer:
 optional string site-name:
 optional string site-url: /
 optional ftd.image-src twitter-logo:
@@ -471,105 +486,109 @@ optional string telegram-url: /
 optional string copyright:
 optional body bio:
 optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
-string logo-height: 32
-width: fill
-max-width: 1200
-align: center
-padding-vertical: $fpm.space.space-13
-optional ftd.color backgroungcolor: $fpm.color.main.background.base
-fpm.toc-item list footer-nav-list: $empty-toc
-background-color: $fpm.color.main.background.base
-spacing: 24
+integer logo-height: 32
 boolean social: false
+optional ftd.color backgroundcolor: $inherited.colors.background.step-1
+pr.toc-item list footer-nav-list: $sitemap.sections
 
---- ftd.row:
-id: logo-bio-container
-width: fill
-spacing: 40
+-- ftd.column:
+width: fill-container
+padding-vertical.px: 80
+padding-horizontal.px: 48
+background.solid: $social-sideline-footer.backgroundcolor
+spacing.fixed.px: 24
 
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 40
 
---- logo-with-name:
-site-logo: $site-logo
-site-name: $site-name
-site-url: $site-url
-logo-height: $logo-height
+-- logo-with-name:
+site-logo: $social-sideline-footer.site-logo
+site-name: $social-sideline-footer.site-name
+site-url: $social-sideline-footer.site-url
+logo-height: $social-sideline-footer.logo-height
 
+-- ftd.text:
+text: $social-sideline-footer.bio
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+width.fixed.px: 305
 
---- container: logo-bio-container
+-- end: ftd.row
 
+-- ftd.row:
+width: fill-container
+border-bottom-width.px: 1
+border-color: $inherited.colors.border
 
---- ftd.text:
-text: $bio
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
-width: 305
+-- end: ftd.row
 
---- container: ftd.main
+-- ftd.row:
+width: fill-container
 
+-- ftd.text: 
+text: $social-sideline-footer.copyright
+color: $inherited.colors.text
+role: $inherited.types.fine-print
+width: fill-container
 
---- ftd.row:
-width: fill
-border-bottom: 1
-border-color: $fpm.color.main.border
+-- ftd.row:
+if: {!social-sideline-footer.social}
+align-content: center
+spacing.fixed.px: 32
 
---- container: ftd.main
-
---- ftd.row:
-width: fill
-id: copyright-with-link-container
-
---- ftd.row:
-width: fill
-
---- ftd.text: 
-text: $copyright
-color: $fpm.color.main.text
-align: center
-role: $fpm.type.fine-print
-
---- container: copyright-with-link-container
-
---- ftd.row:
-if: not $social
-align: center
-spacing: 32
-
-
---- footer-list-section: 
+-- footer-list-section: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
-toc: $empty-toc
 sub-sections: $empty-toc
-$loop$: $footer-nav-list as $obj
+$loop$: $social-sideline-footer.footer-nav-list as $obj
 
---- container: copyright-with-link-container
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 32
+if: {social-sideline-footer.social}
+
+-- images-list:
+twitter-logo: $social-sideline-footer.twitter-logo
+twitter-url: $social-sideline-footer.twitter-url
+facebook-logo: $social-sideline-footer.facebook-logo
+facebook-url: $social-sideline-footer.facebook-url
+discord-logo: $social-sideline-footer.discord-logo
+discord-url: $social-sideline-footer.discord-url
+instagram-logo: $social-sideline-footer.instagram-logo
+instagram-url: $social-sideline-footer.instagram-url
+telegram-logo: $social-sideline-footer.telegram-logo
+telegram-url: $social-sideline-footer.telegram-url
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: social-sideline-footer
 
 
---- ftd.row:
-spacing: 32
-if:  $social
-
-
---- images-list:
-twitter-logo: $twitter-logo
-twitter-url: $twitter-url
-facebook-logo: $facebook-logo
-facebook-url: $facebook-url
-discord-logo: $discord-logo
-discord-url: $discord-url
-instagram-logo: $instagram-logo
-instagram-url: $instagram-url
-telegram-logo: $telegram-logo
-telegram-url: $telegram-url
 
 
 
 
 
 
--- ftd.column social-sideline-footer-with-socio-links:
+
+
+-- component left-hug-sitemap-footer:
 optional string site-name:
+optional string site-url: /
+optional string copyright:
+optional body bio:
+optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
+integer logo-height: 32
+optional ftd.color backgroundcolor: $inherited.colors.background.step-1
+pr.toc-item list footer-nav-list: $empty-toc
+pr.toc-item list sections: $sitemap.sections
 optional ftd.image-src twitter-logo:
 optional ftd.image-src facebook-logo:
 optional ftd.image-src discord-logo:
@@ -580,219 +599,92 @@ optional string facebook-url: /
 optional string discord-url: /
 optional string instagram-url: /
 optional string telegram-url: /
-optional string site-url: /
-optional string copyright:
-optional body bio:
-optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
-string logo-height: 32
-width: fill
-max-width: 1200
-align: center
-padding-vertical: $fpm.space.space-13
-optional ftd.color backgroungcolor: $fpm.color.main.background.base
-fpm.toc-item list footer-nav-list: $empty-toc
-background-color: $fpm.color.main.background.base
-spacing: 24
 
---- ftd.row:
-id: logo-bio-container
-width: fill
-spacing: 40
+-- ftd.row:
+width: fill-container
+max-width.fixed.px: 1200
+align-content: center
+align-self: center
+padding-vertical.px: 80
+background.solid: $left-hug-sitemap-footer.backgroundcolor
 
+-- ftd.column:
+spacing.fixed.px: 24
+width.fixed.percent: 30
 
+-- logo-with-name:
+site-logo: $left-hug-sitemap-footer.site-logo
+site-name: $left-hug-sitemap-footer.site-name
+site-url: $left-hug-sitemap-footer.site-url
+logo-height: $left-hug-sitemap-footer.logo-height
 
---- logo-with-name:
-site-logo: $site-logo
-site-name: $site-name
-site-url: $site-url
-logo-height: $logo-height
+-- ftd.text:
+text: $left-hug-sitemap-footer.bio
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+width.fixed.px: 305
 
+-- ftd.row:
+padding-vertical.px: 16
 
---- container: logo-bio-container
+-- images-list:
+twitter-logo: $left-hug-sitemap-footer.twitter-logo
+twitter-url: $left-hug-sitemap-footer.twitter-url
+facebook-logo: $left-hug-sitemap-footer.facebook-logo
+facebook-url: $left-hug-sitemap-footer.facebook-url
+discord-logo: $left-hug-sitemap-footer.discord-logo
+discord-url: $left-hug-sitemap-footer.discord-url
+instagram-logo: $left-hug-sitemap-footer.instagram-logo
+instagram-url: $left-hug-sitemap-footer.instagram-url
+telegram-logo: $left-hug-sitemap-footer.telegram-logo
+telegram-url: $left-hug-sitemap-footer.telegram-url
 
+-- end: ftd.row
 
---- ftd.text:
-text: $bio
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
-width: 305
+-- ftd.text: 
+text: $left-hug-sitemap-footer.copyright
+color: $inherited.colors.text
+role: $inherited.types.fine-print
 
---- container: ftd.main
+-- end: ftd.column
 
+-- ftd.row:
+max-width.fixed.px: 688
+spacing.fixed.px: 32
+wrap: true
+margin-left.px: 88
+width.fixed.percent: 70
 
---- ftd.row:
-width: fill
-border-bottom: 1
-border-color: $fpm.color.main.border
-
---- container: ftd.main
-
---- ftd.row:
-width: fill
-id: copyright-with-link-container
-
---- ftd.row:
-width: fill
-
---- ftd.text: 
-text: $copyright
-color: $fpm.color.main.text
-align: center
-role: $fpm.type.fine-print
-
---- container: copyright-with-link-container
-
---- ftd.row:
-spacing: 32
-
---- images-list:
-twitter-logo: $twitter-logo
-twitter-url: $twitter-url
-facebook-logo: $facebook-logo
-facebook-url: $facebook-url
-discord-logo: $discord-logo
-discord-url: $discord-url
-instagram-logo: $instagram-logo
-instagram-url: $instagram-url
-telegram-logo: $telegram-logo
-telegram-url: $telegram-url
-
-
--- ftd.row left-hug-sitemap-footer:
-optional string site-name:
-optional string site-url: /
-optional string copyright:
-optional body bio:
-optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
-string logo-height: 32
-width: fill
-max-width: 1200
-align: center
-padding-vertical: $fpm.space.space-11
-optional ftd.color backgroungcolor: $fpm.color.main.background.base
-fpm.toc-item list footer-nav-list: $empty-toc
-fpm.toc-item list sections: $empty-toc
-fpm.toc-item list sub-sections: $empty-toc
-background-color: $fpm.color.main.background.base
-optional ftd.image-src twitter-logo:
-optional ftd.image-src facebook-logo:
-optional ftd.image-src discord-logo:
-optional ftd.image-src instagram-logo:
-optional ftd.image-src telegram-logo:
-optional string twitter-url: /
-optional string facebook-url: /
-optional string discord-url: /
-optional string instagram-url: /
-optional string telegram-url: /
-spacing: 88
-
---- ftd.column:
-id: right-side
-spacing: 24
-
---- logo-with-name:
-site-logo: $site-logo
-site-name: $site-name
-site-url: $site-url
-logo-height: $logo-height
-
-
---- container: right-side
-
---- ftd.text:
-text: $bio
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
-width: 305
-
---- container: right-side
-
---- ftd.row:
-padding-vertical: 16
-
---- images-list:
-twitter-logo: $twitter-logo
-twitter-url: $twitter-url
-facebook-logo: $facebook-logo
-facebook-url: $facebook-url
-discord-logo: $discord-logo
-discord-url: $discord-url
-instagram-logo: $instagram-logo
-instagram-url: $instagram-url
-telegram-logo: $telegram-logo
-telegram-url: $telegram-url
-
-
-
---- container: right-side
-
-
---- ftd.text: 
-text: $copyright
-color: $fpm.color.main.text
-role: $fpm.type.fine-print
-
---- container: ftd.main
-
---- ftd.row:
-width: fill
-max-width: 688
-
-
---- footer-list-section: 
+-- footer-list-section: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
-toc: $empty-toc
-sub-sections: $sitemap.subsections
-$loop$: $sections as $obj
+sub-sections: $obj.children
+$loop$: $left-hug-sitemap-footer.sections as $obj
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: left-hug-sitemap-footer
 
 
--- ftd.column footer-item: 
-caption title:
-optional string link:
-fpm.toc-item list children:
-
---- ftd.row:
-width: fill
-
---- ftd.text: $title
-role: $fpm.type.fine-print
-color: $fpm.color.main.text
-white-space: nowrap
-margin-bottom: 20
 
 
---- container: ftd.main
-
---- ftd.row:
-width: fill
-if: $children is not empty
 
 
---- ftd.column:
-width: fill
-
---- footer-item: $obj.title
-$loop$: $children as $obj
-link: $obj.url
-title: $obj.title
-children: $obj.children 
 
 
--- ftd.column sitemap-footer:
+
+
+-- component sitemap-footer:
 optional string site-name:
 optional string site-url: /
 optional string copyright:
 optional body bio:
 optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
-string logo-height: 32
-width: fill
-max-width: 1200
-align: center
-padding-vertical: $fpm.space.space-11
-optional ftd.color backgroungcolor: $fpm.color.main.background.base
-background-color: $fpm.color.main.background.base
+integer logo-height: 32
+optional ftd.color backgroundcolor: $inherited.colors.background.step-1
 optional ftd.image-src twitter-logo:
 optional ftd.image-src facebook-logo:
 optional ftd.image-src discord-logo:
@@ -804,125 +696,130 @@ optional string discord-url: /
 optional string instagram-url: /
 optional string telegram-url: /
 optional string sign-up-txt:
-fpm.toc-item list sections: $sitemap.sections
-fpm.toc-item list sub-sections: $sitemap.subsections
-fpm.toc-item list toc: $sitemap.toc
-spacing: 88
+pr.toc-item list sections: $sitemap.sections
 optional boolean subscription: false
-ftd.color text-color: $fpm.color.main.text
-ftd.color active-text-color: $fpm.color.main.text-strong
+ftd.color text-color: $inherited.colors.text
+ftd.color active-text-color: $inherited.colors.text-strong
 
+-- ftd.column:
+width: fill-container
+align-content: center
+align-self: center
+padding-vertical.px: 80
+background.solid: $sitemap-footer.backgroundcolor
 
---- ftd.row:
-width: fill
-max-width: 1200
-align: center
+-- ftd.row:
+width: fill-container
+spacing: space-between
+max-width.fixed.px: 1200
+align-self: center
 
---- footer-list-section: 
+-- footer-list-section: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
-text-color: $text-color
-active-text-color: $active-text-color
-toc: $sitemap.toc
-sub-sections: $sitemap.subsections
-$loop$: $sections as $obj
+text-color: $sitemap-footer.text-color
+active-text-color: $sitemap-footer.active-text-color
+sub-sections: $obj.children
+show-toc: true
+$loop$: $sitemap-footer.sections as $obj
 
+-- end: ftd.row
 
---- container: ftd.main
+-- ftd.row:
+align-content if { sitemap-footer.subscription }: center
+width if { sitemap-footer.subscription }: fill-container
 
---- ftd.row:
-id: main-container
-align if not $subscription: center
-width if  $subscription: fill
+-- ftd.column:
+align-content: center
+spacing.fixed.px: 24
+width: fill-container
 
---- ftd.column:
-align: center
-id: logo-with-copyright
-spacing: 24
-width: fill
+-- logo-with-name:
+site-logo: $sitemap-footer.site-logo
+site-name: $sitemap-footer.site-name
+site-url: $sitemap-footer.site-url
+logo-height: $sitemap-footer.logo-height
 
---- logo-with-name:
-site-logo: $site-logo
-site-name: $site-name
-site-url: $site-url
-logo-height: $logo-height
+-- images-list:
+twitter-logo: $sitemap-footer.twitter-logo
+twitter-url: $sitemap-footer.twitter-url
+facebook-logo: $sitemap-footer.facebook-logo
+facebook-url: $sitemap-footer.facebook-url
+discord-logo: $sitemap-footer.discord-logo
+discord-url: $sitemap-footer.discord-url
+instagram-logo: $sitemap-footer.instagram-logo
+instagram-url: $sitemap-footer.instagram-url
+telegram-logo: $sitemap-footer.telegram-logo
+telegram-url: $sitemap-footer.telegram-url
 
+-- ftd.text: 
+text: $sitemap-footer.copyright
+color: $inherited.colors.text
+role: $inherited.types.fine-print
 
+-- end: ftd.column
 
---- container: logo-with-copyright
+-- ftd.row:
+align-content: right
+if: { sitemap-footer.subscription }
 
---- images-list:
-twitter-logo: $twitter-logo
-twitter-url: $twitter-url
-facebook-logo: $facebook-logo
-facebook-url: $facebook-url
-discord-logo: $discord-logo
-discord-url: $discord-url
-instagram-logo: $instagram-logo
-instagram-url: $instagram-url
-telegram-logo: $telegram-logo
-telegram-url: $telegram-url
+-- subscription-form:
 
+-- end: ftd.row
 
+-- end: ftd.column
 
---- container: logo-with-copyright
-
---- ftd.text: 
-text: $copyright
-color: $fpm.color.main.text
-role: $fpm.type.fine-print
-
-
---- container: main-container
-
---- ftd.row:
-align: right
-if: $subscription
-
---- subscription-form:
+-- end: sitemap-footer
 
 
 
 
--- ftd.row subscription-form:
-width: fill
-spacing: 8
 
 
 
 
---- ftd.input: 
-border-radius: 8
-background-color: $fpm.color.main.text-strong
-padding-vertical: 12
-padding-horizontal: 16
+
+
+-- component subscription-form:
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 8
+
+-- ftd.text-input: 
+border-radius.px: 8
+background.solid: $inherited.colors.text-strong
+padding-vertical.px: 12
+padding-horizontal.px: 16
 placeholder: Enter your Email...
-color: $fpm.color.main.text
+color: $inherited.colors.text
 
+-- ftd.row:
+width: fill-container
+padding-vertical.px: 12
+padding-horizontal.px: 24
+border-radius.px: 8
+background.solid: $inherited.colors.accent.secondary
 
-
---- container: ftd.main
-
---- ftd.row:
-width: fill
-padding-vertical: 12
-padding-horizontal: 24
-border-radius: 8
-background-color: $fpm.color.main.accent.secondary
-
---- ftd.text:  Try it Free
-role: $bold-copy-relaxed
-color: $fpm.color.main.text-strong
+-- ftd.text:  Try it Free
+color: $inherited.colors.text-strong
 white-space: nowrap
 
---- ftd.row:
-padding-top: 8
-padding-horizontal: 4
+-- ftd.row:
+padding-top.px: 8
+padding-horizontal.px: 4
 
---- ftd.image:
+-- ftd.image:
 src: $assets.files.assets.right-arrow.svg
 
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: subscription-form
 
 
 
@@ -933,76 +830,94 @@ src: $assets.files.assets.right-arrow.svg
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- ftd.column footer-list-section:
+-- component footer-list-section:
 caption title:
 optional string url: /
 boolean is-active: false
-ftd.color text-color: $fpm.color.main.text-strong
-ftd.color active-text-color: $fpm.color.main.text-strong
-fpm.toc-item list sub-sections: $empty-toc
-fpm.toc-item list toc: $empty-toc
-width: fill
+ftd.color text-color: $inherited.colors.text-strong
+ftd.color active-text-color: $inherited.colors.text-strong
+pr.toc-item list sub-sections: $empty-toc
+boolean show-toc: false
 
---- ftd.text: $title
-color: $fpm.color.main.text
-role: $fpm.type.copy-relaxed
-link: $url
-width: fill
+-- ftd.column:
+spacing.fixed.px: 16
 
---- container: ftd.main
+-- ftd.text: $footer-list-section.title
+color:$inherited.colors.text
+role: $inherited.types.copy-small
+link: $footer-list-section.url
+width: fill-container
+white-space: nowrap
 
---- footer-list-toc: 
+-- footer-list-toc: 
+if: { !footer-list-section.show-toc }
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
-toc: $toc
-$loop$: $sub-sections as $obj
+toc: $empty-toc
+$loop$: $footer-list-section.sub-sections as $obj
+
+-- footer-list-toc: 
+if: { footer-list-section.show-toc }
+title: $obj.title
+url: $obj.url
+is-active: $obj.is-active
+toc: $obj.children
+$loop$: $footer-list-section.sub-sections as $obj
+
+-- end: ftd.column
+
+-- end: footer-list-section
 
 
 
 
 
--- ftd.column footer-list-toc:
+
+
+
+
+
+-- component footer-list-toc:
 caption title:
 optional string url: /
 boolean is-active: false
-ftd.color text-color: $fpm.color.main.text-strong
-ftd.color active-text-color: $fpm.color.main.text-strong 
-fpm.toc-item list toc: $empty-toc
-append-at: toc-container
-open: true
+ftd.color text-color: $inherited.colors.text-strong
+ftd.color active-text-color: $inherited.colors.text-strong 
+pr.toc-item list toc: $empty-toc
+children wrap:
 
---- ftd.text: $title
-color: $fpm.color.main.text
-role: $fpm.type.copy-relaxed
-link: $url
-width: fill
+-- ftd.column:
+spacing.fixed.px: 16
 
---- ftd.column:
-if: $toc is not empty
+-- ftd.text: $footer-list-toc.title
+color: $inherited.colors.text
+role: $inherited.types.copy-small
+link: $footer-list-toc.url
+width: fill-container
+white-space: nowrap
 
---- ftd.column:
-id: toc-container
+-- ftd.column:
+if: {!ftd.is_empty(footer-list-toc.toc)}
+spacing.fixed.px: 16
 
---- footer-list-toc: 
+-- footer-list-toc: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
-$loop$: $toc as $obj
+$loop$: $footer-list-toc.toc as $obj
+
+-- ftd.column:
+children: $footer-list-toc.wrap
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+
+-- end: footer-list-toc
 
 
 
@@ -1013,53 +928,38 @@ $loop$: $toc as $obj
 
 
 
-
-
-
-
-
-
-
-
-
-
-
--- ftd.row logo-with-name:
+-- component logo-with-name:
 optional string site-name:
 optional string site-url: 
 optional ftd.image-src site-logo: 
-string logo-height:
-optional ftd.color backgroundcolor: $fpm.color.main.background.base
+integer logo-height: 32
 
+-- ftd.row:
 
---- ftd.row:
-spacing: 8
-link: $site-url
-background-color: $backgroundcolor
+-- ftd.row:
+spacing.fixed.px: 8
+link: $logo-with-name.site-url
 
---- ftd.image:
-if: $site-logo is not null
-src: $site-logo
+-- ftd.image:
+if: {logo-with-name.site-logo != NULL}
+src: $logo-with-name.site-logo
 width: auto
-height: $logo-height
+height.fixed.px: $logo-with-name.logo-height
 
+-- ftd.text: $logo-with-name.site-name
+if: {logo-with-name.site-name != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
 
---- ftd.text: $site-name
-if: $site-name is not null
-color: $fpm.color.main.text-strong
-position: center
-role: $sub-heading-small
+-- end: ftd.row
 
---- container: ftd.main
+-- fallback-title:
+if: {logo-with-name.site-logo == NULL}
+site-name: $logo-with-name.site-name
 
---- fallback-title:
-if: $site-logo is null
-site-name: $site-name
+-- end: ftd.row
 
-
-
-
-
+-- end: logo-with-name
 
 
 
@@ -1070,10 +970,7 @@ site-name: $site-name
 
 
 
-
-
-
--- ftd.row images-list:
+-- component images-list:
 optional ftd.image-src twitter-logo:
 optional ftd.image-src facebook-logo:
 optional ftd.image-src discord-logo:
@@ -1085,43 +982,50 @@ optional string discord-url: /
 optional string instagram-url: /
 optional string telegram-url: /
 
---- ftd.image: 
-if: $twitter-logo is not null
-src: $twitter-logo
-link: $twitter-url
-width: 16
-height: 16
-margin-right: 32
+-- ftd.row:
 
---- ftd.image: 
-if: $facebook-logo is not null
-src: $facebook-logo
-link: $facebook-url
-width: 16
-height: 16
-margin-right: 32
+-- ftd.image: 
+if: {images-list.twitter-logo != NULL}
+src: $images-list.twitter-logo
+link: $images-list.twitter-url
+width.fixed.px: 16
+height.fixed.px: 16
+margin-right.px: 32
 
---- ftd.image: 
-if: $discord-logo is not null
-src: $discord-logo
-link: $discord-url
-width: 16
-height: 16
-margin-right: 32
+-- ftd.image: 
+if: {images-list.facebook-logo != NULL}
+src: $images-list.facebook-logo
+link: $images-list.facebook-url
+width.fixed.px: 16
+height.fixed.px: 16
+margin-right.px: 32
 
---- ftd.image: 
-if: $instagram-logo is not null
-src: $instagram-logo
-link: $instagram-url
-width: 16
-height: 16
-margin-right: 32
+-- ftd.image: 
+if: {images-list.discord-logo != NULL}
+src: $images-list.discord-logo
+link: $images-list.discord-url
+width.fixed.px: 16
+height.fixed.px: 16
+margin-right.px: 32
+
+-- ftd.image: 
+if: {images-list.instagram-logo != NULL}
+src: $images-list.instagram-logo
+link: $images-list.instagram-url
+width.fixed.px: 16
+height.fixed.px: 16
+margin-right.px: 32
+
+-- ftd.image: 
+if: {images-list.telegram-logo != NULL}
+src: $images-list.telegram-logo
+link: $images-list.telegram-url
+width.fixed.px: 16
+height.fixed.px: 16
+margin-right.px: 32
+
+-- end: ftd.row
+
+-- end: images-list
 
 
---- ftd.image: 
-if: $telegram-logo is not null
-src: $telegram-logo
-link: $telegram-url
-width: 16
-height: 16
-margin-right: 32

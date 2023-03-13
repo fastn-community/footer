@@ -1,0 +1,54 @@
+-- import: fastn
+
+-- fastn.package: fifthtry.github.io/footer
+
+-- fastn.dependency: fifthtry.github.io/package-doc 
+
+
+-- fastn.sitemap:
+
+# Homepage: index.html
+
+# Simple Footer: basic-footer/
+
+# Social Footer: social-footer/
+## Sub-section 1: index.html
+## Sub-section 1: index.html
+## Sub-section 1: index.html
+
+# Social Sideline Footer: social-sideline-footer/
+
+# Left Hug Sitemap Footer: left-hug-sitemap-footer/
+
+# Sitemap Footer: sitemap-footer/
+
+## Sub-section 1: index.html
+
+- Link - 1: index.html
+
+- Link - 2: index.html
+
+- Link - 3: index.html
+
+- Link - 4: index.html
+
+
+## Sub-section 1: index.html
+
+- Link - 1: index.html
+
+- Link - 2: index.html
+
+- Link - 3: index.html
+
+- Link - 4: index.html
+
+## Sub-section 1: index.html
+
+- Link - 1: index.html
+
+- Link - 2: index.html
+
+- Link - 3: index.html
+
+- Link - 4: index.html
