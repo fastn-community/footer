@@ -5,6 +5,12 @@
 -- fastn.dependency: fifthtry.github.io/package-doc 
 
 
+-- fastn.auto-import: fifthtry.github.io/package-doc as pd
+-- fastn.auto-import: fastn
+-- fastn.auto-import: fifthtry.github.io/package-doc/typography as tf
+-- fastn.auto-import: fifthtry.github.io/package-doc/code-block as cb
+-- fastn.auto-import: fifthtry.github.io/package-doc/forest-theme as ft
+
 -- fastn.sitemap:
 
 # Homepage: index.html

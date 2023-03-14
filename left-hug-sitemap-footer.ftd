@@ -1,6 +1,5 @@
 -- import: fifthtry.github.io/footer/assets
--- import: fifthtry.github.io/footer as footer
--- import: fifthtry.github.io/package-doc/forest-theme as ft
+-- import: fifthtry.github.io/footer/lib as footer
 
 
 
