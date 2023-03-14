@@ -37,7 +37,7 @@ lang: ftd
 -- lib.basic-footer:
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
 site-url: /
-copyright: Copyright ©2022. FifthTry Pvt Ltd.
+copyright: Copyright ©2023. fifthtry.com
 
 -- ft.h3: social-footer:
 
@@ -52,7 +52,7 @@ instagram-logo: $assets.files.assets.instagram.svg
 instagram-url: /
 telegram-logo: $assets.files.assets.telegram.svg
 telegram-url: /
-copyright: Copyright ©2022. FifthTry Pvt Ltd.
+copyright: Copyright ©2023. fifthtry.com
 
 
 -- ft.h3: social-sideline-footer: 
@@ -72,7 +72,7 @@ instagram-logo: $assets.files.assets.instagram.svg
 instagram-url: /
 telegram-logo: $assets.files.assets.telegram.svg
 telegram-url: /
-copyright: Copyright ©2022. FifthTry Pvt Ltd.
+copyright: Copyright ©2023. fifthtry.com
 
 I'm surprised you had the courage to take the responsibility yourself. 
 Leave that to me.
@@ -85,7 +85,7 @@ Leave that to me.
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
 site-url: /
 site-name: Fifthtry
-copyright: Copyright ©2022. FifthTry Pvt Ltd.
+copyright: Copyright ©2023. fifthtry.com
 twitter-logo: $assets.files.assets.twitter.svg
 twitter-url: /
 facebook-logo: $assets.files.assets.facebook.svg
@@ -106,7 +106,7 @@ Leave that to me.
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
 site-url: /
 site-name: Fifthtry
-copyright: Copyright ©2022. FifthTry Pvt Ltd.
+copyright: Copyright ©2023. fifthtry.com
 twitter-logo: $assets.files.assets.twitter.svg
 twitter-url: /
 facebook-logo: $assets.files.assets.facebook.svg
