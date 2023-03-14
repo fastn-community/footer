@@ -10,7 +10,7 @@ show-footer: true
 
 -- ft.page.footer: 
 
--- footer.socio-footer:
+-- footer.social-footer:
 twitter-logo: $assets.files.assets.twitter.svg
 twitter-url: /
 facebook-logo: $assets.files.assets.facebook.svg

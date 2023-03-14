@@ -32,16 +32,16 @@ lang: ftd
 
 -- ft.h2: Below are some sample footer Components:
 
--- ft.h3: Baisc footer:
+-- ft.h3: Basic footer:
 
 -- lib.basic-footer:
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
 site-url: /
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
 
--- ft.h3: socio-footer:
+-- ft.h3: social-footer:
 
--- lib.socio-footer:
+-- lib.social-footer:
 twitter-logo: $assets.files.assets.twitter.svg
 twitter-url: /
 facebook-logo: $assets.files.assets.facebook.svg

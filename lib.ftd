@@ -83,7 +83,7 @@ copyright: Copyright ©2022. FifthTry Pvt Ltd.
 
 -- cb.rendered.input: 
 
-\-- socio-footer:
+\-- social-footer:
 twitter-logo: $assets.files.assets.twitter.svg
 twitter-url: /
 facebook-logo: $assets.files.assets.facebook.svg
@@ -98,7 +98,7 @@ copyright: Copyright ©2022. FifthTry Pvt Ltd.
 
 -- cb.rendered.output:
 
--- socio-footer:
+-- social-footer:
 twitter-logo: $assets.files.assets.twitter.svg
 twitter-url: /
 facebook-logo: $assets.files.assets.facebook.svg
@@ -312,8 +312,8 @@ integer logo-height: 32
 width: fill-container
 align-self: center
 align-content: center
-padding-vertical.px: 64
-spacing.fixed.px: 32
+padding-vertical.px: 24
+spacing.fixed.px: 24
 background.solid: $basic-footer.backgroundcolor
 
 -- ftd.row:
@@ -331,7 +331,7 @@ logo-height: $basic-footer.logo-height
 
 -- ftd.row:
 align-content: center
-spacing.fixed.px: 32
+spacing.fixed.px: 16
 max-width.fixed.percent: 70
 wrap: true
 
@@ -356,7 +356,7 @@ if: {basic-footer.copyright != NULL}
 text: $basic-footer.copyright
 color: $inherited.colors.text
 text-align: center
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-small
 
 -- end: ftd.column
 
@@ -390,7 +390,7 @@ color: $inherited.colors.text-strong
 
 
 
--- component socio-footer:
+-- component social-footer:
 optional ftd.image-src twitter-logo:
 optional ftd.image-src facebook-logo:
 optional ftd.image-src discord-logo:
@@ -411,23 +411,23 @@ align-content: center
 align-self: center
 padding-vertical.px: 80
 spacing.fixed.px: 32
-background.solid: $socio-footer.backgroundcolor
+background.solid: $social-footer.backgroundcolor
 
 -- ftd.row:
 align-content: center
 max-width.fixed.px: 1200
 
 -- images-list:
-twitter-logo: $socio-footer.twitter-logo
-twitter-url: $socio-footer.twitter-url
-facebook-logo: $socio-footer.facebook-logo
-facebook-url: $socio-footer.facebook-url
-discord-logo: $socio-footer.discord-logo
-discord-url: $socio-footer.discord-url
-instagram-logo: $socio-footer.instagram-logo
-instagram-url: $socio-footer.instagram-url
-telegram-logo: $socio-footer.telegram-logo
-telegram-url: $socio-footer.telegram-url
+twitter-logo: $social-footer.twitter-logo
+twitter-url: $social-footer.twitter-url
+facebook-logo: $social-footer.facebook-logo
+facebook-url: $social-footer.facebook-url
+discord-logo: $social-footer.discord-logo
+discord-url: $social-footer.discord-url
+instagram-logo: $social-footer.instagram-logo
+instagram-url: $social-footer.instagram-url
+telegram-logo: $social-footer.telegram-logo
+telegram-url: $social-footer.telegram-url
 
 -- end: ftd.row
 
@@ -444,7 +444,7 @@ title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
 sub-sections: $empty-toc
-$loop$: $socio-footer.footer-nav-list as $obj
+$loop$: $social-footer.footer-nav-list as $obj
 
 -- end: ftd.row
 
@@ -456,14 +456,14 @@ border-color: $inherited.colors.border
 -- end: ftd.row
 
 -- ftd.text: 
-text: $socio-footer.copyright
+text: $social-footer.copyright
 color: $inherited.colors.text
 text-align: center
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-small
 
 -- end: ftd.column
 
--- end: socio-footer
+-- end: social-footer
 
 
 
@@ -855,16 +855,16 @@ role: $inherited.types.button-large
 link: $footer-list-section.url
 width: fill-container
 white-space: nowrap
-margin-bottom.px: 12
+margin-bottom.px  : 12
 
 -- ftd.text: $footer-list-section.title
 if: { !footer-list-section.show-toc }
 color:$inherited.colors.text
-role: $inherited.types.button-medium
+role: $inherited.types.copy-regular
 link: $footer-list-section.url
 width: fill-container
 white-space: nowrap
-margin-bottom.px: 12
+
 
 -- footer-list-toc: 
 if: { !footer-list-section.show-toc }
