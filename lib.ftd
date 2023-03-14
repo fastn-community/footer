@@ -38,7 +38,7 @@ This is the main footer.
 -- cb.rendered.input: 
 
 \-- basic-footer:
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
 
@@ -47,7 +47,7 @@ copyright: Copyright ©2022. FifthTry Pvt Ltd.
 -- cb.rendered.output:
 
 -- basic-footer:
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
 
@@ -60,7 +60,7 @@ copyright: Copyright ©2022. FifthTry Pvt Ltd.
 -- cb.rendered.input: 
 
 \-- basic-footer:
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-logo: $assets.files.assets.logo-fifthtry.svg
 backgroungcolor: $inherited.colors.background.step-1
 site-url: /
 site-name: Fifthtry
@@ -69,7 +69,7 @@ copyright: Copyright ©2022. FifthTry Pvt Ltd.
 -- cb.rendered.output:
 
 -- basic-footer:
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-logo: $assets.files.assets.logo-fifthtry.svg
 backgroundcolor: $inherited.colors.background.step-1
 site-url: /
 site-name: Fifthtry
@@ -121,7 +121,7 @@ copyright: Copyright ©2022. FifthTry Pvt Ltd.
 
 \-- social-sideline-footer:
 social: true
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
 footer-nav-list: $sitemap.sections
 site-name: Fifthtry
@@ -144,7 +144,7 @@ Leave that to me.
 
 -- social-sideline-footer:
 social: true
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-logo: $assets.files.assets.logo-fifthtry.svg
 bio: $bio-text
 site-url: /
 footer-nav-list: $sitemap.sections
@@ -170,7 +170,7 @@ copyright: Copyright ©2022. FifthTry Pvt Ltd.
 -- cb.rendered.input: 
 
 \-- social-sideline-footer:
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
 site-name: Fifthtry
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
@@ -181,7 +181,7 @@ Leave that to me.
 -- cb.rendered.output:
 
 -- social-sideline-footer:
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-logo: $assets.files.assets.logo-fifthtry.svg
 bio: $bio-text
 site-url: /
 site-name: Fifthtry
@@ -196,7 +196,7 @@ copyright: Copyright ©2022. FifthTry Pvt Ltd.
 -- cb.rendered.input: 
 
 \-- left-hug-sitemap-footer:
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
 site-name: Fifthtry
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
@@ -217,7 +217,7 @@ Leave that to me.
 -- cb.rendered.output:
 
 -- left-hug-sitemap-footer:
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
 site-name: Fifthtry
 sections: $sitemap.sections
@@ -245,7 +245,7 @@ Leave that to me.
 -- cb.rendered.input: 
 
 \-- sitemap-footer:
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
 site-name: Fifthtry
 copyright: Copyright ©2022. FifthTry Pvt Ltd.
@@ -266,7 +266,7 @@ Leave that to me.
 -- cb.rendered.output:
 
 -- sitemap-footer:
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-logo: $assets.files.assets.logo-fifthtry.svg
 bio: $bio-text
 site-url: /
 site-name: Fifthtry
