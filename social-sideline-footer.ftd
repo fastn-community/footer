@@ -1,40 +1,99 @@
 -- import: fifthtry.github.io/footer/assets
--- import: fifthtry.github.io/footer/lib as footer
+-- import: fifthtry.github.io/footer/lib as lib
+-- import: fifthtry.github.io/footer/toc as toc
 -- import: fifthtry.github.io/package-doc/forest-theme as ft
 
 
 
-
-
--- ft.page: Footer Type 1
+-- ft.page: Footer Components
 show-footer: true
 
 -- ft.page.footer: 
 
--- footer.social-sideline-footer:
+-- lib.social-sideline-footer:
 social: true
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
+footer-list: $toc.items
 site-name: Fifthtry
-twitter-logo: $assets.files.assets.twitter.svg
 twitter-url: /
-facebook-logo: $assets.files.assets.facebook.svg
 facebook-url: /
-discord-logo: $assets.files.assets.discord.svg
 discord-url: /
-instagram-logo: $assets.files.assets.instagram.svg
 instagram-url: /
-telegram-logo: $assets.files.assets.telegram.svg
 telegram-url: /
 copyright: Copyright ©2023. fifthtry.com
 
 I'm surprised you had the courage to take the responsibility yourself. 
 Leave that to me.
 
-
 -- end: ft.page.footer
 
 -- ft.page.body:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+-- pd.package: Social Footer
+name: fifthtry.github.io/footer
+
+`social-footer` is another footer component which shows sections from your
+`fastn` sitemap of `FASTN.ftd`.
+
+Use our `social-footer` on your fast web projects where you would like to show footer on your web pages.
+
+If you are using our `doc-site` as your website theme, then to use `social-footer` add below `fastn` dependency into `FASTN.ftd` file:
+
+-- ft.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/doc-site
+\-- fastn.dependency: fifthtry.github.io/footer
+\-- fastn.auto-import: fifthtry.github.io/doc-site as ds
+\-- fastn.auto-import: fifthtry.github.io/footer/lib as lib
+
+
+-- tf.markdown:
+
+Once you add above lines into your `fastn` package, add `footer` into your `.ftd` 
+
+-- cb.rendered:
+
+-- cb.rendered.input:
+
+\-- ds.page: Title of the page
+show-footer: true
+
+\-- ds.page.footer: 
+
+\-- lib.social-sideline-footer:
+social: true
+site-logo: $assets.files.assets.logo-fifthtry.svg
+site-url: /
+footer-list: $sitemap.sections
+site-name: Fifthtry
+twitter-url: /
+facebook-url: /
+discord-url: /
+instagram-url: /
+telegram-url: /
+copyright: Copyright ©2023. fifthtry.com
+
+I'm surprised you had the courage to take the responsibility yourself. 
+Leave that to me.
+
+\-- end: ds.page.footer
+
+\-- ds.page.body:
+
+Some page body components and content here
+
+\-- end: ds.page
+
+-- cb.rendered.output:
+
+-- tf.markdown:
+
+ Look at the bottom of this page.
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
 -- end: ft.page

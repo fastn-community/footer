@@ -5,7 +5,7 @@
 -- fastn.dependency: fifthtry.github.io/package-doc 
 
 
--- fastn.auto-import: fifthtry.github.io/package-doc as pd
+-- fastn.auto-import: fifthtry.github.io/package-doc/doc as pd
 -- fastn.auto-import: fastn
 -- fastn.auto-import: fifthtry.github.io/package-doc/typography as tf
 -- fastn.auto-import: fifthtry.github.io/package-doc/code-block as cb
@@ -13,48 +13,21 @@
 
 -- fastn.sitemap:
 
-# Homepage: index.html
+# Home: index.html
 
-# Simple Footer: basic-footer/
+## Footer Components: index.html
+- Basic Footer: basic-footer/
+- Social Footer: social-footer/
+- Social Sideline Footer: social-sideline-footer/
+- Left Hug Sitemap Footer: left-hug-sitemap-footer/
+- Sitemap Footer: sitemap-footer/
 
-# Social Footer: social-footer/
-## Sub-section 1: index.html
-## Sub-section 1: index.html
-## Sub-section 1: index.html
-
-# Social Sideline Footer: social-sideline-footer/
-
-# Left Hug Sitemap Footer: left-hug-sitemap-footer/
-
-# Sitemap Footer: sitemap-footer/
-
-## Sub-section 1: index.html
-
-- Link - 1: index.html
-
-- Link - 2: index.html
-
-- Link - 3: index.html
-
-- Link - 4: index.html
+# Github
+  url: 
 
 
-## Sub-section 1: index.html
 
-- Link - 1: index.html
 
-- Link - 2: index.html
 
-- Link - 3: index.html
 
-- Link - 4: index.html
 
-## Sub-section 1: index.html
-
-- Link - 1: index.html
-
-- Link - 2: index.html
-
-- Link - 3: index.html
-
-- Link - 4: index.html

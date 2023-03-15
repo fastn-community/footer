@@ -10,7 +10,7 @@ color: $inherited.colors.text-strong
 -- end: white
 
 
--- ft.page:
+-- ft.page: Footers
 
 
 -- pd.package: Footer components
@@ -29,33 +29,12 @@ lang: ftd
 \-- fastn.dependency: fifthtry.github.io/footer as footer
 \-- fastn.auto-import: footer
 
-
--- ft.h2: Below are some sample footer Components:
-
--- ft.h3: Basic footer:
+-- ft.h3: Some footer samples:
 
 -- lib.basic-footer:
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
 site-url: /
 copyright: Copyright ©2023. fifthtry.com
-
--- ft.h3: social-footer:
-
--- lib.social-footer:
-twitter-logo: $assets.files.assets.twitter.svg
-twitter-url: /
-facebook-logo: $assets.files.assets.facebook.svg
-facebook-url: /
-discord-logo: $assets.files.assets.discord.svg
-discord-url: /
-instagram-logo: $assets.files.assets.instagram.svg
-instagram-url: /
-telegram-logo: $assets.files.assets.telegram.svg
-telegram-url: /
-copyright: Copyright ©2023. fifthtry.com
-
-
--- ft.h3: social-sideline-footer: 
 
 -- lib.social-sideline-footer:
 social: true
@@ -77,49 +56,6 @@ copyright: Copyright ©2023. fifthtry.com
 I'm surprised you had the courage to take the responsibility yourself. 
 Leave that to me.
 
-
--- ft.h3: left-hug-sitemap-footer:
-
-
--- lib.left-hug-sitemap-footer:
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
-site-url: /
-site-name: Fifthtry
-copyright: Copyright ©2023. fifthtry.com
-twitter-logo: $assets.files.assets.twitter.svg
-twitter-url: /
-facebook-logo: $assets.files.assets.facebook.svg
-facebook-url: /
-discord-logo: $assets.files.assets.discord.svg
-discord-url: /
-instagram-logo: $assets.files.assets.instagram.svg
-instagram-url: /
-telegram-logo: $assets.files.assets.telegram.svg
-telegram-url: /
-
-I'm surprised you had the courage to take the responsibility yourself. 
-Leave that to me.
-
--- ft.h3: sitemap-footer:
-
--- lib.sitemap-footer:
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
-site-url: /
-site-name: Fifthtry
-copyright: Copyright ©2023. fifthtry.com
-twitter-logo: $assets.files.assets.twitter.svg
-twitter-url: /
-facebook-logo: $assets.files.assets.facebook.svg
-facebook-url: /
-discord-logo: $assets.files.assets.discord.svg
-discord-url: /
-instagram-logo: $assets.files.assets.instagram.svg
-instagram-url: /
-telegram-logo: $assets.files.assets.telegram.svg
-telegram-url: /
-
-I'm surprised you had the courage to take the responsibility yourself. 
-Leave that to me.
 
 
 -- end: ft.page
