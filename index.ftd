@@ -1,5 +1,6 @@
 -- import: fifthtry.github.io/footer/assets
 -- import: fifthtry.github.io/footer/lib
+-- import: fifthtry.github.io/footer/toc
 -- import: fifthtry.github.io/package-doc/doc as pd
 
 -- component white:
@@ -34,6 +35,7 @@ lang: ftd
 -- lib.basic-footer:
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
 site-url: /
+footer-list: $toc.items
 copyright: Copyright ©2023. fifthtry.com
 
 -- lib.social-sideline-footer:
@@ -41,15 +43,10 @@ social: true
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
 site-url: /
 site-name: Fifthtry
-twitter-logo: $assets.files.assets.twitter.svg
 twitter-url: /
-facebook-logo: $assets.files.assets.facebook.svg
 facebook-url: /
-discord-logo: $assets.files.assets.discord.svg
 discord-url: /
-instagram-logo: $assets.files.assets.instagram.svg
 instagram-url: /
-telegram-logo: $assets.files.assets.telegram.svg
 telegram-url: /
 copyright: Copyright ©2023. fifthtry.com
 

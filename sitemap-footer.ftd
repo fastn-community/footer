@@ -1,13 +1,8 @@
 -- import: fifthtry.github.io/footer/assets
--- import: fifthtry.github.io/footer/lib as footer
+-- import: fifthtry.github.io/footer/lib as lib
 -- import: fifthtry.github.io/footer/toc as toc
 -- import: fifthtry.github.io/package-doc/forest-theme as ft
--- import: fastn/processors as pr
 
--- pr.toc-item list empty-toc: 
-
--- pr.sitemap-data sitemap:
-$processor$: pr.full-sitemap
 
 
 
@@ -53,7 +48,7 @@ lang: ftd
 \-- fastn.dependency: fifthtry.github.io/doc-site
 \-- fastn.dependency: fifthtry.github.io/footer
 \-- fastn.auto-import: fifthtry.github.io/doc-site as ds
-\-- fastn.auto-import: fifthtry.github.io/footer
+\-- fastn.auto-import: fifthtry.github.io/footer/lib as lib
 
 
 -- tf.markdown:
@@ -69,7 +64,7 @@ show-footer: true
 
 \-- ds.page.footer: 
 
-\-- footer.sitemap-footer:
+\-- lib.sitemap-footer:
 site-logo: $assets.files.assets.logo-fifthtry.svg
 footer-list: $sitemap.sections
 site-url: /

@@ -312,7 +312,7 @@ integer logo-height: 32
 width: fill-container
 align-self: center
 align-content: center
-padding-vertical.px: 24
+padding-vertical.px: 40
 spacing.fixed.px: 24
 background.solid: $basic-footer.backgroundcolor
 
@@ -409,7 +409,7 @@ optional ftd.color backgroundcolor: $inherited.colors.background.step-1
 width: fill-container
 align-content: center
 align-self: center
-padding-vertical.px: 24
+padding-vertical.px: 40
 spacing.fixed.px: 24
 background.solid: $social-footer.backgroundcolor
 
@@ -497,14 +497,14 @@ pr.toc-item list footer-list: $sitemap.sections
 
 -- ftd.column:
 width: fill-container
-padding-vertical.px: 80
-padding-horizontal.px: 48
+padding-vertical.px: 40
 background.solid: $social-sideline-footer.backgroundcolor
 spacing.fixed.px: 24
 
 -- ftd.row:
 width: fill-container
 spacing.fixed.px: 40
+padding-horizontal.px: 40
 
 -- logo-with-name:
 site-logo: $social-sideline-footer.site-logo
@@ -528,6 +528,7 @@ border-color: $inherited.colors.border
 -- end: ftd.row
 
 -- ftd.row:
+padding-horizontal.px: 40
 width: fill-container
 
 -- ftd.text: 
@@ -606,8 +607,8 @@ optional string telegram-url:
 
 -- ftd.row:
 width: fill-container
-padding-vertical.px: 32
-padding-horizontal.px: 32
+padding-vertical.px: 40
+padding-horizontal.px: 40
 background.solid: $left-hug-sitemap-footer.backgroundcolor
 
 -- ftd.column:
@@ -710,9 +711,9 @@ ftd.color active-text-color: $inherited.colors.text-strong
 width: fill-container
 align-content: center
 align-self: center
-padding-vertical.px: 32
+padding-vertical.px: 40
 spacing.fixed.px: 32
-padding-horizontal.px: 32
+padding-horizontal.px: 40
 background.solid: $sitemap-footer.backgroundcolor
 
 -- ftd.row:
