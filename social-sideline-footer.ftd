@@ -1,5 +1,5 @@
 -- import: fifthtry.github.io/footer/assets
--- import: fifthtry.github.io/footer/lib as lib
+-- import: fifthtry.github.io/footer as footer
 -- import: fifthtry.github.io/footer/toc as toc
 -- import: fifthtry.github.io/package-doc/forest-theme as ft
 
@@ -10,7 +10,7 @@ show-footer: true
 
 -- ft.page.footer: 
 
--- lib.social-sideline-footer:
+-- footer.social-sideline-footer:
 social: true
 site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
@@ -46,7 +46,7 @@ lang: ftd
 \-- fastn.dependency: fifthtry.github.io/doc-site
 \-- fastn.dependency: fifthtry.github.io/footer
 \-- fastn.auto-import: fifthtry.github.io/doc-site as ds
-\-- fastn.auto-import: fifthtry.github.io/footer/lib as lib
+\-- fastn.auto-import: fifthtry.github.io/footer as footer
 
 
 -- tf.markdown:
@@ -62,7 +62,7 @@ show-footer: true
 
 \-- ds.page.footer: 
 
-\-- lib.social-sideline-footer:
+\-- footer.social-sideline-footer:
 social: true
 site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
