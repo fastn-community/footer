@@ -15,7 +15,7 @@ social: true
 site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
 footer-list: $toc.items
-site-name: Fifthtry
+site-name: FifthTry
 twitter-url: /
 facebook-url: /
 discord-url: /
@@ -67,7 +67,7 @@ social: true
 site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
 footer-list: $sitemap.sections
-site-name: Fifthtry
+site-name: FifthTry
 twitter-url: /
 facebook-url: /
 discord-url: /

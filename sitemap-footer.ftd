@@ -16,7 +16,7 @@ show-footer: true
 site-logo: $assets.files.assets.logo-fifthtry.svg
 footer-list: $toc.items
 site-url: /
-site-name: Fifthtry
+site-name: FifthTry
 copyright: Copyright ©2023. fifthtry.com
 twitter-url: /
 facebook-url: /
@@ -68,7 +68,7 @@ show-footer: true
 site-logo: $assets.files.assets.logo-fifthtry.svg
 footer-list: $sitemap.sections
 site-url: /
-site-name: Fifthtry
+site-name: FifthTry
 copyright: Copyright ©2023. fifthtry.com
 twitter-url: /
 facebook-url: /
