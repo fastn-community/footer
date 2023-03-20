@@ -388,6 +388,8 @@ border-color: $inherited.colors.border
 -- ftd.row:
 padding-horizontal.px: 40
 width: fill-container
+align-content: center
+
 
 -- ftd.text: 
 text: $social-sideline-footer-desktop.copyright
@@ -473,6 +475,7 @@ spacing.fixed.px: 24
 width: fill-container
 spacing.fixed.px: 24
 padding-horizontal.px: 24
+align-content: center
 
 -- logo-with-name:
 site-logo: $social-sideline-footer-mobile.site-logo
@@ -485,6 +488,7 @@ text: $social-sideline-footer-mobile.bio
 role: $inherited.types.fine-print
 color: $inherited.colors.text
 width: fill-container
+text-align: center
 
 -- end: ftd.column
 
@@ -499,6 +503,7 @@ border-color: $inherited.colors.border
 spacing.fixed.px: 24
 padding-horizontal.px: 24
 width: fill-container
+align-content: center
 
 -- ftd.row:
 if: {!social-sideline-footer-mobile.social}
@@ -537,6 +542,7 @@ text: $social-sideline-footer-mobile.copyright
 color: $inherited.colors.text
 role: $inherited.types.copy-regular
 width: fill-container
+text-align: center
 
 -- end: ftd.column
 
@@ -884,6 +890,8 @@ site-name: $sitemap-footer.site-name
 site-url: $sitemap-footer.site-url
 logo-height: $sitemap-footer.logo-height
 
+
+
 -- images-list:
 twitter-logo: $sitemap-footer.twitter-logo
 twitter-url: $sitemap-footer.twitter-url
@@ -900,6 +908,8 @@ telegram-url: $sitemap-footer.telegram-url
 text: $sitemap-footer.copyright
 color: $inherited.colors.text
 role: $inherited.types.copy-regular
+text-align if {ftd.device == "mobile"}: center
+
 
 -- end: ftd.column
 
@@ -1028,6 +1038,7 @@ optional string instagram-url:
 optional string telegram-url: 
 
 -- ftd.row:
+spacing.fixed.px: 32
 
 -- ftd.image: 
 if: {images-list.twitter-url != NULL}
@@ -1037,7 +1048,7 @@ width.fixed.px: 32
 height.fixed.px: 32
 width.fixed.px if {ftd.device == "mobile}: 24
 height.fixed.px if {ftd.device == "mobile}: 24
-margin-right.px: 32
+
 
 -- ftd.image: 
 if: {images-list.facebook-url != NULL}
@@ -1047,7 +1058,7 @@ width.fixed.px: 32
 height.fixed.px: 32
 width.fixed.px if {ftd.device == "mobile}: 24
 height.fixed.px if {ftd.device == "mobile}: 24
-margin-right.px: 32
+
 
 -- ftd.image: 
 if: {images-list.discord-url != NULL}
@@ -1057,7 +1068,7 @@ width.fixed.px: 32
 height.fixed.px: 32
 width.fixed.px if {ftd.device == "mobile}: 24
 height.fixed.px if {ftd.device == "mobile}: 24
-margin-right.px: 32
+
 
 -- ftd.image: 
 if: {images-list.instagram-url != NULL}
@@ -1067,7 +1078,7 @@ width.fixed.px: 32
 height.fixed.px: 32
 width.fixed.px if {ftd.device == "mobile}: 24
 height.fixed.px if {ftd.device == "mobile}: 24
-margin-right.px: 32
+
 
 -- ftd.image: 
 if: {images-list.telegram-url != NULL}
@@ -1077,7 +1088,7 @@ width.fixed.px: 32
 height.fixed.px: 32
 width.fixed.px if {ftd.device == "mobile}: 24
 height.fixed.px if {ftd.device == "mobile}: 24
-margin-right.px: 32
+
 
 -- end: ftd.row
 
