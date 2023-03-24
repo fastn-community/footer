@@ -72,7 +72,7 @@ site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
 site-name: FifthTry
 footer-list: $sitemap.sections
-copyright: Copyright ©2023. fifthtry.com
+copyright: Copyright © 2023 - fifthtry.com
 twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
 discord-url: https://discord.gg/bucrdvptYd

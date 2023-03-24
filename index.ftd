@@ -216,7 +216,7 @@ telegram-url: $social-footer.telegram-url
 
 -- ftd.row:
 align-content: center
-spacing.fixed.px: 16
+spacing.fixed.px: 32
 max-width.fixed.percent: 70
 wrap: true
 
