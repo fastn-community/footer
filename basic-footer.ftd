@@ -59,7 +59,7 @@ show-footer: true
 footer-list: $sitemap.sections
 site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
-copyright: Copyright ©2023. fifthtry.com
+copyright: Copyright © 2023 - fifthtry.com
 
 \-- end: ds.page.footer
 

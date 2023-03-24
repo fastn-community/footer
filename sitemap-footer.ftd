@@ -17,7 +17,7 @@ site-logo: $assets.files.assets.logo-fifthtry.svg
 footer-list: $toc.items
 site-url: /
 site-name: FifthTry
-copyright: Copyright ©2023. fifthtry.com
+copyright: Copyright © 2023 - fifthtry.com
 twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
 discord-url: https://discord.gg/bucrdvptYd
@@ -74,7 +74,7 @@ site-logo: $assets.files.assets.logo-fifthtry.svg
 footer-list: $sitemap.sections
 site-url: /
 site-name: FifthTry
-copyright: Copyright ©2023. fifthtry.com
+copyright: Copyright © 2023 - fifthtry.com
 twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
 discord-url: https://discord.gg/bucrdvptYd
