@@ -3,11 +3,7 @@
 -- import: fifthtry.github.io/footer/toc as toc
 -- import: fifthtry.github.io/package-doc/forest-theme as ft
 
-
-
-
-
--- ft.page: Footer Components
+-- ft.page: 
 show-footer: true
 
 -- ft.page.footer: 
@@ -16,7 +12,7 @@ show-footer: true
 footer-list: $toc.items
 site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
-copyright: Copyright ©2023. fifthtry.com
+copyright: Copyright © 2023 - fifthtry.com
 
 -- end: ft.page.footer
 
@@ -28,9 +24,10 @@ name: fifthtry.github.io/footer
 `basic-footer` is another footer component which shows sections from your
 `fastn` sitemap of `FASTN.ftd`.
 
-Use our `basic-footer` on your fast web projects where you would like to show footer on your web pages.
+Use our `basic-footer` on your fastn web projects.
 
-If you are using our `doc-site` as your website theme, then to use `basic-footer` add below `fastn` dependency into `FASTN.ftd` file:
+If you are using our `doc-site` as your website theme, then to use
+`basic-footer` add below `fastn` dependency into `FASTN.ftd` file:
 
 -- ft.code:
 lang: ftd
@@ -43,7 +40,11 @@ lang: ftd
 
 -- tf.markdown:
 
-Once you add above lines into your `fastn` package, add `footer` into your `.ftd` 
+Once you add above lines into your `fastn` package, add `footer` into your
+`.ftd` file like shown in below code snippet. 
+
+Below example code is to add footer if you are using `doc-site` as your website
+thme.
 
 -- cb.rendered:
 
@@ -60,11 +61,9 @@ site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
 copyright: Copyright ©2023. fifthtry.com
 
-
 \-- end: ds.page.footer
 
 \-- ds.page.body:
-
 Some page body components and content here
 
 \-- end: ds.page

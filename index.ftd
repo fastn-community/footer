@@ -20,9 +20,7 @@ color: $inherited.colors.text-strong
 
 -- end: white
 
-
 -- ft.page: Footers
-
 
 -- pd.package: Footer components
 name: fifthtry.github.io/footer
@@ -40,30 +38,36 @@ lang: ftd
 \-- fastn.dependency: fifthtry.github.io/footer as footer
 \-- fastn.auto-import: footer
 
--- ft.h3: Some footer samples:
+-- ft.h3: Footer examples:
+
+-- ft.markdown: 
+
+**Basic Footer:**
 
 -- basic-footer:
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
 site-url: /
 footer-list: $toc.items
-copyright: Copyright ©2023. fifthtry.com
+copyright: Copyright © 2023 - fifthtry.com
+
+-- ft.markdown: 
+
+**Social Sideline Footer:**
 
 -- social-sideline-footer:
 social: true
 site-logo: $assets.files.assets.logo-fifthtry-dark.svg
 site-url: /
 site-name: FifthTry
-twitter-url: /
+twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
-discord-url: /
+discord-url: https://discord.gg/bucrdvptYd
 instagram-url: /
 telegram-url: /
-copyright: Copyright ©2023. fifthtry.com
+copyright: Copyright © 2023 - fifthtry.com
 
 I'm surprised you had the courage to take the responsibility yourself. 
 Leave that to me.
-
-
 
 -- end: ft.page
 
@@ -735,7 +739,6 @@ $loop$: $left-hug-sitemap-footer-desktop.footer-list as $obj
 
 
 
-
 -- component left-hug-sitemap-footer-mobile:
 optional string site-name:
 optional string site-url: /
@@ -881,7 +884,7 @@ width if { sitemap-footer.subscription }: fill-container
 
 -- ftd.column:
 align-content: center
-spacing.fixed.px: 24
+spacing.fixed.px: 48
 width: fill-container
 
 -- logo-with-name:
@@ -889,8 +892,6 @@ site-logo: $sitemap-footer.site-logo
 site-name: $sitemap-footer.site-name
 site-url: $sitemap-footer.site-url
 logo-height: $sitemap-footer.logo-height
-
-
 
 -- images-list:
 twitter-logo: $sitemap-footer.twitter-logo
@@ -909,7 +910,6 @@ text: $sitemap-footer.copyright
 color: $inherited.colors.text
 role: $inherited.types.copy-regular
 text-align if {ftd.device == "mobile"}: center
-
 
 -- end: ftd.column
 
@@ -1049,7 +1049,6 @@ height.fixed.px: 32
 width.fixed.px if {ftd.device == "mobile}: 24
 height.fixed.px if {ftd.device == "mobile}: 24
 
-
 -- ftd.image: 
 if: {images-list.facebook-url != NULL}
 src: $images-list.facebook-logo
@@ -1058,7 +1057,6 @@ width.fixed.px: 32
 height.fixed.px: 32
 width.fixed.px if {ftd.device == "mobile}: 24
 height.fixed.px if {ftd.device == "mobile}: 24
-
 
 -- ftd.image: 
 if: {images-list.discord-url != NULL}
@@ -1069,7 +1067,6 @@ height.fixed.px: 32
 width.fixed.px if {ftd.device == "mobile}: 24
 height.fixed.px if {ftd.device == "mobile}: 24
 
-
 -- ftd.image: 
 if: {images-list.instagram-url != NULL}
 src: $images-list.instagram-logo
@@ -1078,7 +1075,6 @@ width.fixed.px: 32
 height.fixed.px: 32
 width.fixed.px if {ftd.device == "mobile}: 24
 height.fixed.px if {ftd.device == "mobile}: 24
-
 
 -- ftd.image: 
 if: {images-list.telegram-url != NULL}
@@ -1089,10 +1085,11 @@ height.fixed.px: 32
 width.fixed.px if {ftd.device == "mobile}: 24
 height.fixed.px if {ftd.device == "mobile}: 24
 
-
 -- end: ftd.row
 
 -- end: images-list
+
+
 
 
 

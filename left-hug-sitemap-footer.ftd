@@ -6,7 +6,7 @@
 
 
 
--- ft.page: Footer Components
+-- ft.page: 
 show-footer: true
 
 -- ft.page.footer: 
@@ -16,16 +16,15 @@ site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
 site-name: FifthTry
 footer-list: $toc.items
-copyright: Copyright ©2023. fifthtry.com
-twitter-url: /
+copyright: Copyright © 2023 - fifthtry.com
+twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
-discord-url: /
+discord-url: https://discord.gg/bucrdvptYd
 instagram-url: /
 telegram-url: /
 
 I'm surprised you had the courage to take the responsibility yourself. 
 Leave that to me.
-
 
 -- end: ft.page.footer
 
@@ -34,12 +33,13 @@ Leave that to me.
 -- pd.package: Left Hug Sitemap Footer
 name: fifthtry.github.io/footer
 
-`left-hug-sitemap-footer` is another footer component which shows sections from your
-`fastn` sitemap of `FASTN.ftd`.
+`left-hug-sitemap-footer` is another footer component which shows sections and
+sub-sections from your `fastn` sitemap of `FASTN.ftd`.
 
-Use our `left-hug-sitemap-footer` on your fast web projects where you would like to show footer on your web pages.
+Use our `left-hug-sitemap-footer` on your fastn web projects.
 
-If you are using our `doc-site` as your website theme, then to use `left-hug-sitemap-footer` add below `fastn` dependency into `FASTN.ftd` file:
+If you are using our `doc-site` as your website theme, then to use
+`left-hug-sitemap-footer` add below `fastn` dependency into `FASTN.ftd` file:
 
 -- ft.code:
 lang: ftd
@@ -52,7 +52,11 @@ lang: ftd
 
 -- tf.markdown:
 
-Once you add above lines into your `fastn` package, add `footer` into your `.ftd` 
+Once you add above lines into your `fastn` package, add `footer` into your
+`.ftd` 
+
+Below example code is to add footer if you are using `doc-site` as your website
+thme.
 
 -- cb.rendered:
 
@@ -69,9 +73,9 @@ site-url: /
 site-name: FifthTry
 footer-list: $sitemap.sections
 copyright: Copyright ©2023. fifthtry.com
-twitter-url: /
+twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
-discord-url: /
+discord-url: https://discord.gg/bucrdvptYd
 instagram-url: /
 telegram-url: /
 

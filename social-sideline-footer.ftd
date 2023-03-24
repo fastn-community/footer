@@ -5,7 +5,7 @@
 
 
 
--- ft.page: Footer Components
+-- ft.page: 
 show-footer: true
 
 -- ft.page.footer: 
@@ -16,12 +16,12 @@ site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
 footer-list: $toc.items
 site-name: FifthTry
-twitter-url: /
+twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
-discord-url: /
+discord-url: https://discord.gg/bucrdvptYd
 instagram-url: /
 telegram-url: /
-copyright: Copyright ©2023. fifthtry.com
+copyright: Copyright © 2023 - fifthtry.com
 
 I'm surprised you had the courage to take the responsibility yourself. 
 Leave that to me.
@@ -30,15 +30,16 @@ Leave that to me.
 
 -- ft.page.body:
 
--- pd.package: Social Footer
+-- pd.package: Social Sideline Footer
 name: fifthtry.github.io/footer
 
-`social-footer` is another footer component which shows sections from your
-`fastn` sitemap of `FASTN.ftd`.
+`social-sideline-footer` is another footer component which shows sections from
+your `fastn` sitemap of `FASTN.ftd`.
 
-Use our `social-footer` on your fast web projects where you would like to show footer on your web pages.
+Use our `social-sideline-footer` on your fastn web projects.
 
-If you are using our `doc-site` as your website theme, then to use `social-footer` add below `fastn` dependency into `FASTN.ftd` file:
+If you are using our `doc-site` as your website theme, then to use
+`social-sideline-footer` add below `fastn` dependency into `FASTN.ftd` file:
 
 -- ft.code:
 lang: ftd
@@ -48,10 +49,13 @@ lang: ftd
 \-- fastn.auto-import: fifthtry.github.io/doc-site as ds
 \-- fastn.auto-import: fifthtry.github.io/footer as footer
 
-
 -- tf.markdown:
 
-Once you add above lines into your `fastn` package, add `footer` into your `.ftd` 
+Once you add above lines into your `fastn` package, add `footer` into your
+`.ftd` 
+
+Below example code is to add footer if you are using `doc-site` as your website
+thme.
 
 -- cb.rendered:
 
@@ -68,12 +72,12 @@ site-logo: $assets.files.assets.logo-fifthtry.svg
 site-url: /
 footer-list: $sitemap.sections
 site-name: FifthTry
-twitter-url: /
+twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
-discord-url: /
+discord-url: https://discord.gg/bucrdvptYd
 instagram-url: /
 telegram-url: /
-copyright: Copyright ©2023. fifthtry.com
+copyright: Copyright © 2023 - fifthtry.com
 
 I'm surprised you had the courage to take the responsibility yourself. 
 Leave that to me.

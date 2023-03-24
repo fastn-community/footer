@@ -7,7 +7,7 @@
 
 
 
--- ft.page: Footer Components
+-- ft.page:
 show-footer: true
 
 -- ft.page.footer: 
@@ -18,9 +18,9 @@ footer-list: $toc.items
 site-url: /
 site-name: FifthTry
 copyright: Copyright ©2023. fifthtry.com
-twitter-url: /
+twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
-discord-url: /
+discord-url: https://discord.gg/bucrdvptYd
 instagram-url: /
 telegram-url: /
 
@@ -35,12 +35,13 @@ Leave that to me.
 -- pd.package: Sitemap Footer
 name: fifthtry.github.io/footer
 
-`sitemap-footer` is another footer component which shows sections from your
-`fastn` sitemap of `FASTN.ftd`.
+`sitemap-footer` is another footer component which shows sections, sub-sections
+and toc items from your `fastn` sitemap of `FASTN.ftd`.
 
-Use our `sitemap-footer` on your fast web projects where you would like to show footer on your web pages.
+Use our `sitemap-footer` on your fastn web projects.
 
-If you are using our `doc-site` as your website theme, then to use `sitemap-footer` add below `fastn` dependency into `FASTN.ftd` file:
+If you are using our `doc-site` as your website theme, then to use
+`sitemap-footer` add below `fastn` dependency into `FASTN.ftd` file:
 
 -- ft.code:
 lang: ftd
@@ -53,7 +54,11 @@ lang: ftd
 
 -- tf.markdown:
 
-Once you add above lines into your `fastn` package, add `footer` into your `.ftd` 
+Once you add above lines into your `fastn` package, add `footer` into your
+`.ftd` 
+
+Below example code is to add footer if you are using `doc-site` as your website
+thme.
 
 -- cb.rendered:
 
@@ -70,9 +75,9 @@ footer-list: $sitemap.sections
 site-url: /
 site-name: FifthTry
 copyright: Copyright ©2023. fifthtry.com
-twitter-url: /
+twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
-discord-url: /
+discord-url: https://discord.gg/bucrdvptYd
 instagram-url: /
 telegram-url: /
 
