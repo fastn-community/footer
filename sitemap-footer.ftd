@@ -9,15 +9,16 @@
 
 -- ft.page:
 show-footer: true
+site-name: Footers
 
 -- ft.page.footer: 
 
 -- footer.sitemap-footer:
-site-logo: $assets.files.assets.logo-fifthtry.svg
+site-logo: $assets.files.assets.dummy-site-logo.png
 footer-list: $toc.items
 site-url: /
-site-name: FifthTry
-copyright: Copyright © 2023 - fifthtry.com
+site-name: Site name
+copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
 discord-url: https://discord.gg/bucrdvptYd
@@ -70,19 +71,19 @@ show-footer: true
 \-- ds.page.footer: 
 
 \-- footer.sitemap-footer:
-site-logo: $assets.files.assets.logo-fifthtry.svg
+site-logo: $assets.files.assets.dummy-site-logo.png
 footer-list: $sitemap.sections
 site-url: /
-site-name: FifthTry
-copyright: Copyright © 2023 - fifthtry.com
+site-name: Site name
+copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
 discord-url: https://discord.gg/bucrdvptYd
 instagram-url: /
 telegram-url: /
 
-I'm surprised you had the courage to take the responsibility yourself. 
-Leave that to me.
+I'm surprised you had the courage to take the responsibility
+yourself. Leave that to me.
 
 \-- end: ds.page.footer
 

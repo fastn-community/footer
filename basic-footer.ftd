@@ -5,14 +5,15 @@
 
 -- ft.page: 
 show-footer: true
+site-name: Footers
 
 -- ft.page.footer: 
 
 -- footer.basic-footer:
 footer-list: $toc.items
-site-logo: $assets.files.assets.logo-fifthtry.svg
+site-logo: $assets.files.assets.dummy-site-logo.png
 site-url: /
-copyright: Copyright © 2023 - fifthtry.com
+copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 
 -- end: ft.page.footer
 
@@ -57,9 +58,9 @@ show-footer: true
 
 \-- footer.basic-footer:
 footer-list: $sitemap.sections
-site-logo: $assets.files.assets.logo-fifthtry.svg
+site-logo: $assets.files.assets.dummy-site-logo.png
 site-url: /
-copyright: Copyright © 2023 - fifthtry.com
+copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 
 \-- end: ds.page.footer
 

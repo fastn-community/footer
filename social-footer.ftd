@@ -7,6 +7,7 @@
 
 -- ft.page: 
 show-footer: true
+site-name: Footers
 
 -- ft.page.footer: 
 
@@ -17,7 +18,7 @@ discord-url: https://discord.gg/bucrdvptYd
 instagram-url: /
 telegram-url: /
 footer-list: $toc.items
-copyright: Copyright © 2023 - fifthtry.com
+copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 
 -- end: ft.page.footer
 
@@ -68,7 +69,7 @@ discord-url: https://discord.gg/bucrdvptYd
 instagram-url: /
 telegram-url: /
 footer-list: $sitemap.sections
-copyright: Copyright © 2023 - fifthtry.com
+copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 
 \-- end: ds.page.footer
 

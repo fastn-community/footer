@@ -1,6 +1,7 @@
 -- import: fifthtry.github.io/footer/assets
 -- import: fifthtry.github.io/footer/toc
 -- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/footer
 -- import: fastn/processors as pr
 
 -- pr.toc-item list empty-toc: 
@@ -20,7 +21,15 @@ color: $inherited.colors.text-strong
 
 -- end: white
 
--- ft.page: Footers
+-- ft.page: 
+show-footer: true
+site-name: Footers
+
+-- ft.page.footer:
+
+-- footer.fastn-footer:
+
+-- end: ft.page.footer
 
 -- pd.package: Footer components
 name: fifthtry.github.io/footer
@@ -45,7 +54,7 @@ lang: ftd
 **Basic Footer:**
 
 -- basic-footer:
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-logo: $assets.files.assets.dummy-site-logo.png
 site-url: /
 footer-list: $toc.items
 copyright: Copyright © 2023 - fifthtry.com
@@ -56,9 +65,9 @@ copyright: Copyright © 2023 - fifthtry.com
 
 -- social-sideline-footer:
 social: true
-site-logo: $assets.files.assets.logo-fifthtry-dark.svg
+site-logo: $assets.files.assets.dummy-site-logo.png
 site-url: /
-site-name: FifthTry
+site-name: Site name
 twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
 discord-url: https://discord.gg/bucrdvptYd
@@ -83,8 +92,8 @@ Leave that to me.
 -- component basic-footer:
 optional string site-name:
 optional string site-url: /
-optional string copyright: Copyright ©2023. fifthtry.com
-optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
+optional string copyright: Copyright © 2023 - fifthtry.com
+optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
 optional ftd.color backgroundcolor: $inherited.colors.background.step-1
 pr.toc-item list footer-list: $sitemap.sections
 ftd.color text-color: $inherited.colors.text
@@ -270,7 +279,7 @@ optional string instagram-url:
 optional string telegram-url: 
 optional string copyright:
 optional body bio:
-optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
+optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
 integer logo-height: 32
 boolean social: false
 optional ftd.color backgroundcolor: $inherited.colors.background.step-1
@@ -351,7 +360,7 @@ optional string instagram-url:
 optional string telegram-url: 
 optional string copyright:
 optional body bio:
-optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
+optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
 integer logo-height: 32
 boolean social: false
 optional ftd.color backgroundcolor: $inherited.colors.background.step-1
@@ -463,7 +472,7 @@ optional string instagram-url:
 optional string telegram-url: 
 optional string copyright:
 optional body bio:
-optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
+optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
 integer logo-height: 32
 boolean social: false
 optional ftd.color backgroundcolor: $inherited.colors.background.step-1
@@ -568,7 +577,7 @@ optional string site-name:
 optional string site-url: /
 optional string copyright:
 optional body bio:
-optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
+optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
 integer logo-height: 32
 optional ftd.color backgroundcolor: $inherited.colors.background.step-1
 pr.toc-item list footer-list: $sitemap.sections
@@ -646,7 +655,7 @@ optional string site-name:
 optional string site-url: /
 optional string copyright:
 optional body bio:
-optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
+optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
 integer logo-height: 32
 optional ftd.color backgroundcolor: $inherited.colors.background.step-1
 pr.toc-item list footer-list: $empty-toc
@@ -744,7 +753,7 @@ optional string site-name:
 optional string site-url: /
 optional string copyright:
 optional body bio:
-optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
+optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
 integer logo-height: 32
 optional ftd.color backgroundcolor: $inherited.colors.background.step-1
 pr.toc-item list footer-list: $empty-toc
@@ -834,7 +843,7 @@ optional string site-name:
 optional string site-url: /
 optional string copyright:
 optional body bio:
-optional ftd.image-src site-logo: $assets.files.assets.site-logo.svg
+optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
 integer logo-height: 32
 optional ftd.color backgroundcolor: $inherited.colors.background.step-1
 optional ftd.image-src twitter-logo: $assets.files.assets.twitter.svg
@@ -987,13 +996,14 @@ src: $assets.files.assets.right-arrow.svg
 optional string site-name:
 optional string site-url: 
 optional ftd.image-src site-logo: 
-integer logo-height: 32
+integer logo-height: 38
 
 -- ftd.row:
 
 -- ftd.row:
 spacing.fixed.px: 8
 link: $logo-with-name.site-url
+align-content: center
 
 -- ftd.image:
 if: {logo-with-name.site-logo != NULL}
