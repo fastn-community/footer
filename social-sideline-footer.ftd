@@ -1,0 +1,103 @@
+-- import: fifthtry.github.io/footer/assets
+-- import: fifthtry.github.io/footer as footer
+-- import: fifthtry.github.io/footer/toc as toc
+-- import: fifthtry.github.io/package-doc/forest-theme as ft
+
+
+
+-- ft.page: 
+show-footer: true
+
+-- ft.page.footer: 
+
+-- footer.social-sideline-footer:
+social: true
+site-logo: $assets.files.assets.logo-fifthtry.svg
+site-url: /
+footer-list: $toc.items
+site-name: FifthTry
+twitter-url: https://twitter.com/FifthTryHQ
+facebook-url: /
+discord-url: https://discord.gg/bucrdvptYd
+instagram-url: /
+telegram-url: /
+copyright: Copyright © 2023 - fifthtry.com
+
+I'm surprised you had the courage to take the responsibility yourself. 
+Leave that to me.
+
+-- end: ft.page.footer
+
+-- ft.page.body:
+
+-- pd.package: Social Sideline Footer
+name: fifthtry.github.io/footer
+
+`social-sideline-footer` is another footer component which shows sections from
+your `fastn` sitemap of `FASTN.ftd`.
+
+Use our `social-sideline-footer` on your fastn web projects.
+
+If you are using our `doc-site` as your website theme, then to use
+`social-sideline-footer` add below `fastn` dependency into `FASTN.ftd` file:
+
+-- ft.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/doc-site
+\-- fastn.dependency: fifthtry.github.io/footer
+\-- fastn.auto-import: fifthtry.github.io/doc-site as ds
+\-- fastn.auto-import: fifthtry.github.io/footer as footer
+
+-- tf.markdown:
+
+Once you add above lines into your `fastn` package, add `footer` into your
+`.ftd` 
+
+Below example code is to add footer if you are using `doc-site` as your website
+thme.
+
+-- cb.rendered:
+
+-- cb.rendered.input:
+
+\-- ds.page: Title of the page
+show-footer: true
+
+\-- ds.page.footer: 
+
+\-- footer.social-sideline-footer:
+social: true
+site-logo: $assets.files.assets.logo-fifthtry.svg
+site-url: /
+footer-list: $sitemap.sections
+site-name: FifthTry
+twitter-url: https://twitter.com/FifthTryHQ
+facebook-url: /
+discord-url: https://discord.gg/bucrdvptYd
+instagram-url: /
+telegram-url: /
+copyright: Copyright © 2023 - fifthtry.com
+
+I'm surprised you had the courage to take the responsibility yourself. 
+Leave that to me.
+
+\-- end: ds.page.footer
+
+\-- ds.page.body:
+
+Some page body components and content here
+
+\-- end: ds.page
+
+-- cb.rendered.output:
+
+-- tf.markdown:
+
+ Look at the bottom of this page.
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- end: ft.page

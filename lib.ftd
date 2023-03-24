@@ -1,0 +1,295 @@
+-- import: fastn
+-- import: fifthtry.github.io/footer/assets
+-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/code-block as cb
+-- import: fastn/processors as pr
+
+-- pr.toc-item list empty-toc: 
+
+-- pr.sitemap-data sitemap:
+$processor$: pr.full-sitemap
+
+-- string bio-text: 
+
+I'm surprised you had the courage to take the responsibility yourself. 
+Leave that to me.
+
+
+
+
+
+-- ftd.column:
+width: fill-container
+padding-horizontal.px: 50
+background.solid: $inherited.colors.background.base
+
+-- pd.package: footer
+name: fifthtry.github.io/footer
+
+This component can be used as a footer component on your page.
+
+-- pd.component: footer
+name: fifthtry.github.io/footer
+
+This is the main footer.
+
+-- cb.rendered: 
+
+-- cb.rendered.input: 
+
+\-- basic-footer:
+site-logo: $assets.files.assets.logo-fifthtry.svg
+site-url: /
+copyright: Copyright ©2023. fifthtry.com
+
+
+
+-- cb.rendered.output:
+
+-- basic-footer:
+site-logo: $assets.files.assets.logo-fifthtry.svg
+site-url: /
+copyright: Copyright ©2023. fifthtry.com
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- cb.rendered: 
+
+-- cb.rendered.input: 
+
+\-- basic-footer:
+site-logo: $assets.files.assets.logo-fifthtry.svg
+backgroungcolor: $inherited.colors.background.step-1
+site-url: /
+site-name: Fifthtry
+copyright: Copyright ©2023. fifthtry.com
+
+-- cb.rendered.output:
+
+-- basic-footer:
+site-logo: $assets.files.assets.logo-fifthtry.svg
+backgroundcolor: $inherited.colors.background.step-1
+site-url: /
+site-name: Fifthtry
+copyright: Copyright ©2023. fifthtry.com
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- cb.rendered: 
+
+-- cb.rendered.input: 
+
+\-- social-footer:
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+copyright: Copyright ©2023. fifthtry.com
+
+-- cb.rendered.output:
+
+-- social-footer:
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+copyright: Copyright ©2023. fifthtry.com
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- cb.rendered: 
+
+-- cb.rendered.input: 
+
+\-- social-sideline-footer:
+social: true
+site-logo: $assets.files.assets.logo-fifthtry.svg
+site-url: /
+footer-list: $sitemap.sections
+site-name: Fifthtry
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+copyright: Copyright ©2023. fifthtry.com
+
+I'm surprised you had the courage to take the responsibility yourself. 
+Leave that to me.
+
+-- cb.rendered.output:
+
+-- social-sideline-footer:
+social: true
+site-logo: $assets.files.assets.logo-fifthtry.svg
+bio: $bio-text
+site-url: /
+footer-list: $sitemap.sections
+site-name: Fifthtry
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+copyright: Copyright ©2023. fifthtry.com
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- cb.rendered: 
+
+-- cb.rendered.input: 
+
+\-- social-sideline-footer:
+site-logo: $assets.files.assets.logo-fifthtry.svg
+site-url: /
+site-name: Fifthtry
+copyright: Copyright ©2023. fifthtry.com
+
+I'm surprised you had the courage to take the responsibility yourself. 
+Leave that to me.
+
+-- cb.rendered.output:
+
+-- social-sideline-footer:
+site-logo: $assets.files.assets.logo-fifthtry.svg
+bio: $bio-text
+site-url: /
+site-name: Fifthtry
+copyright: Copyright ©2023. fifthtry.com
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- cb.rendered: 
+
+-- cb.rendered.input: 
+
+\-- left-hug-sitemap-footer:
+site-logo: $assets.files.assets.logo-fifthtry.svg
+site-url: /
+site-name: Fifthtry
+copyright: Copyright ©2023. fifthtry.com
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+
+I'm surprised you had the courage to take the responsibility yourself. 
+Leave that to me.
+
+-- cb.rendered.output:
+
+-- left-hug-sitemap-footer:
+site-logo: $assets.files.assets.logo-fifthtry.svg
+site-url: /
+site-name: Fifthtry
+sections: $sitemap.sections
+copyright: Copyright ©2023. fifthtry.com
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+
+I'm surprised you had the courage to take the responsibility yourself. 
+Leave that to me.
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- cb.rendered: 
+
+-- cb.rendered.input: 
+
+\-- sitemap-footer:
+site-logo: $assets.files.assets.logo-fifthtry.svg
+site-url: /
+site-name: Fifthtry
+copyright: Copyright ©2023. fifthtry.com
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+
+I'm surprised you had the courage to take the responsibility yourself. 
+Leave that to me.
+
+-- cb.rendered.output:
+
+-- sitemap-footer:
+site-logo: $assets.files.assets.logo-fifthtry.svg
+bio: $bio-text
+site-url: /
+site-name: Fifthtry
+copyright: Copyright ©2023. fifthtry.com
+twitter-logo: $assets.files.assets.twitter.svg
+twitter-url: /
+facebook-logo: $assets.files.assets.facebook.svg
+facebook-url: /
+discord-logo: $assets.files.assets.discord.svg
+discord-url: /
+instagram-logo: $assets.files.assets.instagram.svg
+instagram-url: /
+telegram-logo: $assets.files.assets.telegram.svg
+telegram-url: /
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- end: ftd.column
+
+
+
+
+
+
