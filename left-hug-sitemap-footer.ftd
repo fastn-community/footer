@@ -8,23 +8,24 @@
 
 -- ft.page: 
 show-footer: true
+site-name: Footers
 
 -- ft.page.footer: 
 
 -- footer.left-hug-sitemap-footer:
-site-logo: $assets.files.assets.logo-fifthtry.svg
+site-logo: $assets.files.assets.dummy-site-logo.png
 site-url: /
-site-name: FifthTry
+site-name: Site name
 footer-list: $toc.items
-copyright: Copyright © 2023 - fifthtry.com
+copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
 discord-url: https://discord.gg/bucrdvptYd
 instagram-url: /
 telegram-url: /
 
-I'm surprised you had the courage to take the responsibility yourself. 
-Leave that to me.
+I'm surprised you had the courage to take the responsibility
+yourself. Leave that to me.
 
 -- end: ft.page.footer
 
@@ -68,19 +69,19 @@ show-footer: true
 \-- ds.page.footer: 
 
 \-- footer.left-hug-sitemap-footer:
-site-logo: $assets.files.assets.logo-fifthtry.svg
+site-logo: $assets.files.assets.dummy-site-logo.png
 site-url: /
-site-name: FifthTry
+site-name: Site name
 footer-list: $sitemap.sections
-copyright: Copyright © 2023 - fifthtry.com
+copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
 discord-url: https://discord.gg/bucrdvptYd
 instagram-url: /
 telegram-url: /
 
-I'm surprised you had the courage to take the responsibility yourself. 
-Leave that to me.
+I'm surprised you had the courage to take the responsibility
+yourself. Leave that to me.
 
 \-- end: ds.page.footer
 
