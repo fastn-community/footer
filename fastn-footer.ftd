@@ -1,0 +1,79 @@
+-- import: fifthtry.github.io/footer/assets
+-- import: fifthtry.github.io/footer as footer
+-- import: fifthtry.github.io/package-doc/forest-theme as ft
+
+-- ft.page: 
+show-footer: true
+site-name: Footers
+
+-- ft.page.footer: 
+
+-- footer.fastn-footer:
+copyright: Copyright © 2023 - [FifthTry](https://www.fifthtry.com/)
+site-logo: $footer.fastn-logo
+powered-by-text: Powered by
+powered-by-link: https://fastn.io/
+
+-- end: ft.page.footer
+
+-- ft.page.body:
+
+-- pd.package: Fastn Powered by Footer
+name: fifthtry.github.io/footer
+
+`fastn-footer` is another footer component which shows powered by text with
+fastn logo and link to fifthtry.com.
+
+Use our `fastn-footer` on your fastn web projects, and give us credit.
+
+If you are using our `doc-site` as your website theme, then to use
+`fastn-footer` add below `fastn` dependency into `FASTN.ftd` file:
+
+-- ft.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/doc-site
+\-- fastn.dependency: fifthtry.github.io/footer
+\-- fastn.auto-import: fifthtry.github.io/doc-site as ds
+\-- fastn.auto-import: fifthtry.github.io/footer
+
+
+-- tf.markdown:
+
+Once you add above lines into your `fastn` package, add `footer` into your
+`.ftd` file like shown in below code snippet. 
+
+Below example code is to add footer if you are using `doc-site` as your website
+thme.
+
+-- cb.rendered:
+
+-- cb.rendered.input:
+
+\-- ds.page: Title of the page
+show-footer: true
+
+\-- ds.page.footer: 
+
+\-- footer.fastn-footer:
+copyright: Copyright © 2023 - [FifthTry](https://www.fifthtry.com/)
+site-logo: https://fastn.io/-/fastn.io/images/fastn.svg
+powered-by-text: Powered by
+powered-by-link: https://fastn.io/
+
+\-- ds.page.body:
+Some page body components and content here
+
+\-- end: ds.page
+
+-- cb.rendered.output:
+
+-- tf.markdown:
+
+ Look at the bottom of this page.
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- end: ft.page
