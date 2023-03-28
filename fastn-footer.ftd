@@ -9,6 +9,10 @@ site-name: Footers
 -- ft.page.footer: 
 
 -- footer.fastn-footer:
+copyright: Copyright © 2023 - [FifthTry](https://www.fifthtry.com/)
+site-logo: $footer.fastn-logo
+powered-by-text: Powered by
+powered-by-link: https://fastn.io/
 
 -- end: ft.page.footer
 
@@ -52,6 +56,10 @@ show-footer: true
 \-- ds.page.footer: 
 
 \-- footer.fastn-footer:
+copyright: Copyright © 2023 - [FifthTry](https://www.fifthtry.com/)
+site-logo: https://fastn.io/-/fastn.io/images/fastn.svg
+powered-by-text: Powered by
+powered-by-link: https://fastn.io/
 
 \-- ds.page.body:
 Some page body components and content here

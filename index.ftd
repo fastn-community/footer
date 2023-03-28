@@ -21,7 +21,7 @@ color: $inherited.colors.text-strong
 
 -- end: white
 
--- ftd.image-src fastn:
+-- ftd.image-src fastn-logo:
 light: https://fastn.io/-/fastn.io/images/fastn.svg
 dark: https://fastn.io/-/fastn.io/images/fastn-dark.svg
 
@@ -1423,17 +1423,16 @@ children: $footer-list-toc-children.wrap
 
 
 -- component fastn-footer:
-optional string copyright: Copyright © 2023 - [FifthTry](https://www.fifthtry.com/)
-optional ftd.color backgroundcolor: $inherited.colors.background.step-1
-ftd.color text-color: $inherited.colors.text
-ftd.color active-text-color: $inherited.colors.text-strong
-integer logo-height: 32
+caption copyright: Copyright © 2023 - [FifthTry](https://www.fifthtry.com/)
+optional ftd.image-src site-logo: 
+optional string powered-by-text:
+optional string powered-by-link: 
 
 -- ftd.column:
 width: fill-container
 align-self: center
 align-content: center
-background.solid: $fastn-footer.backgroundcolor
+background.solid: $inherited.colors.background.step-1
 
 -- ftd.row:
 width: fill-container
@@ -1459,12 +1458,14 @@ white-space: nowrap
 -- ftd.row:
 align-self: end
 
--- powered-by:
+-- powered-by: $fastn-footer.powered-by-text
+if: { fastn-footer.site-logo != NULL }
+fastn: $fastn-footer.site-logo
+link: $fastn-footer.powered-by-link
 
 -- end: ftd.row
 
 -- end: ftd.row
-
 
 -- end: ftd.column
 
@@ -1481,7 +1482,7 @@ align-self: end
 
 -- component powered-by:
 caption title: Powered by
-ftd.image-src fastn: $fastn
+ftd.image-src fastn: $fastn-logo
 string link: https://fastn.io/
 
 -- ftd.column:
