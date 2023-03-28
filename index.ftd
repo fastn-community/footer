@@ -21,6 +21,14 @@ color: $inherited.colors.text-strong
 
 -- end: white
 
+-- ftd.image-src fastn-logo:
+light: https://fastn.io/-/fastn.io/images/fastn.svg
+dark: https://fastn.io/-/fastn.io/images/fastn-dark.svg
+
+
+
+
+
 -- ft.page: 
 show-footer: true
 site-name: Footers
@@ -1404,3 +1412,92 @@ children: $footer-list-toc-children.wrap
 -- end: ftd.column
 
 -- end: footer-list-toc-children
+
+
+
+
+
+
+
+
+
+
+-- component fastn-footer:
+caption copyright: Copyright © 2023 - [FifthTry](https://www.fifthtry.com/)
+optional ftd.image-src site-logo: 
+optional string powered-by-text:
+optional string powered-by-link: 
+
+-- ftd.column:
+width: fill-container
+align-self: center
+align-content: center
+background.solid: $inherited.colors.background.step-1
+
+-- ftd.row:
+width: fill-container
+border-top-width.px: 1
+border-color: $inherited.colors.border
+padding-vertical.px: 20
+padding-horizontal.px: 20
+align-content: center
+
+-- ftd.row:
+width: fill-container
+
+-- ftd.text: 
+if: {fastn-footer.copyright != NULL}
+text: $fastn-footer.copyright
+color: $inherited.colors.text
+text-align: center
+role: $inherited.types.copy-small
+white-space: nowrap
+
+-- end: ftd.row
+
+-- ftd.row:
+align-self: end
+
+-- powered-by: $fastn-footer.powered-by-text
+if: { fastn-footer.site-logo != NULL }
+fastn: $fastn-footer.site-logo
+link: $fastn-footer.powered-by-link
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: fastn-footer
+
+
+
+
+
+
+
+
+
+
+-- component powered-by:
+caption title: Powered by
+ftd.image-src fastn: $fastn-logo
+string link: https://fastn.io/
+
+-- ftd.column:
+link: $powered-by.link
+
+-- ftd.text: $powered-by.title
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- ftd.image:
+src: $powered-by.fastn
+max-width.fixed.px: 120
+height.fixed.px: 28
+margin-left.px: 18
+
+-- end: ftd.column
+
+-- end: powered-by
