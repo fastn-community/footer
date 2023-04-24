@@ -297,7 +297,7 @@ pr.toc-item list footer-list: $sitemap.sections
 width: fill-container
 
 -- social-sideline-footer-desktop:
-if: {ftd.device != "mobile"}
+if: { ftd.device != "mobile" }
 site-name: $social-sideline-footer.site-name
 telegram-url: $social-sideline-footer.telegram-url
 instagram-url: $social-sideline-footer.instagram-url
@@ -319,7 +319,7 @@ site-logo: $social-sideline-footer.site-logo
 social: $social-sideline-footer.social
 
 -- social-sideline-footer-mobile:
-if: {ftd.device == "mobile"}
+if: { ftd.device == "mobile" }
 site-name: $social-sideline-footer.site-name
 telegram-url: $social-sideline-footer.telegram-url
 instagram-url: $social-sideline-footer.instagram-url
@@ -392,6 +392,7 @@ site-url: $social-sideline-footer-desktop.site-url
 logo-height: $social-sideline-footer-desktop.logo-height
 
 -- ftd.text:
+if: { social-sideline-footer-desktop.bio != NULL }
 text: $social-sideline-footer-desktop.bio
 role: $inherited.types.fine-print
 color: $inherited.colors.text
@@ -419,7 +420,7 @@ role: $inherited.types.copy-regular
 width: fill-container
 
 -- ftd.row:
-if: {!social-sideline-footer-desktop.social}
+if: { !social-sideline-footer-desktop.social }
 align-content: center
 spacing.fixed.px: 32
 
@@ -434,7 +435,7 @@ $loop$: $social-sideline-footer-desktop.footer-list as $obj
 
 -- ftd.row:
 spacing.fixed.px: 32
-if: {social-sideline-footer-desktop.social}
+if: { social-sideline-footer-desktop.social }
 
 -- images-list:
 twitter-logo: $social-sideline-footer-desktop.twitter-logo
@@ -505,6 +506,7 @@ site-url: $social-sideline-footer-mobile.site-url
 logo-height: $social-sideline-footer-mobile.logo-height
 
 -- ftd.text:
+if: { social-sideline-footer-mobile.bio != NULL }
 text: $social-sideline-footer-mobile.bio
 role: $inherited.types.fine-print
 color: $inherited.colors.text
@@ -527,7 +529,7 @@ width: fill-container
 align-content: center
 
 -- ftd.row:
-if: {!social-sideline-footer-mobile.social}
+if: { !social-sideline-footer-mobile.social }
 align-content: center
 spacing.fixed.px: 32
 
@@ -542,7 +544,7 @@ $loop$: $social-sideline-footer-mobile.footer-list as $obj
 
 -- ftd.row:
 spacing.fixed.px: 32
-if: {social-sideline-footer-mobile.social}
+if: { social-sideline-footer-mobile.social }
 
 -- images-list:
 twitter-logo: $social-sideline-footer-mobile.twitter-logo
@@ -604,7 +606,7 @@ optional string telegram-url:
 width: fill-container
 
 -- left-hug-sitemap-footer-desktop:
-if: {ftd.device != "mobile"}
+if: { ftd.device != "mobile" }
 site-name: $left-hug-sitemap-footer.site-name
 telegram-url: $left-hug-sitemap-footer.telegram-url
 instagram-url: $left-hug-sitemap-footer.instagram-url
@@ -625,7 +627,7 @@ site-url: $left-hug-sitemap-footer.site-url
 site-logo: $left-hug-sitemap-footer.site-logo
 
 -- left-hug-sitemap-footer-mobile:
-if: {ftd.device == "mobile"}
+if: { ftd.device == "mobile" }
 site-name: $left-hug-sitemap-footer.site-name
 telegram-url: $left-hug-sitemap-footer.telegram-url
 instagram-url: $left-hug-sitemap-footer.instagram-url
