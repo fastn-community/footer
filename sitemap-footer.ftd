@@ -3,10 +3,6 @@
 -- import: fifthtry.github.io/footer/toc as toc
 -- import: fifthtry.github.io/package-doc/forest-theme as ft
 
-
-
-
-
 -- ft.page:
 show-footer: true
 site-name: Footers
@@ -25,9 +21,8 @@ discord-url: https://discord.gg/bucrdvptYd
 instagram-url: /
 telegram-url: /
 
-I'm surprised you had the courage to take the responsibility yourself. 
-Leave that to me.
-
+I'm surprised you had the courage to take the responsibility yourself. Leave
+that to me.
 
 -- end: ft.page.footer
 
@@ -51,7 +46,6 @@ lang: ftd
 \-- fastn.dependency: fifthtry.github.io/footer
 \-- fastn.auto-import: fifthtry.github.io/doc-site as ds
 \-- fastn.auto-import: fifthtry.github.io/footer as footer
-
 
 -- tf.markdown:
 
@@ -82,8 +76,8 @@ discord-url: https://discord.gg/bucrdvptYd
 instagram-url: /
 telegram-url: /
 
-I'm surprised you had the courage to take the responsibility
-yourself. Leave that to me.
+I'm surprised you had the courage to take the responsibility yourself. Leave
+that to me.
 
 \-- end: ds.page.footer
 
@@ -97,7 +91,7 @@ Some page body components and content here
 
 -- tf.markdown:
 
- Look at the bottom of this page.
+Look at the bottom of this page.
 
 -- end: cb.rendered.output
 
