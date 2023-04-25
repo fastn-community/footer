@@ -3,8 +3,6 @@
 -- import: fifthtry.github.io/footer/toc as toc
 -- import: fifthtry.github.io/package-doc/forest-theme as ft
 
-
-
 -- ft.page: 
 show-footer: true
 site-name: Footers
@@ -24,8 +22,8 @@ instagram-url: /
 telegram-url: /
 copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 
-I'm surprised you had the courage to take the responsibility yourself. 
-Leave that to me.
+I'm surprised you had the courage to take the responsibility yourself. Leave
+that to me.
 
 -- end: ft.page.footer
 
@@ -80,8 +78,8 @@ instagram-url: /
 telegram-url: /
 copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 
-I'm surprised you had the courage to take the responsibility
-yourself. Leave that to me.
+I'm surprised you had the courage to take the responsibility yourself. Leave
+that to me.
 
 \-- end: ds.page.footer
 
@@ -95,7 +93,7 @@ Some page body components and content here
 
 -- tf.markdown:
 
- Look at the bottom of this page.
+Look at the bottom of this page.
 
 -- end: cb.rendered.output
 
