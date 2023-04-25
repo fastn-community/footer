@@ -38,7 +38,6 @@ lang: ftd
 \-- fastn.auto-import: fifthtry.github.io/doc-site as ds
 \-- fastn.auto-import: fifthtry.github.io/footer as footer
 
-
 -- tf.markdown:
 
 Once you add above lines into your `fastn` package, add `footer` into your
@@ -73,7 +72,7 @@ Some page body components and content here
 
 -- tf.markdown:
 
- Look at the bottom of this page.
+Look at the bottom of this page.
 
 -- end: cb.rendered.output
 
