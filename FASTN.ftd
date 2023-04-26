@@ -4,7 +4,6 @@
 
 -- fastn.dependency: fifthtry.github.io/package-doc 
 
-
 -- fastn.auto-import: fifthtry.github.io/package-doc/doc as pd
 -- fastn.auto-import: fastn
 -- fastn.auto-import: fifthtry.github.io/package-doc/typography as tf
@@ -25,10 +24,3 @@
 
 # Github
   url: https://github.com/FifthTry/footer
-
-
-
-
-
-
-

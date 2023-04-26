@@ -11,8 +11,8 @@ $processor$: pr.full-sitemap
 
 -- string bio-text: 
 
-I'm surprised you had the courage to take the responsibility yourself. 
-Leave that to me.
+I'm surprised you had the courage to take the responsibility yourself. Leave
+that to me.
 
 -- component white:
 
@@ -24,10 +24,6 @@ color: $inherited.colors.text-strong
 -- ftd.image-src fastn-logo:
 light: https://fastn.io/-/fastn.io/images/fastn.svg
 dark: https://fastn.io/-/fastn.io/images/fastn-dark.svg
-
-
-
-
 
 -- ft.page: 
 show-footer: true
@@ -42,12 +38,11 @@ site-name: Footers
 -- pd.package: Footer components
 name: fifthtry.github.io/footer
 
-`fifthtry.github.io/footer` is a component library which contains various `ftd` 
+`fifthtry.github.io/footer` is a component library which contains various `ftd`
 components can be used on your pages. 
 
-Footer is for making most content pages more interesting.
-To use footer components on your web package, add 
-below into `FASTN.ftd` file:
+Footer is for making most content pages more interesting. To use footer
+components on your web package, add below into `FASTN.ftd` file:
 
 -- ft.code:
 lang: ftd
@@ -83,8 +78,8 @@ instagram-url: /
 telegram-url: /
 copyright: Copyright © 2023 - fifthtry.com
 
-I'm surprised you had the courage to take the responsibility yourself. 
-Leave that to me.
+I'm surprised you had the courage to take the responsibility yourself. Leave
+that to me.
 
 -- end: ft.page
 
@@ -102,7 +97,7 @@ optional string site-name:
 optional string site-url: /
 optional string copyright: Copyright © 2023 - fifthtry.com
 optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
-optional ftd.color backgroundcolor: $inherited.colors.background.step-1
+optional ftd.color background-color: $inherited.colors.background.step-1
 pr.toc-item list footer-list: $sitemap.sections
 ftd.color text-color: $inherited.colors.text
 ftd.color active-text-color: $inherited.colors.text-strong
@@ -114,7 +109,7 @@ align-self: center
 align-content: center
 padding-vertical.px: 40
 spacing.fixed.px: 24
-background.solid: $basic-footer.backgroundcolor
+background.solid: $basic-footer.background-color
 
 -- ftd.row:
 align-self: center
@@ -152,7 +147,7 @@ border-color: $inherited.colors.border
 -- end: ftd.row
 
 -- ftd.text: 
-if: {basic-footer.copyright != NULL}
+if: { basic-footer.copyright != NULL }
 text: $basic-footer.copyright
 color: $inherited.colors.text
 text-align: center
@@ -193,7 +188,7 @@ color: $inherited.colors.text-strong
 -- component social-footer:
 optional ftd.image-src twitter-logo: $assets.files.assets.twitter.svg
 optional ftd.image-src facebook-logo: $assets.files.assets.facebook.svg
-optional ftd.image-src discord-logo:  $assets.files.assets.discord.svg
+optional ftd.image-src discord-logo: $assets.files.assets.discord.svg
 optional ftd.image-src instagram-logo: $assets.files.assets.instagram.svg
 optional ftd.image-src telegram-logo: $assets.files.assets.telegram.svg
 optional string twitter-url: 
@@ -203,7 +198,7 @@ optional string instagram-url:
 optional string telegram-url: 
 optional string copyright:
 pr.toc-item list footer-list: $sitemap.sections
-optional ftd.color backgroundcolor: $inherited.colors.background.step-1
+optional ftd.color background-color: $inherited.colors.background.step-1
 
 -- ftd.column:
 width: fill-container
@@ -211,7 +206,7 @@ align-content: center
 align-self: center
 padding-vertical.px: 40
 spacing.fixed.px: 24
-background.solid: $social-footer.backgroundcolor
+background.solid: $social-footer.background-color
 
 -- ftd.row:
 align-content: center
@@ -277,7 +272,7 @@ optional string site-name:
 optional string site-url: /
 optional ftd.image-src twitter-logo: $assets.files.assets.twitter.svg
 optional ftd.image-src facebook-logo: $assets.files.assets.facebook.svg
-optional ftd.image-src discord-logo:  $assets.files.assets.discord.svg
+optional ftd.image-src discord-logo: $assets.files.assets.discord.svg
 optional ftd.image-src instagram-logo: $assets.files.assets.instagram.svg
 optional ftd.image-src telegram-logo: $assets.files.assets.telegram.svg
 optional string twitter-url: 
@@ -290,7 +285,7 @@ optional body bio:
 optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
 integer logo-height: 32
 boolean social: false
-optional ftd.color backgroundcolor: $inherited.colors.background.step-1
+optional ftd.color background-color: $inherited.colors.background.step-1
 pr.toc-item list footer-list: $sitemap.sections
 
 -- ftd.column:
@@ -309,7 +304,7 @@ instagram-logo: $social-sideline-footer.instagram-logo
 bio: $social-sideline-footer.bio
 copyright: $social-sideline-footer.copyright
 logo-height: $social-sideline-footer.logo-height
-backgroundcolor: $social-sideline-footer.backgroundcolor
+background-color: $social-sideline-footer.background-color
 footer-list: $social-sideline-footer.footer-list
 twitter-logo: $social-sideline-footer.twitter-logo
 facebook-logo: $social-sideline-footer.facebook-logo
@@ -331,7 +326,7 @@ instagram-logo: $social-sideline-footer.instagram-logo
 bio: $social-sideline-footer.bio
 copyright: $social-sideline-footer.copyright
 logo-height: $social-sideline-footer.logo-height
-backgroundcolor: $social-sideline-footer.backgroundcolor
+background-color: $social-sideline-footer.background-color
 footer-list: $social-sideline-footer.footer-list
 twitter-logo: $social-sideline-footer.twitter-logo
 facebook-logo: $social-sideline-footer.facebook-logo
@@ -355,12 +350,12 @@ social: $social-sideline-footer.social
 
 -- component social-sideline-footer-desktop:
 optional string site-name:
-optional string site-url: /
-optional ftd.image-src twitter-logo: $assets.files.assets.twitter.svg
-optional ftd.image-src facebook-logo: $assets.files.assets.facebook.svg
-optional ftd.image-src discord-logo:  $assets.files.assets.discord.svg
-optional ftd.image-src instagram-logo: $assets.files.assets.instagram.svg
-optional ftd.image-src telegram-logo: $assets.files.assets.telegram.svg
+optional string site-url:
+optional ftd.image-src twitter-logo: 
+optional ftd.image-src facebook-logo:
+optional ftd.image-src discord-logo: 
+optional ftd.image-src instagram-logo:
+optional ftd.image-src telegram-logo:
 optional string twitter-url: 
 optional string facebook-url: 
 optional string discord-url: 
@@ -368,16 +363,16 @@ optional string instagram-url:
 optional string telegram-url: 
 optional string copyright:
 optional body bio:
-optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
-integer logo-height: 32
-boolean social: false
-optional ftd.color backgroundcolor: $inherited.colors.background.step-1
-pr.toc-item list footer-list: $sitemap.sections
+optional ftd.image-src site-logo:
+integer logo-height:
+boolean social:
+optional ftd.color background-color:
+pr.toc-item list footer-list:
 
 -- ftd.column:
 width: fill-container
 padding-vertical.px: 40
-background.solid: $social-sideline-footer-desktop.backgroundcolor
+background.solid: $social-sideline-footer-desktop.background-color
 spacing.fixed.px: 24
 
 -- ftd.row:
@@ -411,7 +406,6 @@ border-color: $inherited.colors.border
 padding-horizontal.px: 40
 width: fill-container
 align-content: center
-
 
 -- ftd.text: 
 text: $social-sideline-footer-desktop.copyright
@@ -468,12 +462,12 @@ telegram-url: $social-sideline-footer-desktop.telegram-url
 
 -- component social-sideline-footer-mobile:
 optional string site-name:
-optional string site-url: /
-optional ftd.image-src twitter-logo: $assets.files.assets.twitter.svg
-optional ftd.image-src facebook-logo: $assets.files.assets.facebook.svg
-optional ftd.image-src discord-logo:  $assets.files.assets.discord.svg
-optional ftd.image-src instagram-logo: $assets.files.assets.instagram.svg
-optional ftd.image-src telegram-logo: $assets.files.assets.telegram.svg
+optional string site-url:
+optional ftd.image-src twitter-logo:
+optional ftd.image-src facebook-logo:
+optional ftd.image-src discord-logo:
+optional ftd.image-src instagram-logo:
+optional ftd.image-src telegram-logo:
 optional string twitter-url: 
 optional string facebook-url: 
 optional string discord-url: 
@@ -481,16 +475,16 @@ optional string instagram-url:
 optional string telegram-url: 
 optional string copyright:
 optional body bio:
-optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
-integer logo-height: 32
-boolean social: false
-optional ftd.color backgroundcolor: $inherited.colors.background.step-1
-pr.toc-item list footer-list: $sitemap.sections
+optional ftd.image-src site-logo:
+integer logo-height:
+boolean social:
+optional ftd.color background-color:
+pr.toc-item list footer-list:
 
 -- ftd.column:
 width: fill-container
 padding-vertical.px: 24
-background.solid: $social-sideline-footer-mobile.backgroundcolor
+background.solid: $social-sideline-footer-mobile.background-color
 spacing.fixed.px: 24
 
 -- ftd.column:
@@ -589,11 +583,11 @@ optional string copyright:
 optional body bio:
 optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
 integer logo-height: 32
-optional ftd.color backgroundcolor: $inherited.colors.background.step-1
+optional ftd.color background-color: $inherited.colors.background.step-1
 pr.toc-item list footer-list: $sitemap.sections
 optional ftd.image-src twitter-logo: $assets.files.assets.twitter.svg
 optional ftd.image-src facebook-logo: $assets.files.assets.facebook.svg
-optional ftd.image-src discord-logo:  $assets.files.assets.discord.svg
+optional ftd.image-src discord-logo: $assets.files.assets.discord.svg
 optional ftd.image-src instagram-logo: $assets.files.assets.instagram.svg
 optional ftd.image-src telegram-logo: $assets.files.assets.telegram.svg
 optional string twitter-url: 
@@ -618,7 +612,7 @@ instagram-logo: $left-hug-sitemap-footer.instagram-logo
 bio: $left-hug-sitemap-footer.bio
 copyright: $left-hug-sitemap-footer.copyright
 logo-height: $left-hug-sitemap-footer.logo-height
-backgroundcolor: $left-hug-sitemap-footer.backgroundcolor
+background-color: $left-hug-sitemap-footer.background-color
 footer-list: $left-hug-sitemap-footer.footer-list
 twitter-logo: $left-hug-sitemap-footer.twitter-logo
 facebook-logo: $left-hug-sitemap-footer.facebook-logo
@@ -639,7 +633,7 @@ instagram-logo: $left-hug-sitemap-footer.instagram-logo
 bio: $left-hug-sitemap-footer.bio
 copyright: $left-hug-sitemap-footer.copyright
 logo-height: $left-hug-sitemap-footer.logo-height
-backgroundcolor: $left-hug-sitemap-footer.backgroundcolor
+background-color: $left-hug-sitemap-footer.background-color
 footer-list: $left-hug-sitemap-footer.footer-list
 twitter-logo: $left-hug-sitemap-footer.twitter-logo
 facebook-logo: $left-hug-sitemap-footer.facebook-logo
@@ -662,19 +656,19 @@ site-logo: $left-hug-sitemap-footer.site-logo
 
 -- component left-hug-sitemap-footer-desktop:
 optional string site-name:
-optional string site-url: /
+optional string site-url:
 optional string copyright:
 optional body bio:
-optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
+optional ftd.image-src site-logo:
 integer logo-height: 32
-optional ftd.color backgroundcolor: $inherited.colors.background.step-1
-pr.toc-item list footer-list: $empty-toc
-pr.toc-item list footer-list: $sitemap.sections
-optional ftd.image-src twitter-logo: $assets.files.assets.twitter.svg
-optional ftd.image-src facebook-logo: $assets.files.assets.facebook.svg
-optional ftd.image-src discord-logo:  $assets.files.assets.discord.svg
-optional ftd.image-src instagram-logo: $assets.files.assets.instagram.svg
-optional ftd.image-src telegram-logo: $assets.files.assets.telegram.svg
+optional ftd.color background-color:
+pr.toc-item list footer-list:
+pr.toc-item list footer-list:
+optional ftd.image-src twitter-logo:
+optional ftd.image-src facebook-logo:
+optional ftd.image-src discord-logo:
+optional ftd.image-src instagram-logo:
+optional ftd.image-src telegram-logo:
 optional string twitter-url: 
 optional string facebook-url: 
 optional string discord-url: 
@@ -685,7 +679,7 @@ optional string telegram-url:
 width: fill-container
 padding-vertical.px: 40
 padding-horizontal.px: 40
-background.solid: $left-hug-sitemap-footer-desktop.backgroundcolor
+background.solid: $left-hug-sitemap-footer-desktop.background-color
 
 -- ftd.column:
 spacing.fixed.px: 24
@@ -760,19 +754,19 @@ $loop$: $left-hug-sitemap-footer-desktop.footer-list as $obj
 
 -- component left-hug-sitemap-footer-mobile:
 optional string site-name:
-optional string site-url: /
+optional string site-url:
 optional string copyright:
 optional body bio:
-optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
+optional ftd.image-src site-logo:
 integer logo-height: 32
-optional ftd.color backgroundcolor: $inherited.colors.background.step-1
-pr.toc-item list footer-list: $empty-toc
-pr.toc-item list footer-list: $sitemap.sections
-optional ftd.image-src twitter-logo: $assets.files.assets.twitter.svg
-optional ftd.image-src facebook-logo: $assets.files.assets.facebook.svg
-optional ftd.image-src discord-logo:  $assets.files.assets.discord.svg
-optional ftd.image-src instagram-logo: $assets.files.assets.instagram.svg
-optional ftd.image-src telegram-logo: $assets.files.assets.telegram.svg
+optional ftd.color background-color:
+pr.toc-item list footer-list:
+pr.toc-item list footer-list:
+optional ftd.image-src twitter-logo:
+optional ftd.image-src facebook-logo:
+optional ftd.image-src discord-logo:
+optional ftd.image-src instagram-logo:
+optional ftd.image-src telegram-logo:
 optional string twitter-url: 
 optional string facebook-url: 
 optional string discord-url: 
@@ -783,7 +777,7 @@ optional string telegram-url:
 width: fill-container
 padding-vertical.px: 24
 padding-horizontal.px: 24
-background.solid: $left-hug-sitemap-footer-mobile.backgroundcolor
+background.solid: $left-hug-sitemap-footer-mobile.background-color
 spacing.fixed.px: 24
 
 -- logo-with-name:
@@ -855,10 +849,10 @@ optional string copyright:
 optional body bio:
 optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
 integer logo-height: 32
-optional ftd.color backgroundcolor: $inherited.colors.background.step-1
+optional ftd.color background-color: $inherited.colors.background.step-1
 optional ftd.image-src twitter-logo: $assets.files.assets.twitter.svg
 optional ftd.image-src facebook-logo: $assets.files.assets.facebook.svg
-optional ftd.image-src discord-logo:  $assets.files.assets.discord.svg
+optional ftd.image-src discord-logo: $assets.files.assets.discord.svg
 optional ftd.image-src instagram-logo: $assets.files.assets.instagram.svg
 optional ftd.image-src telegram-logo: $assets.files.assets.telegram.svg
 optional string twitter-url: 
@@ -879,11 +873,11 @@ align-self: center
 padding-vertical.px: 40
 spacing.fixed.px: 32
 padding-horizontal.px: 40
-background.solid: $sitemap-footer.backgroundcolor
+background.solid: $sitemap-footer.background-color
 
 -- ftd.row:
 width: fill-container
-wrap if {ftd.device =="mobile"}: true
+wrap if { ftd.device =="mobile" }: true
 
 -- footer-loop: 
 title: $obj.title
@@ -928,7 +922,7 @@ telegram-url: $sitemap-footer.telegram-url
 text: $sitemap-footer.copyright
 color: $inherited.colors.text
 role: $inherited.types.copy-regular
-text-align if {ftd.device == "mobile"}: center
+text-align if { ftd.device == "mobile" }: center
 
 -- end: ftd.column
 
@@ -974,7 +968,7 @@ padding-horizontal.px: 24
 border-radius.px: 8
 background.solid: $inherited.colors.accent.secondary
 
--- ftd.text:  Try it Free
+-- ftd.text: Try it Free
 color: $inherited.colors.text-strong
 white-space: nowrap
 
@@ -1016,20 +1010,20 @@ link: $logo-with-name.site-url
 align-content: center
 
 -- ftd.image:
-if: {logo-with-name.site-logo != NULL}
+if: { logo-with-name.site-logo != NULL }
 src: $logo-with-name.site-logo
 width: auto
 height.fixed.px: $logo-with-name.logo-height
 
 -- ftd.text: $logo-with-name.site-name
-if: {logo-with-name.site-name != NULL}
+if: { logo-with-name.site-name != NULL }
 color: $inherited.colors.text-strong
 role: $inherited.types.heading-small
 
 -- end: ftd.row
 
 -- fallback-title:
-if: {logo-with-name.site-logo == NULL}
+if: { logo-with-name.site-logo == NULL }
 site-name: $logo-with-name.site-name
 
 -- end: ftd.row
@@ -1061,49 +1055,49 @@ optional string telegram-url:
 spacing.fixed.px: 32
 
 -- ftd.image: 
-if: {images-list.twitter-url != NULL}
+if: { images-list.twitter-url != NULL }
 src: $images-list.twitter-logo
 link: $images-list.twitter-url
 width.fixed.px: 32
 height.fixed.px: 32
-width.fixed.px if {ftd.device == "mobile}: 24
-height.fixed.px if {ftd.device == "mobile}: 24
+width.fixed.px if { ftd.device == "mobile" }: 24
+height.fixed.px if { ftd.device == "mobile" }: 24
 
 -- ftd.image: 
-if: {images-list.facebook-url != NULL}
+if: { images-list.facebook-url != NULL }
 src: $images-list.facebook-logo
 link: $images-list.facebook-url
 width.fixed.px: 32
 height.fixed.px: 32
-width.fixed.px if {ftd.device == "mobile}: 24
-height.fixed.px if {ftd.device == "mobile}: 24
+width.fixed.px if { ftd.device == "mobile" }: 24
+height.fixed.px if { ftd.device == "mobile" }: 24
 
 -- ftd.image: 
-if: {images-list.discord-url != NULL}
+if: { images-list.discord-url != NULL }
 src: $images-list.discord-logo
 link: $images-list.discord-url
 width.fixed.px: 32
 height.fixed.px: 32
-width.fixed.px if {ftd.device == "mobile}: 24
-height.fixed.px if {ftd.device == "mobile}: 24
+width.fixed.px if { ftd.device == "mobile" }: 24
+height.fixed.px if { ftd.device == "mobile" }: 24
 
 -- ftd.image: 
-if: {images-list.instagram-url != NULL}
+if: { images-list.instagram-url != NULL }
 src: $images-list.instagram-logo
 link: $images-list.instagram-url
 width.fixed.px: 32
 height.fixed.px: 32
-width.fixed.px if {ftd.device == "mobile}: 24
-height.fixed.px if {ftd.device == "mobile}: 24
+width.fixed.px if { ftd.device == "mobile" }: 24
+height.fixed.px if { ftd.device == "mobile" }: 24
 
 -- ftd.image: 
-if: {images-list.telegram-url != NULL}
+if: { images-list.telegram-url != NULL }
 src: $images-list.telegram-logo
 link: $images-list.telegram-url
 width.fixed.px: 32
 height.fixed.px: 32
-width.fixed.px if {ftd.device == "mobile}: 24
-height.fixed.px if {ftd.device == "mobile}: 24
+width.fixed.px if { ftd.device == "mobile" }: 24
+height.fixed.px if { ftd.device == "mobile" }: 24
 
 -- end: ftd.row
 
@@ -1133,8 +1127,11 @@ boolean show-subsections: false
 width: fill-container
 
 -- footer-loop-mobile: $footer-loop.title
-if: {ftd.device == "mobile"}
+if: { ftd.device == "mobile" }
 url: $footer-loop.url
+is-active: $footer-loop.is-active
+text-color: $footer-loop.text-color
+active-text-color: $footer-loop.active-text-color
 sub-sections: $footer-loop.sub-sections 
 $shows-data: $footer-loop.shows-data
 show-toc: $footer-loop.show-toc
@@ -1147,7 +1144,7 @@ wrap: true
 width: fill-container
 
 -- footer-list-section: $footer-loop.title
-if: {ftd.device != "mobile"} 
+if: { ftd.device != "mobile" } 
 url: $footer-loop.url
 sub-sections: $footer-loop.sub-sections 
 show-toc: $footer-loop.show-toc
@@ -1173,11 +1170,11 @@ caption title:
 string url:
 boolean $shows-data: 
 boolean is-active: false
-ftd.color text-color: $inherited.colors.text-strong
-ftd.color active-text-color: $inherited.colors.text-strong
-pr.toc-item list sub-sections: $empty-toc
-boolean show-toc: false
-boolean show-subsections: false
+ftd.color text-color:
+ftd.color active-text-color:
+pr.toc-item list sub-sections:
+boolean show-toc:
+boolean show-subsections:
 
 -- ftd.column:
 width: fill-container
@@ -1255,30 +1252,30 @@ boolean show-toc: false
 boolean show-subsections: false
 
 -- ftd.column:
-width.fixed.percent if {ftd.device == "mobile" && footer-list-section.show-subsections}: 50
-margin-bottom.px if {ftd.device == "mobile"}:  24
+width.fixed.percent if { ftd.device == "mobile" && footer-list-section.show-subsections }: 50
+margin-bottom.px if { ftd.device == "mobile" }: 24
 
 -- ftd.text: $footer-list-section.title
-if: {footer-list-section.show-toc}
-color:$inherited.colors.text
+if: { footer-list-section.show-toc }
+color: $inherited.colors.text
 role: $inherited.types.button-large
 link: $footer-list-section.url
 width: fill-container
 white-space: nowrap
-margin-bottom.px  : 12
+margin-bottom.px: 12
 
 -- ftd.text: $footer-list-section.title
 if: { footer-list-section.show-subsections && !footer-list-section.show-toc }
-color:$inherited.colors.text
+color: $inherited.colors.text
 role: $inherited.types.button-medium
 link: $footer-list-section.url
 width: fill-container
 white-space: nowrap
-margin-bottom.px  : 12
+margin-bottom.px: 12
 
 -- ftd.text: $footer-list-section.title
-if: { !footer-list-section.show-toc && ! footer-list-section.show-subsections}
-color:$inherited.colors.text
+if: { !footer-list-section.show-toc && ! footer-list-section.show-subsections }
+color: $inherited.colors.text
 role: $inherited.types.copy-regular
 link: $footer-list-section.url
 width: fill-container
@@ -1327,7 +1324,7 @@ boolean show-subsections: false
 -- ftd.column:
 
 -- ftd.text: $footer-list-toc.title
-if: { footer-list-toc.show-subsections}
+if: { footer-list-toc.show-subsections }
 color: $inherited.colors.text
 role: $inherited.types.copy-regular
 link: $footer-list-toc.url
@@ -1336,7 +1333,7 @@ white-space: nowrap
 margin-bottom.px: 12
 
 -- ftd.text: $footer-list-toc.title
-if: { !footer-list-toc.show-subsections}
+if: { !footer-list-toc.show-subsections }
 color: $inherited.colors.text
 role: $inherited.types.button-medium
 link: $footer-list-toc.url
@@ -1345,7 +1342,7 @@ white-space: nowrap
 margin-bottom.px: 12
 
 -- ftd.column:
-if: {!ftd.is_empty(footer-list-toc.toc)}
+if: { !ftd.is_empty(footer-list-toc.toc) }
 spacing.fixed.px: 12
 
 -- footer-list-toc-children: 
@@ -1395,7 +1392,7 @@ width: fill-container
 white-space: nowrap
 
 -- ftd.column:
-if: {!ftd.is_empty(footer-list-toc-children.toc)}
+if: { !ftd.is_empty(footer-list-toc-children.toc) }
 spacing.fixed.px: 16
 
 -- footer-list-toc-children: 
@@ -1448,7 +1445,7 @@ align-content: center
 width: fill-container
 
 -- ftd.text: 
-if: {fastn-footer.copyright != NULL}
+if: { fastn-footer.copyright != NULL }
 text: $fastn-footer.copyright
 color: $inherited.colors.text
 text-align: center
