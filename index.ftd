@@ -291,8 +291,9 @@ pr.toc-item list footer-list: $sitemap.sections
 -- ftd.column:
 width: fill-container
 
+-- ftd.desktop:
+
 -- social-sideline-footer-desktop:
-if: { ftd.device != "mobile" }
 site-name: $social-sideline-footer.site-name
 telegram-url: $social-sideline-footer.telegram-url
 instagram-url: $social-sideline-footer.instagram-url
@@ -313,8 +314,12 @@ site-url: $social-sideline-footer.site-url
 site-logo: $social-sideline-footer.site-logo
 social: $social-sideline-footer.social
 
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
 -- social-sideline-footer-mobile:
-if: { ftd.device == "mobile" }
 site-name: $social-sideline-footer.site-name
 telegram-url: $social-sideline-footer.telegram-url
 instagram-url: $social-sideline-footer.instagram-url
@@ -334,6 +339,8 @@ discord-logo: $social-sideline-footer.discord-logo
 site-url: $social-sideline-footer.site-url
 site-logo: $social-sideline-footer.site-logo
 social: $social-sideline-footer.social
+
+-- end: ftd.mobile
 
 -- end: ftd.column
 
@@ -599,8 +606,9 @@ optional string telegram-url:
 -- ftd.column:
 width: fill-container
 
+-- ftd.desktop:
+
 -- left-hug-sitemap-footer-desktop:
-if: { ftd.device != "mobile" }
 site-name: $left-hug-sitemap-footer.site-name
 telegram-url: $left-hug-sitemap-footer.telegram-url
 instagram-url: $left-hug-sitemap-footer.instagram-url
@@ -620,8 +628,12 @@ discord-logo: $left-hug-sitemap-footer.discord-logo
 site-url: $left-hug-sitemap-footer.site-url
 site-logo: $left-hug-sitemap-footer.site-logo
 
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
 -- left-hug-sitemap-footer-mobile:
-if: { ftd.device == "mobile" }
 site-name: $left-hug-sitemap-footer.site-name
 telegram-url: $left-hug-sitemap-footer.telegram-url
 instagram-url: $left-hug-sitemap-footer.instagram-url
@@ -640,6 +652,8 @@ facebook-logo: $left-hug-sitemap-footer.facebook-logo
 discord-logo: $left-hug-sitemap-footer.discord-logo
 site-url: $left-hug-sitemap-footer.site-url
 site-logo: $left-hug-sitemap-footer.site-logo
+
+-- end: ftd.mobile
 
 -- end: ftd.column
 
@@ -1126,8 +1140,9 @@ boolean show-subsections: false
 -- ftd.column:
 width: fill-container
 
+-- ftd.mobile:
+
 -- footer-loop-mobile: $footer-loop.title
-if: { ftd.device == "mobile" }
 url: $footer-loop.url
 is-active: $footer-loop.is-active
 text-color: $footer-loop.text-color
@@ -1137,6 +1152,11 @@ $shows-data: $footer-loop.shows-data
 show-toc: $footer-loop.show-toc
 show-subsections: $footer-loop.show-subsections
 
+-- end: ftd.mobile
+
+
+-- ftd.desktop:
+
 -- ftd.row:
 spacing: space-between
 align-self: center
@@ -1144,13 +1164,14 @@ wrap: true
 width: fill-container
 
 -- footer-list-section: $footer-loop.title
-if: { ftd.device != "mobile" } 
 url: $footer-loop.url
 sub-sections: $footer-loop.sub-sections 
 show-toc: $footer-loop.show-toc
 show-subsections: $footer-loop.show-subsections
 
 -- end: ftd.row
+
+-- end: ftd.desktop
 
 -- end: ftd.column
 
