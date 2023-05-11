@@ -1,6 +1,6 @@
--- import: fifthtry.github.io/footer/assets
--- import: fifthtry.github.io/footer as footer
--- import: fifthtry.github.io/footer/toc as toc
+-- import: fastn-community.github.io/footer/assets
+-- import: fastn-community.github.io/footer as footer
+-- import: fastn-community.github.io/footer/toc as toc
 -- import: fifthtry.github.io/package-doc/forest-theme as ft
 
 -- ft.page: 
@@ -23,7 +23,7 @@ copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 -- ft.page.body:
 
 -- pd.package: Social Footer
-name: fifthtry.github.io/footer
+name: fastn-community.github.io/footer
 
 `social-footer` is another footer component which shows sections from your
 `fastn` sitemap of `FASTN.ftd`.
@@ -37,9 +37,9 @@ If you are using our `doc-site` as your website theme, then to use
 lang: ftd
 
 \-- fastn.dependency: fifthtry.github.io/doc-site
-\-- fastn.dependency: fifthtry.github.io/footer
+\-- fastn.dependency: fastn-community.github.io/footer
 \-- fastn.auto-import: fifthtry.github.io/doc-site as ds
-\-- fastn.auto-import: fifthtry.github.io/footer as footer
+\-- fastn.auto-import: fastn-community.github.io/footer as footer
 
 -- tf.markdown:
 

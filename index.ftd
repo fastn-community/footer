@@ -1,5 +1,5 @@
--- import: fifthtry.github.io/footer/assets
--- import: fifthtry.github.io/footer/toc
+-- import: fastn-community.github.io/footer/assets
+-- import: fastn-community.github.io/footer/toc
 -- import: fifthtry.github.io/package-doc/doc as pd
 -- import: fifthtry.github.io/package-doc/footer
 -- import: fastn/processors as pr
@@ -36,9 +36,9 @@ site-name: Footers
 -- end: ft.page.footer
 
 -- pd.package: Footer components
-name: fifthtry.github.io/footer
+name: fastn-community.github.io/footer
 
-`fifthtry.github.io/footer` is a component library which contains various `ftd`
+`fastn-community.github.io/footer` is a component library which contains various `ftd`
 components can be used on your pages. 
 
 Footer is for making most content pages more interesting. To use footer
@@ -47,7 +47,7 @@ components on your web package, add below into `FASTN.ftd` file:
 -- ft.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/footer as footer
+\-- fastn.dependency: fastn-community.github.io/footer as footer
 \-- fastn.auto-import: footer
 
 -- ft.h3: Footer examples:
