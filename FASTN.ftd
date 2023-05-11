@@ -1,13 +1,13 @@
 -- import: fastn
 
--- fastn.package: fifthtry.github.io/footer
+-- fastn.package: fastn-community.github.io/footer
 
 -- fastn.dependency: fifthtry.github.io/package-doc 
 
 -- fastn.auto-import: fifthtry.github.io/package-doc/doc as pd
 -- fastn.auto-import: fastn
--- fastn.auto-import: fifthtry.github.io/package-doc/typography as tf
--- fastn.auto-import: fifthtry.github.io/package-doc/code-block as cb
+-- fastn.auto-import: fastn-community.github.io/typography as tf
+-- fastn.auto-import: fastn-community.github.io/code-block as cb
 -- fastn.auto-import: fifthtry.github.io/package-doc/forest-theme as ft
 
 -- fastn.sitemap:
@@ -23,4 +23,4 @@
 - Fastn Powered-by Footer: fastn-footer/
 
 # Github
-  url: https://github.com/FifthTry/footer
+  url: https://github.com/fastn-community/footer

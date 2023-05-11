@@ -1,5 +1,5 @@
--- import: fifthtry.github.io/footer/assets
--- import: fifthtry.github.io/footer as footer
+-- import: fastn-community.github.io/footer/assets
+-- import: fastn-community.github.io/footer as footer
 -- import: fifthtry.github.io/package-doc/forest-theme as ft
 
 -- ft.page: 
@@ -19,7 +19,7 @@ powered-by-link: https://fastn.com/
 -- ft.page.body:
 
 -- pd.package: Fastn Powered by Footer
-name: fifthtry.github.io/footer
+name: fastn-community.github.io/footer
 
 `fastn-footer` is another footer component which shows powered by text with
 fastn logo and link to fifthtry.com.
@@ -33,9 +33,9 @@ If you are using our `doc-site` as your website theme, then to use
 lang: ftd
 
 \-- fastn.dependency: fifthtry.github.io/doc-site
-\-- fastn.dependency: fifthtry.github.io/footer
+\-- fastn.dependency: fastn-community.github.io/footer
 \-- fastn.auto-import: fifthtry.github.io/doc-site as ds
-\-- fastn.auto-import: fifthtry.github.io/footer
+\-- fastn.auto-import: fastn-community.github.io/footer
 
 -- tf.markdown:
 
