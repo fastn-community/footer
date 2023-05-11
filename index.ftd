@@ -22,8 +22,8 @@ color: $inherited.colors.text-strong
 -- end: white
 
 -- ftd.image-src fastn-logo:
-light: https://fastn.io/-/fastn.io/images/fastn.svg
-dark: https://fastn.io/-/fastn.io/images/fastn-dark.svg
+light: https://fastn.com/-/fastn.com/images/fastn.svg
+dark: https://fastn.com/-/fastn.com/images/fastn-dark.svg
 
 -- ft.page: 
 show-footer: true
@@ -1503,7 +1503,7 @@ link: $fastn-footer.powered-by-link
 -- component powered-by:
 caption title: Powered by
 ftd.image-src fastn: $fastn-logo
-string link: https://fastn.io/
+string link: https://fastn.com/
 
 -- ftd.column:
 link: $powered-by.link
