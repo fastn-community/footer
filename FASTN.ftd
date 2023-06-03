@@ -2,27 +2,30 @@
 
 -- fastn.package: fastn-community.github.io/footer
 
--- fastn.dependency: fifthtry.github.io/package-doc 
+-- fastn.dependency: fastn-community.github.io/site-doc
 -- fastn.dependency: fastn-community.github.io/code-block
--- fastn.dependency: fastn-community.github.io/typography
 
--- fastn.auto-import: fifthtry.github.io/package-doc/doc as pd
--- fastn.auto-import: fastn
--- fastn.auto-import: fastn-community.github.io/typography as tf
+-- fastn.auto-import: fastn-community.github.io/site-doc
 -- fastn.auto-import: fastn-community.github.io/code-block as cb
--- fastn.auto-import: fifthtry.github.io/package-doc/forest-theme as ft
+-- fastn.auto-import: fastn-community.github.io/footer/assets
+-- fastn.auto-import: fastn
+
+
 
 -- fastn.sitemap:
 
 # Home: index.html
 
-## Footer Components: index.html
-- Basic Footer: basic-footer/
-- Social Footer: social-footer/
-- Social Sideline Footer: social-sideline-footer/
-- Left Hug Sitemap Footer: left-hug-sitemap-footer/
-- Sitemap Footer: sitemap-footer/
-- Fastn Powered-by Footer: fastn-footer/
+## Some: index.html
 
-# Github
+- Footer Overview: index.html
+- Documentation: /docs/
+  - Basic Footer: /docs/
+  - fastn Powered by Footer: /docs/fastn-footer/
+  - Social Footer: /docs/social-footer/
+  - Social Sideline Footer: /docs/social-sideline-footer/
+  - Left Hug Sitemap Footer: /docs/left-hug-sitemap-footer/
+  - Sitemap Footer: /docs/sitemap-footer/
+
+# GitHub
   url: https://github.com/fastn-community/footer
