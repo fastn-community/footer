@@ -1,76 +1,40 @@
 -- import: fastn-community.github.io/footer/assets
 -- import: fastn-community.github.io/footer/toc
--- import: fifthtry.github.io/package-doc/doc as pd
--- import: fifthtry.github.io/package-doc/footer
 -- import: fastn/processors as pr
 
 -- pr.toc-item list empty-toc: 
 
 -- pr.sitemap-data sitemap:
-$processor$: pr.full-sitemap
+$processor$: pr.sitemap
 
 -- string bio-text: 
 
 I'm surprised you had the courage to take the responsibility yourself. Leave
 that to me.
 
--- component white:
-
--- ftd.text: test
-color: $inherited.colors.text-strong
-
--- end: white
 
 -- ftd.image-src fastn-logo:
 light: https://fastn.com/-/fastn.com/images/fastn.svg
 dark: https://fastn.com/-/fastn.com/images/fastn-dark.svg
 
--- ft.page: 
-show-footer: true
-site-name: Footers
 
--- ft.page.footer:
 
--- footer.fastn-footer:
 
--- end: ft.page.footer
 
--- pd.package: Footer components
-name: fastn-community.github.io/footer
+-- site-doc.doc-home: fastn package: Footer
+license-url: https://github.com/fastn-community/footer/blob/main/LICENSE
+current-package: fastn-community.github.io/footer
+show-tabs: false
+site-title: Footer
 
-`fastn-community.github.io/footer` is a component library which contains various `ftd`
-components can be used on your pages. 
-
-Footer is for making most content pages more interesting. To use footer
-components on your web package, add below into `FASTN.ftd` file:
-
--- ft.code:
-lang: ftd
-
-\-- fastn.dependency: fastn-community.github.io/footer as footer
-\-- fastn.auto-import: footer
-
--- ft.h3: Footer examples:
-
--- ft.markdown: 
-
-**Basic Footer:**
-
--- basic-footer:
-site-logo: $assets.files.assets.dummy-site-logo.png
-site-url: /
-footer-list: $toc.items
-copyright: Copyright © 2023 - fifthtry.com
-
--- ft.markdown: 
-
-**Social Sideline Footer:**
+-- site-doc.output:
+colors: $ftd.default-colors
 
 -- social-sideline-footer:
 social: true
-site-logo: $assets.files.assets.dummy-site-logo.png
+site-logo: $assets.files.assets.ipsum-logo.svg
 site-url: /
-site-name: Site name
+site-name: NULL
 twitter-url: https://twitter.com/FifthTryHQ
 facebook-url: /
 discord-url: https://discord.gg/bucrdvptYd
@@ -81,7 +45,35 @@ copyright: Copyright © 2023 - fifthtry.com
 I'm surprised you had the courage to take the responsibility yourself. Leave
 that to me.
 
--- end: ft.page
+-- end: site-doc.output
+
+-- site-doc.header: What is footer
+
+A website footer refers to the section located at the bottom of a web page. It
+typically appears across all pages of a website and contains information that
+is useful for users, but not necessarily the main focus of the page. The footer
+is commonly separated from the main content area by a horizontal line or a
+distinct background color.
+
+-- site-doc.header: How to use `footer`
+
+If you are using our [doc-site](https://fastn-community.github.io/doc-site/) 
+theme then go through our doc-site
+[documentation](https://fastn-community.github.io/doc-site/footer/) of how to
+add footer in a module.
+
+
+To learn all types of footer [click here](docs/).
+
+To use `footer` add below lines into your FASTN.ftd document:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/footer
+
+-- end: site-doc.doc-home
+
 
 
 
@@ -96,11 +88,8 @@ that to me.
 optional string site-name:
 optional string site-url: /
 optional string copyright: Copyright © 2023 - fifthtry.com
-optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
-optional ftd.color background-color: $inherited.colors.background.step-1
-pr.toc-item list footer-list: $sitemap.sections
-ftd.color text-color: $inherited.colors.text
-ftd.color active-text-color: $inherited.colors.text-strong
+optional ftd.image-src site-logo: $assets.files.assets.ipsum-logo.svg
+pr.toc-item list footer-links: $sitemap.sections
 integer logo-height: 32
 
 -- ftd.column:
@@ -109,7 +98,7 @@ align-self: center
 align-content: center
 padding-vertical.px: 40
 spacing.fixed.px: 24
-background.solid: $basic-footer.background-color
+background.solid: $inherited.colors.background.step-1
 
 -- ftd.row:
 align-self: center
@@ -130,12 +119,12 @@ spacing.fixed.px: 16
 max-width.fixed.percent: 70
 wrap: true
 
--- footer-list-section: 
+-- footer-links-section: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
 sub-sections: $empty-toc
-$loop$: $basic-footer.footer-list as $obj
+$loop$: $basic-footer.footer-links as $obj
 
 -- end: ftd.row
 
@@ -197,8 +186,7 @@ optional string discord-url:
 optional string instagram-url: 
 optional string telegram-url: 
 optional string copyright:
-pr.toc-item list footer-list: $sitemap.sections
-optional ftd.color background-color: $inherited.colors.background.step-1
+pr.toc-item list footer-links: $sitemap.sections
 
 -- ftd.column:
 width: fill-container
@@ -206,7 +194,7 @@ align-content: center
 align-self: center
 padding-vertical.px: 40
 spacing.fixed.px: 24
-background.solid: $social-footer.background-color
+background.solid: $inherited.colors.background.step-1
 
 -- ftd.row:
 align-content: center
@@ -232,12 +220,12 @@ spacing.fixed.px: 32
 max-width.fixed.percent: 70
 wrap: true
 
--- footer-list-section: 
+-- footer-links-section: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
 sub-sections: $empty-toc
-$loop$: $social-footer.footer-list as $obj
+$loop$: $social-footer.footer-links as $obj
 
 -- end: ftd.row
 
@@ -285,8 +273,7 @@ optional body bio:
 optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
 integer logo-height: 32
 boolean social: false
-optional ftd.color background-color: $inherited.colors.background.step-1
-pr.toc-item list footer-list: $sitemap.sections
+pr.toc-item list footer-links: $sitemap.sections
 
 -- ftd.column:
 width: fill-container
@@ -305,8 +292,7 @@ instagram-logo: $social-sideline-footer.instagram-logo
 bio: $social-sideline-footer.bio
 copyright: $social-sideline-footer.copyright
 logo-height: $social-sideline-footer.logo-height
-background-color: $social-sideline-footer.background-color
-footer-list: $social-sideline-footer.footer-list
+footer-links: $social-sideline-footer.footer-links
 twitter-logo: $social-sideline-footer.twitter-logo
 facebook-logo: $social-sideline-footer.facebook-logo
 discord-logo: $social-sideline-footer.discord-logo
@@ -331,8 +317,7 @@ instagram-logo: $social-sideline-footer.instagram-logo
 bio: $social-sideline-footer.bio
 copyright: $social-sideline-footer.copyright
 logo-height: $social-sideline-footer.logo-height
-background-color: $social-sideline-footer.background-color
-footer-list: $social-sideline-footer.footer-list
+footer-links: $social-sideline-footer.footer-links
 twitter-logo: $social-sideline-footer.twitter-logo
 facebook-logo: $social-sideline-footer.facebook-logo
 discord-logo: $social-sideline-footer.discord-logo
@@ -373,13 +358,12 @@ optional body bio:
 optional ftd.image-src site-logo:
 integer logo-height:
 boolean social:
-optional ftd.color background-color:
-pr.toc-item list footer-list:
+pr.toc-item list footer-links:
 
 -- ftd.column:
 width: fill-container
 padding-vertical.px: 40
-background.solid: $social-sideline-footer-desktop.background-color
+background.solid: $inherited.colors.background.step-1
 spacing.fixed.px: 24
 
 -- ftd.row:
@@ -425,12 +409,12 @@ if: { !social-sideline-footer-desktop.social }
 align-content: center
 spacing.fixed.px: 32
 
--- footer-list-section: 
+-- footer-links-section: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
 sub-sections: $empty-toc
-$loop$: $social-sideline-footer-desktop.footer-list as $obj
+$loop$: $social-sideline-footer-desktop.footer-links as $obj
 
 -- end: ftd.row
 
@@ -485,13 +469,12 @@ optional body bio:
 optional ftd.image-src site-logo:
 integer logo-height:
 boolean social:
-optional ftd.color background-color:
-pr.toc-item list footer-list:
+pr.toc-item list footer-links:
 
 -- ftd.column:
 width: fill-container
 padding-vertical.px: 24
-background.solid: $social-sideline-footer-mobile.background-color
+background.solid: $inherited.colors.background.step-1
 spacing.fixed.px: 24
 
 -- ftd.column:
@@ -534,12 +517,12 @@ if: { !social-sideline-footer-mobile.social }
 align-content: center
 spacing.fixed.px: 32
 
--- footer-list-section: 
+-- footer-links-section: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
 sub-sections: $empty-toc
-$loop$: $social-sideline-footer-mobile.footer-list as $obj
+$loop$: $social-sideline-footer-mobile.footer-links as $obj
 
 -- end: ftd.row
 
@@ -590,8 +573,7 @@ optional string copyright:
 optional body bio:
 optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
 integer logo-height: 32
-optional ftd.color background-color: $inherited.colors.background.step-1
-pr.toc-item list footer-list: $sitemap.sections
+pr.toc-item list footer-links: $sitemap.sections
 optional ftd.image-src twitter-logo: $assets.files.assets.twitter.svg
 optional ftd.image-src facebook-logo: $assets.files.assets.facebook.svg
 optional ftd.image-src discord-logo: $assets.files.assets.discord.svg
@@ -620,8 +602,7 @@ instagram-logo: $left-hug-sitemap-footer.instagram-logo
 bio: $left-hug-sitemap-footer.bio
 copyright: $left-hug-sitemap-footer.copyright
 logo-height: $left-hug-sitemap-footer.logo-height
-background-color: $left-hug-sitemap-footer.background-color
-footer-list: $left-hug-sitemap-footer.footer-list
+footer-links: $left-hug-sitemap-footer.footer-links
 twitter-logo: $left-hug-sitemap-footer.twitter-logo
 facebook-logo: $left-hug-sitemap-footer.facebook-logo
 discord-logo: $left-hug-sitemap-footer.discord-logo
@@ -645,8 +626,7 @@ instagram-logo: $left-hug-sitemap-footer.instagram-logo
 bio: $left-hug-sitemap-footer.bio
 copyright: $left-hug-sitemap-footer.copyright
 logo-height: $left-hug-sitemap-footer.logo-height
-background-color: $left-hug-sitemap-footer.background-color
-footer-list: $left-hug-sitemap-footer.footer-list
+footer-links: $left-hug-sitemap-footer.footer-links
 twitter-logo: $left-hug-sitemap-footer.twitter-logo
 facebook-logo: $left-hug-sitemap-footer.facebook-logo
 discord-logo: $left-hug-sitemap-footer.discord-logo
@@ -675,9 +655,8 @@ optional string copyright:
 optional body bio:
 optional ftd.image-src site-logo:
 integer logo-height: 32
-optional ftd.color background-color:
-pr.toc-item list footer-list:
-pr.toc-item list footer-list:
+pr.toc-item list footer-links:
+pr.toc-item list footer-links:
 optional ftd.image-src twitter-logo:
 optional ftd.image-src facebook-logo:
 optional ftd.image-src discord-logo:
@@ -693,7 +672,7 @@ optional string telegram-url:
 width: fill-container
 padding-vertical.px: 40
 padding-horizontal.px: 40
-background.solid: $left-hug-sitemap-footer-desktop.background-color
+background.solid: $inherited.colors.background.step-1
 
 -- ftd.column:
 spacing.fixed.px: 24
@@ -743,13 +722,13 @@ wrap: true
 margin-left.px: 32
 width.fixed.percent: 65
 
--- footer-list-section: 
+-- footer-links-section: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
 sub-sections: $obj.children
 show-subsections: true
-$loop$: $left-hug-sitemap-footer-desktop.footer-list as $obj
+$loop$: $left-hug-sitemap-footer-desktop.footer-links as $obj
 
 -- end: ftd.row
 
@@ -773,9 +752,8 @@ optional string copyright:
 optional body bio:
 optional ftd.image-src site-logo:
 integer logo-height: 32
-optional ftd.color background-color:
-pr.toc-item list footer-list:
-pr.toc-item list footer-list:
+pr.toc-item list footer-links:
+pr.toc-item list footer-links:
 optional ftd.image-src twitter-logo:
 optional ftd.image-src facebook-logo:
 optional ftd.image-src discord-logo:
@@ -791,7 +769,7 @@ optional string telegram-url:
 width: fill-container
 padding-vertical.px: 24
 padding-horizontal.px: 24
-background.solid: $left-hug-sitemap-footer-mobile.background-color
+background.solid: $inherited.colors.background.step-1
 spacing.fixed.px: 24
 
 -- logo-with-name:
@@ -811,13 +789,13 @@ spacing: space-between
 wrap: true
 width: fill-container
 
--- footer-list-section: 
+-- footer-links-section: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
 sub-sections: $obj.children
 show-subsections: true
-$loop$: $left-hug-sitemap-footer-mobile.footer-list as $obj
+$loop$: $left-hug-sitemap-footer-mobile.footer-links as $obj
 
 -- end: ftd.row
 
@@ -863,7 +841,6 @@ optional string copyright:
 optional body bio:
 optional ftd.image-src site-logo: $assets.files.assets.dummy-site-logo.png
 integer logo-height: 32
-optional ftd.color background-color: $inherited.colors.background.step-1
 optional ftd.image-src twitter-logo: $assets.files.assets.twitter.svg
 optional ftd.image-src facebook-logo: $assets.files.assets.facebook.svg
 optional ftd.image-src discord-logo: $assets.files.assets.discord.svg
@@ -874,11 +851,10 @@ optional string facebook-url:
 optional string discord-url: 
 optional string instagram-url: 
 optional string telegram-url: 
+pr.toc-item list footer-links: $sitemap.sections
 optional string sign-up-txt:
-pr.toc-item list footer-list: $sitemap.sections
+optional string sign-up-link: 
 optional boolean subscription: false
-ftd.color text-color: $inherited.colors.text
-ftd.color active-text-color: $inherited.colors.text-strong
 
 -- ftd.column:
 width: fill-container
@@ -887,7 +863,7 @@ align-self: center
 padding-vertical.px: 40
 spacing.fixed.px: 32
 padding-horizontal.px: 40
-background.solid: $sitemap-footer.background-color
+background.solid: $inherited.colors.background.step-1
 
 -- ftd.row:
 width: fill-container
@@ -897,11 +873,9 @@ wrap if { ftd.device =="mobile" }: true
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
-text-color: $sitemap-footer.text-color
-active-text-color: $sitemap-footer.active-text-color
 sub-sections: $obj.children
 show-toc: true
-$loop$: $sitemap-footer.footer-list as $obj
+$loop$: $sitemap-footer.footer-links as $obj
 
 -- end: ftd.row
 
@@ -919,6 +893,14 @@ site-logo: $sitemap-footer.site-logo
 site-name: $sitemap-footer.site-name
 site-url: $sitemap-footer.site-url
 logo-height: $sitemap-footer.logo-height
+
+-- ftd.row:
+if: { sitemap-footer.subscription }
+
+-- subscription-form: $sitemap-footer.sign-up-txt
+link: $sitemap-footer.sign-up-link
+
+-- end: ftd.row
 
 -- images-list:
 twitter-logo: $sitemap-footer.twitter-logo
@@ -940,14 +922,6 @@ text-align if { ftd.device == "mobile" }: center
 
 -- end: ftd.column
 
--- ftd.row:
-align-content: right
-if: { sitemap-footer.subscription }
-
--- subscription-form:
-
--- end: ftd.row
-
 -- end: ftd.column
 
 -- end: sitemap-footer
@@ -962,6 +936,9 @@ if: { sitemap-footer.subscription }
 
 
 -- component subscription-form:
+caption title: 
+string link: 
+boolean $mouse-in: false
 
 -- ftd.row:
 width: fill-container
@@ -974,26 +951,28 @@ padding-vertical.px: 12
 padding-horizontal.px: 16
 placeholder: Enter your Email...
 color: $inherited.colors.text
+min-width.fixed.px: 220
 
 -- ftd.row:
 width: fill-container
-padding-vertical.px: 12
+padding-vertical.px: 10
 padding-horizontal.px: 24
 border-radius.px: 8
-background.solid: $inherited.colors.accent.secondary
+background.solid if { !subscription-form.mouse-in }: $inherited.colors.cta-primary.base
+background.solid if { subscription-form.mouse-in }: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $subscription-form.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $subscription-form.mouse-in, v = false)
+align-content: center
+spacing.fixed.px: 8
+link: $subscription-form.link
 
--- ftd.text: Try it Free
-color: $inherited.colors.text-strong
+-- ftd.text: $subscription-form.title
+role: $inherited.types.button-medium
+color:  $inherited.colors.cta-primary.text
 white-space: nowrap
-
--- ftd.row:
-padding-top.px: 8
-padding-horizontal.px: 4
 
 -- ftd.image:
 src: $assets.files.assets.right-arrow.svg
-
--- end: ftd.row
 
 -- end: ftd.row
 
@@ -1131,8 +1110,6 @@ caption title:
 string url:
 boolean $shows-data: false
 boolean is-active: false
-ftd.color text-color: $inherited.colors.text-strong
-ftd.color active-text-color: $inherited.colors.text-strong
 pr.toc-item list sub-sections: $empty-toc
 boolean show-toc: false
 boolean show-subsections: false
@@ -1145,15 +1122,12 @@ width: fill-container
 -- footer-loop-mobile: $footer-loop.title
 url: $footer-loop.url
 is-active: $footer-loop.is-active
-text-color: $footer-loop.text-color
-active-text-color: $footer-loop.active-text-color
 sub-sections: $footer-loop.sub-sections 
 $shows-data: $footer-loop.shows-data
 show-toc: $footer-loop.show-toc
 show-subsections: $footer-loop.show-subsections
 
 -- end: ftd.mobile
-
 
 -- ftd.desktop:
 
@@ -1163,7 +1137,7 @@ align-self: center
 wrap: true
 width: fill-container
 
--- footer-list-section: $footer-loop.title
+-- footer-links-section: $footer-loop.title
 url: $footer-loop.url
 sub-sections: $footer-loop.sub-sections 
 show-toc: $footer-loop.show-toc
@@ -1191,8 +1165,6 @@ caption title:
 string url:
 boolean $shows-data: 
 boolean is-active: false
-ftd.color text-color:
-ftd.color active-text-color:
 pr.toc-item list sub-sections:
 boolean show-toc:
 boolean show-subsections:
@@ -1238,7 +1210,7 @@ if: { footer-loop-mobile.shows-data }
 spacing.fixed.px: 14
 margin-top.px if { $footer-loop-mobile.shows-data }: 12
 
--- footer-list-toc: 
+-- footer-links-toc: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
@@ -1262,66 +1234,64 @@ $loop$: $footer-loop-mobile.sub-sections as $obj
 
 
 
--- component footer-list-section:
+-- component footer-links-section:
 caption title:
 optional string url: /
 boolean is-active: false
-ftd.color text-color: $inherited.colors.text-strong
-ftd.color active-text-color: $inherited.colors.text-strong
 pr.toc-item list sub-sections: $empty-toc
 boolean show-toc: false
 boolean show-subsections: false
 
 -- ftd.column:
-width.fixed.percent if { ftd.device == "mobile" && footer-list-section.show-subsections }: 50
+width.fixed.percent if { ftd.device == "mobile" && footer-links-section.show-subsections }: 50
 margin-bottom.px if { ftd.device == "mobile" }: 24
 
--- ftd.text: $footer-list-section.title
-if: { footer-list-section.show-toc }
+-- ftd.text: $footer-links-section.title
+if: { footer-links-section.show-toc }
 color: $inherited.colors.text
 role: $inherited.types.button-large
-link: $footer-list-section.url
+link: $footer-links-section.url
 width: fill-container
 white-space: nowrap
 margin-bottom.px: 12
 
--- ftd.text: $footer-list-section.title
-if: { footer-list-section.show-subsections && !footer-list-section.show-toc }
+-- ftd.text: $footer-links-section.title
+if: { footer-links-section.show-subsections && !footer-links-section.show-toc }
 color: $inherited.colors.text
 role: $inherited.types.button-medium
-link: $footer-list-section.url
+link: $footer-links-section.url
 width: fill-container
 white-space: nowrap
 margin-bottom.px: 12
 
--- ftd.text: $footer-list-section.title
-if: { !footer-list-section.show-toc && ! footer-list-section.show-subsections }
+-- ftd.text: $footer-links-section.title
+if: { !footer-links-section.show-toc && ! footer-links-section.show-subsections }
 color: $inherited.colors.text
 role: $inherited.types.copy-regular
-link: $footer-list-section.url
+link: $footer-links-section.url
 width: fill-container
 white-space: nowrap
 
--- footer-list-toc: 
-if: { !footer-list-section.show-toc }
+-- footer-links-toc: 
+if: { !footer-links-section.show-toc }
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
 toc: $empty-toc
-show-subsections: $footer-list-section.show-subsections 
-$loop$: $footer-list-section.sub-sections as $obj
+show-subsections: $footer-links-section.show-subsections 
+$loop$: $footer-links-section.sub-sections as $obj
 
--- footer-list-toc: 
-if: { footer-list-section.show-toc }
+-- footer-links-toc: 
+if: { footer-links-section.show-toc }
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
 toc: $obj.children
-$loop$: $footer-list-section.sub-sections as $obj
+$loop$: $footer-links-section.sub-sections as $obj
 
 -- end: ftd.column
 
--- end: footer-list-section
+-- end: footer-links-section
 
 
 
@@ -1332,49 +1302,47 @@ $loop$: $footer-list-section.sub-sections as $obj
 
 
 
--- component footer-list-toc:
+-- component footer-links-toc:
 caption title:
 optional string url: /
 boolean is-active: false
-ftd.color text-color: $inherited.colors.text-strong
-ftd.color active-text-color: $inherited.colors.text-strong 
 pr.toc-item list toc: $empty-toc
 children wrap:
 boolean show-subsections: false
 
 -- ftd.column:
 
--- ftd.text: $footer-list-toc.title
-if: { footer-list-toc.show-subsections }
+-- ftd.text: $footer-links-toc.title
+if: { footer-links-toc.show-subsections }
 color: $inherited.colors.text
 role: $inherited.types.copy-regular
-link: $footer-list-toc.url
+link: $footer-links-toc.url
 width: fill-container
 white-space: nowrap
 margin-bottom.px: 12
 
--- ftd.text: $footer-list-toc.title
-if: { !footer-list-toc.show-subsections }
+-- ftd.text: $footer-links-toc.title
+if: { !footer-links-toc.show-subsections }
 color: $inherited.colors.text
 role: $inherited.types.button-medium
-link: $footer-list-toc.url
+link: $footer-links-toc.url
 width: fill-container
 white-space: nowrap
 margin-bottom.px: 12
 
 -- ftd.column:
-if: { !ftd.is_empty(footer-list-toc.toc) }
+if: { !ftd.is_empty(footer-links-toc.toc) }
 spacing.fixed.px: 12
 
--- footer-list-toc-children: 
+-- footer-links-toc-children: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
 toc: $obj.children
-$loop$: $footer-list-toc.toc as $obj
+$loop$: $footer-links-toc.toc as $obj
 
 -- ftd.column:
-children: $footer-list-toc.wrap
+children: $footer-links-toc.wrap
 
 -- end: ftd.column
 
@@ -1382,7 +1350,7 @@ children: $footer-list-toc.wrap
 
 -- end: ftd.column
 
--- end: footer-list-toc
+-- end: footer-links-toc
 
 
 
@@ -1393,37 +1361,35 @@ children: $footer-list-toc.wrap
 
 
 
--- component footer-list-toc-children:
+-- component footer-links-toc-children:
 caption title:
 optional string url: /
 boolean is-active: false
-ftd.color text-color: $inherited.colors.text-strong
-ftd.color active-text-color: $inherited.colors.text-strong 
 pr.toc-item list toc: $empty-toc
 children wrap:
 
 -- ftd.column:
 spacing.fixed.px: 16
 
--- ftd.text: $footer-list-toc-children.title
+-- ftd.text: $footer-links-toc-children.title
 color: $inherited.colors.text
 role: $inherited.types.copy-small
-link: $footer-list-toc-children.url
+link: $footer-links-toc-children.url
 width: fill-container
 white-space: nowrap
 
 -- ftd.column:
-if: { !ftd.is_empty(footer-list-toc-children.toc) }
+if: { !ftd.is_empty(footer-links-toc-children.toc) }
 spacing.fixed.px: 16
 
--- footer-list-toc-children: 
+-- footer-links-toc-children: 
 title: $obj.title
 url: $obj.url
 is-active: $obj.is-active
-$loop$: $footer-list-toc-children.toc as $obj
+$loop$: $footer-links-toc-children.toc as $obj
 
 -- ftd.column:
-children: $footer-list-toc-children.wrap
+children: $footer-links-toc-children.wrap
 
 -- end: ftd.column
 
@@ -1431,7 +1397,7 @@ children: $footer-list-toc-children.wrap
 
 -- end: ftd.column
 
--- end: footer-list-toc-children
+-- end: footer-links-toc-children
 
 
 
