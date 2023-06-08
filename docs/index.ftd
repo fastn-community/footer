@@ -14,9 +14,10 @@ info: The `--footer` option serves as a convenient way to add a footer to your f
 
 - **Logo:** The fastn website logo is placed in the top-left corner of the
     footer. Clicking on the logo leads back to the homepage.
-- **Footer Links:** Primary navigation which called as sections in
-  `fastn.sitemap`, presented as a horizontal list of links placed in the right
-  side of the logo.
+- **Footer Links:** The primary navigation, referred to as sections in
+    fastn.sitemap, is displayed as a horizontal list of links positioned on the
+    right side of the logo.
+
 - **Sub-sections:** Secondary navigation which called as sub-sections in
   `fastn.sitemap` is placed in the footer.
 

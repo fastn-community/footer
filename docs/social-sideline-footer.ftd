@@ -12,9 +12,10 @@ package-link: https://fastn-community.github.io/footer
 package-name: fastn-community.github.io/footer
 info: The `--footer` option serves as a convenient way to add a footer to your fastn web projects.
 
-- **Footer Links:** Primary navigation which called as sections in
-  `fastn.sitemap`, presented as a horizontal list of links placed in the right
-  side of the logo.
+- **Footer Links:** The primary navigation, referred to as sections in
+    fastn.sitemap, is displayed as a horizontal list of links positioned on the
+    right side of the logo.
+
 
 -- site-doc.header: How to use
 
