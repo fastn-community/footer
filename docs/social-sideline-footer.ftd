@@ -10,7 +10,7 @@ show-tabs: false
 -- site-doc.component-doc: `footer`
 package-link: https://fastn-community.github.io/footer
 package-name: fastn-community.github.io/footer
-info: `-- footer` can be used as footer on your fastn web projects.
+info: The `--footer` option serves as a convenient way to add a footer to your fastn web projects.
 
 - **Footer Links:** Primary navigation which called as sections in
   `fastn.sitemap`, presented as a horizontal list of links placed in the right
@@ -34,21 +34,21 @@ copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 twitter-logo: $assets.files.assets.twitter.svg
 twitter-url: https://twitter.com/FifthTryHQ
 facebook-logo: $assets.files.assets.facebook.svg
-facebook-url: /
+facebook-url: index.html
 discord-logo: $assets.files.assets.discord.svg
 discord-url: https://discord.gg/bucrdvptYd
 instagram-logo: $assets.files.assets.instagram.svg
-instagram-url: /
+instagram-url: index.html
 telegram-logo: $assets.files.assets.telegram.svg
-telegram-url: /
+telegram-url: index.html
 site-name: fastn
 site-url: index.html
 site-logo: $assets.files.assets.dummy-site-logo.png
 logo-height: 32
 social: true
 
-I'm surprised you had the courage to take the responsibility yourself. Leave
-that to me.
+I appreciate your initiative in taking on the responsibility, but please allow
+me to handle it.
 
 -- site-doc.header: Example with `social: true`
 
@@ -59,17 +59,17 @@ types: $ftd.default-types
 -- footer.social-sideline-footer:
 social: true
 site-logo: $assets.files.assets.ipsum-logo.svg
-site-url: /
+site-url: index.html
 site-name: Site name
 twitter-url: https://twitter.com/FifthTryHQ
-facebook-url: /
+facebook-url: index.html
 discord-url: https://discord.gg/bucrdvptYd
-instagram-url: /
-telegram-url: /
+instagram-url: index.html
+telegram-url: index.html
 copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 
-I'm surprised you had the courage to take the responsibility yourself. Leave
-that to me.
+I appreciate your initiative in taking on the responsibility, but please allow
+me to handle it.
 
 -- end: site-doc.output
 
@@ -82,18 +82,18 @@ types: $ftd.default-types
 -- footer.social-sideline-footer:
 social: false
 site-logo: $assets.files.assets.ipsum-logo.svg
-site-url: /
+site-url: index.html
 footer-links: $footer.sitemap.sections
 site-name: Site name
 twitter-url: https://twitter.com/FifthTryHQ
-facebook-url: /
+facebook-url: index.html
 discord-url: https://discord.gg/bucrdvptYd
-instagram-url: /
-telegram-url: /
+instagram-url: index.html
+telegram-url: index.html
 copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 
-I'm surprised you had the courage to take the responsibility yourself. Leave
-that to me.
+I appreciate your initiative in taking on the responsibility, but please allow
+me to handle it.
 
 -- end: site-doc.output
 

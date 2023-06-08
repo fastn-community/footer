@@ -33,34 +33,32 @@ colors: $ftd.default-colors
 -- social-sideline-footer:
 social: true
 site-logo: $assets.files.assets.ipsum-logo.svg
-site-url: /
+site-url: index.html
 site-name: NULL
 twitter-url: https://twitter.com/FifthTryHQ
-facebook-url: /
+facebook-url: index.html
 discord-url: https://discord.gg/bucrdvptYd
-instagram-url: /
-telegram-url: /
+instagram-url: index.html
+telegram-url: index.html
 copyright: Copyright © 2023 - fifthtry.com
 
-I'm surprised you had the courage to take the responsibility yourself. Leave
-that to me.
+I appreciate your initiative in taking on the responsibility, but please allow
+me to handle it.
 
 -- end: site-doc.output
 
 -- site-doc.header: What is footer
 
-A website footer refers to the section located at the bottom of a web page. It
-typically appears across all pages of a website and contains information that
-is useful for users, but not necessarily the main focus of the page. The footer
-is commonly separated from the main content area by a horizontal line or a
-distinct background color.
+A website footer is the bottom section of a web page, appearing on all pages. It
+contains useful information for users, not the main focus. It is often
+separated from the main content area by a line or distinct background color.
 
 -- site-doc.header: How to use `footer`
 
 If you are using our [doc-site](https://fastn-community.github.io/doc-site/) 
 theme then go through our doc-site
 [documentation](https://fastn-community.github.io/doc-site/footer/) of how to
-add footer in a module.
+add footer in a document.
 
 
 To learn all types of footer [click here](docs/).
