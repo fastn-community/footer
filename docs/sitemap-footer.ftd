@@ -11,11 +11,12 @@ show-tabs: false
 -- site-doc.component-doc: `footer`
 package-link: https://fastn-community.github.io/footer
 package-name: fastn-community.github.io/footer
-info: `-- footer` can be used as footer on your fastn web projects.
+info: The `--footer` option serves as a convenient way to add a footer to your fastn web projects.
 
-- **Footer Links:** Primary navigation which called as sections in
-  `fastn.sitemap`, presented as a horizontal list of links placed in the right
-  side of the logo.
+- **Footer Links:** The primary navigation, referred to as sections in
+    fastn.sitemap, is displayed as a horizontal list of links positioned on the
+    right side of the logo.
+
 
 -- site-doc.header: How to use
 
@@ -35,13 +36,13 @@ copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 twitter-logo: $assets.files.assets.twitter.svg
 twitter-url: https://twitter.com/FifthTryHQ
 facebook-logo: $assets.files.assets.facebook.svg
-facebook-url: /
+facebook-url: index.html
 discord-logo: $assets.files.assets.discord.svg
 discord-url: https://discord.gg/bucrdvptYd
 instagram-logo: $assets.files.assets.instagram.svg
-instagram-url: /
+instagram-url: index.html
 telegram-logo: $assets.files.assets.telegram.svg
-telegram-url: /
+telegram-url: index.html
 site-name: fastn
 site-url: index.html
 site-logo: $assets.files.assets.dummy-site-logo.png
@@ -65,13 +66,13 @@ copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 twitter-logo: $assets.files.assets.twitter.svg
 twitter-url: https://twitter.com/FifthTryHQ
 facebook-logo: $assets.files.assets.facebook.svg
-facebook-url: /
+facebook-url: index.html
 discord-logo: $assets.files.assets.discord.svg
 discord-url: https://discord.gg/bucrdvptYd
 instagram-logo: $assets.files.assets.instagram.svg
-instagram-url: /
+instagram-url: index.html
 telegram-logo: $assets.files.assets.telegram.svg
-telegram-url: /
+telegram-url: index.html
 site-name: fastn
 site-url: index.html
 site-logo: $assets.files.assets.ipsum-logo.svg
@@ -80,8 +81,8 @@ sign-up-txt: Subscribe Us
 sign-up-link: index.html
 subscription: true
 
-I'm surprised you had the courage to take the responsibility yourself. Leave
-that to me.
+I appreciate your initiative in taking on the responsibility, but please allow
+me to handle it.
 
 -- end: site-doc.output
 

@@ -10,7 +10,7 @@ show-tabs: false
 -- site-doc.component-doc: `footer`
 package-link: https://fastn-community.github.io/footer
 package-name: fastn-community.github.io/footer
-info: `-- footer` can be used as footer on your fastn web projects.
+info: The `--footer` option serves as a convenient way to add a footer to your fastn web projects.
 
 
 - **Logo:** Your fastn website logo is placed in the top-left corner of the
