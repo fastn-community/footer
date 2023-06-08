@@ -18,6 +18,7 @@ info: The `--footer` option serves as a convenient way to add a footer to your f
     right side of the logo.
 
 
+
 -- site-doc.header: How to use
 
 -- cb.code: Add `footer` dependency into your FASTN.ftd
