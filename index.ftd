@@ -945,7 +945,7 @@ spacing.fixed.px: 8
 -- ftd.text-input: 
 border-radius.px: 8
 background.solid: $inherited.colors.custom.three
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.overlay
 padding-vertical.px: 12
 padding-horizontal.px: 16
 placeholder: Enter your Email...
