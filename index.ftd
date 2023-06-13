@@ -944,11 +944,11 @@ spacing.fixed.px: 8
 
 -- ftd.text-input: 
 border-radius.px: 8
-background.solid: $inherited.colors.text-strong
+background.solid: $inherited.colors.custom.three
+color: $inherited.colors.cta-secondary.text
 padding-vertical.px: 12
 padding-horizontal.px: 16
 placeholder: Enter your Email...
-color: $inherited.colors.text
 min-width.fixed.px: 220
 
 -- ftd.row:
