@@ -11,7 +11,7 @@ show-tabs: false
 -- site-doc.component-doc: `footer`
 package-link: https://fastn-community.github.io/footer
 package-name: fastn-community.github.io/footer
-info: The `--footer` option serves as a convenient way to add a footer to your fastn web projects.
+info: The `--footer` option serves as a convenient way to add a footer to your [fastn](https://fastn.com/) web projects.
 
 - **Footer Links:** The primary navigation, referred to as sections in
     fastn.sitemap, is displayed as a horizontal list of links positioned on the
@@ -158,7 +158,7 @@ It's used to add your telegram account / handle link.
 -- site-doc.component-property: `site-name`
 type: String (`optional`)
 
-It's used to show your fastn web site name.
+It's used to show your [fastn](https://fastn.com/) web site name.
 
 -- site-doc.component-property: `site-url`
 type: String (`optional`)
@@ -170,7 +170,7 @@ It's used to add your site homepage url, which will be added to `site-name` and
 -- site-doc.component-property: `site-logo`
 type: ftd.image-src (`optional`)
 
-It's used to show your fastn web site logo.
+It's used to show your [fastn](https://fastn.com/) web site logo.
 
 -- site-doc.component-property: `logo-height`
 type: Integer (`optional`, default: 32 pixels)
