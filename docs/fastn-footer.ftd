@@ -6,6 +6,7 @@
 -- site-doc.doc-home: Documentation - fastn Powered by Footer
 site-title: Footer
 show-tabs: false
+github-url: https://github.com/fastn-community/footer
 
 -- site-doc.component-doc: `footer`
 package-link: https://fastn-community.github.io/footer
