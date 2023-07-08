@@ -26,6 +26,7 @@ license-url: https://github.com/fastn-community/footer/blob/main/LICENSE
 current-package: fastn-community.github.io/footer
 show-tabs: false
 site-title: Footer
+github-url: https://github.com/fastn-community/footer
 
 -- site-doc.output:
 colors: $ftd.default-colors
