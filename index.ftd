@@ -1054,6 +1054,7 @@ width.fixed.px: 32
 height.fixed.px: 32
 width.fixed.px if { ftd.device == "mobile" }: 24
 height.fixed.px if { ftd.device == "mobile" }: 24
+open-in-new-tab: true
 
 -- ftd.image: 
 if: { images-list.facebook-url != NULL }
@@ -1063,6 +1064,7 @@ width.fixed.px: 32
 height.fixed.px: 32
 width.fixed.px if { ftd.device == "mobile" }: 24
 height.fixed.px if { ftd.device == "mobile" }: 24
+open-in-new-tab: true
 
 -- ftd.image: 
 if: { images-list.discord-url != NULL }
@@ -1072,6 +1074,7 @@ width.fixed.px: 32
 height.fixed.px: 32
 width.fixed.px if { ftd.device == "mobile" }: 24
 height.fixed.px if { ftd.device == "mobile" }: 24
+open-in-new-tab: true
 
 -- ftd.image: 
 if: { images-list.instagram-url != NULL }
@@ -1081,6 +1084,7 @@ width.fixed.px: 32
 height.fixed.px: 32
 width.fixed.px if { ftd.device == "mobile" }: 24
 height.fixed.px if { ftd.device == "mobile" }: 24
+open-in-new-tab: true
 
 -- ftd.image: 
 if: { images-list.telegram-url != NULL }
@@ -1090,6 +1094,7 @@ width.fixed.px: 32
 height.fixed.px: 32
 width.fixed.px if { ftd.device == "mobile" }: 24
 height.fixed.px if { ftd.device == "mobile" }: 24
+open-in-new-tab: true
 
 -- end: ftd.row
 
