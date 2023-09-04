@@ -1052,7 +1052,7 @@ optional string telegram-url:
 spacing.fixed.px: 32
 
 -- ftd.image: 
-if: { images-list.twitter-url != NULL }
+if: { images-list.twitter-logo != NULL && images-list.twitter-url != NULL}
 src: $images-list.twitter-logo
 link: $images-list.twitter-url
 width.fixed.px: 32
@@ -1062,7 +1062,7 @@ height.fixed.px if { ftd.device == "mobile" }: 24
 open-in-new-tab: true
 
 -- ftd.image: 
-if: { images-list.facebook-url != NULL }
+if: { images-list.facebook-logo != NULL && images-list.facebook-url != NULL }
 src: $images-list.facebook-logo
 link: $images-list.facebook-url
 width.fixed.px: 32
@@ -1072,7 +1072,7 @@ height.fixed.px if { ftd.device == "mobile" }: 24
 open-in-new-tab: true
 
 -- ftd.image: 
-if: { images-list.discord-url != NULL }
+if: { images-list.discord-logo != NULL && images-list.discord-url != NULL}
 src: $images-list.discord-logo
 link: $images-list.discord-url
 width.fixed.px: 32
@@ -1082,7 +1082,7 @@ height.fixed.px if { ftd.device == "mobile" }: 24
 open-in-new-tab: true
 
 -- ftd.image: 
-if: { images-list.instagram-url != NULL }
+if: { images-list.instagram-logo != NULL && images-list.instagram-url != NULL}
 src: $images-list.instagram-logo
 link: $images-list.instagram-url
 width.fixed.px: 32
@@ -1092,7 +1092,7 @@ height.fixed.px if { ftd.device == "mobile" }: 24
 open-in-new-tab: true
 
 -- ftd.image: 
-if: { images-list.telegram-url != NULL }
+if: { images-list.telegram-logo != NULL && images-list.telegram-url != NULL}
 src: $images-list.telegram-logo
 link: $images-list.telegram-url
 width.fixed.px: 32
